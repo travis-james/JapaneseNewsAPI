@@ -1,16 +1,28 @@
 package main
 
 import (
-	"bytes"
 	"encoding/xml"
 	"fmt"
 	"io/ioutil"
 	"log"
 	"net/http"
 	"time"
-
-	"golang.org/x/net/html/charset"
 )
+
+type NHK struct {
+	XMLName xml.Name   `xml:"rss"`
+	XMLCh   NHKChannel `xml:"channel"`
+}
+
+type NHKChannel struct {
+	Items []NHKItem `xml:"item"`
+}
+
+type NHKItem struct {
+	Title string `xml:"title"`
+	Link  string `xml:"link"`
+	Date  string `xml:"pubDate"`
+}
 
 type Asahi struct {
 	XMLName xml.Name    `xml:"RDF"`
@@ -42,28 +54,49 @@ func fetchFeed(url string) ([]byte, error) {
 	return body, nil
 }
 
+// For NHK.
 func main() {
-	//url := "https://www.news24.jp/rss/index.rdf"
-	//resp, err := fetchFeed(url)
-	resp, err := ioutil.ReadFile("ex.rdf")
+	// url := "https://www.news24.jp/rss/index.rdf"
+	// resp, err := fetchFeed(url)
+	resp, err := ioutil.ReadFile("ex.xml")
 	if err != nil {
 		log.Fatalf("fetch feed failed: %v", err)
 	}
-
-	// Definitely wouldn't have found this out on my own:
-	// https://stackoverflow.com/questions/6002619/unmarshal-an-iso-8859-1-xml-input-in-go
-	reader := bytes.NewReader(resp)
-	decoder := xml.NewDecoder(reader)
-	decoder.CharsetReader = charset.NewReaderLabel
-	article := &Asahi{}
-	err = decoder.Decode(article)
-
-	//err = xml.Unmarshal(resp, article)
+	article := &NHK{}
+	// reader := bytes.NewReader(resp)
+	// decoder := xml.NewDecoder(reader)
+	// decoder.CharsetReader = charset.NewReaderLabel
+	// err = decoder.Decode(article)
+	err = xml.Unmarshal(resp, article)
 	if err != nil {
 		log.Fatalf("xml unmarshal fail: %v", err)
 	}
 	fmt.Println(article)
 }
+
+// For news24
+// func main() {
+// 	//url := "https://www.news24.jp/rss/index.rdf"
+// 	//resp, err := fetchFeed(url)
+// 	resp, err := ioutil.ReadFile("ex.rdf")
+// 	if err != nil {
+// 		log.Fatalf("fetch feed failed: %v", err)
+// 	}
+
+// 	// Definitely wouldn't have found this out on my own:
+// 	// https://stackoverflow.com/questions/6002619/unmarshal-an-iso-8859-1-xml-input-in-go
+// 	reader := bytes.NewReader(resp)
+// 	decoder := xml.NewDecoder(reader)
+// 	decoder.CharsetReader = charset.NewReaderLabel
+// 	article := &Asahi{}
+// 	err = decoder.Decode(article)
+
+// 	//err = xml.Unmarshal(resp, article)
+// 	if err != nil {
+// 		log.Fatalf("xml unmarshal fail: %v", err)
+// 	}
+// 	fmt.Println(article)
+// }
 
 // For Asahi.
 // func main() {
