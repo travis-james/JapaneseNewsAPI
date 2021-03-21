@@ -1,12 +1,15 @@
 package main
 
 import (
+	"bytes"
 	"encoding/xml"
 	"fmt"
 	"io/ioutil"
 	"log"
 	"net/http"
 	"time"
+
+	"golang.org/x/net/html/charset"
 )
 
 type Asahi struct {
@@ -40,16 +43,40 @@ func fetchFeed(url string) ([]byte, error) {
 }
 
 func main() {
-	// url := "http://www.asahi.com/rss/asahi/newsheadlines.rdf"
-	// resp, err := fetchFeed(url)
+	//url := "https://www.news24.jp/rss/index.rdf"
+	//resp, err := fetchFeed(url)
 	resp, err := ioutil.ReadFile("ex.rdf")
 	if err != nil {
 		log.Fatalf("fetch feed failed: %v", err)
 	}
+
+	// Definitely wouldn't have found this out on my own:
+	// https://stackoverflow.com/questions/6002619/unmarshal-an-iso-8859-1-xml-input-in-go
+	reader := bytes.NewReader(resp)
+	decoder := xml.NewDecoder(reader)
+	decoder.CharsetReader = charset.NewReaderLabel
 	article := &Asahi{}
-	err = xml.Unmarshal(resp, article)
+	err = decoder.Decode(article)
+
+	//err = xml.Unmarshal(resp, article)
 	if err != nil {
 		log.Fatalf("xml unmarshal fail: %v", err)
 	}
 	fmt.Println(article)
 }
+
+// For Asahi.
+// func main() {
+// 	//url := "https://www.news24.jp/rss/index.rdf"
+// 	//resp, err := fetchFeed(url)
+// 	resp, err := ioutil.ReadFile("ex.rdf")
+// 	if err != nil {
+// 		log.Fatalf("fetch feed failed: %v", err)
+// 	}
+// 	article := &Asahi{}
+// 	err = xml.Unmarshal(resp, article)
+// 	if err != nil {
+// 		log.Fatalf("xml unmarshal fail: %v", err)
+// 	}
+// 	fmt.Println(article)
+// }
