@@ -1,4 +1,4 @@
-package RssReader
+package placeholder
 
 var URLs = []string{
 	"http://www.asahi.com/rss/asahi/newsheadlines.rdf",
