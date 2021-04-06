@@ -3,7 +3,7 @@ Asahi - http://www.asahi.com/rss/asahi/newsheadlines.rdf
 NHK - https://www.nhk.or.jp/rss/news/cat0.xml
 
 newreader, _ := charset.NewReaderLabel("SHIFT_JIS")
-decoder.CharsetReader
+decoder.CharsetReader decoder.CharsetReader = charset.NewReaderLabel
 
 	newreader, _ := charset.NewReaderLabel("SHIFT_JIS")
 	if err != nil {
