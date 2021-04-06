@@ -13,3 +13,4 @@ decoder.CharsetReader
 	decoder.CharsetReader("", newreader)
 	article := &Asahi{}
 	err = decoder.Decode(article)
+a
