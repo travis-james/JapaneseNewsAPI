@@ -6,6 +6,8 @@ import (
 	"io/ioutil"
 	"net/http"
 	"time"
+
+	"github.com/travis-james/RSSReader/readfeeds"
 )
 
 type Asahi struct {
@@ -40,7 +42,7 @@ func fetchFeed(url string) ([]byte, error) {
 
 // For NHK.
 func main() {
-	a := readfeeds.getNHK()
+	a := readfeeds.GetNHK()
 	fmt.Println(a)
 }
 

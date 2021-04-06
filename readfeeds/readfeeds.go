@@ -28,7 +28,7 @@ type NHKItem struct {
 }
 
 // For NHK.
-func getNHK() *NHK {
+func GetNHK() *NHK {
 	// url := "https://www.news24.jp/rss/index.rdf"
 	// resp, err := fetchFeed(url)
 	resp, err := ioutil.ReadFile("ex.xml")
