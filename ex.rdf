@@ -1,871 +1,364 @@
-<?xml version="1.0" encoding="Shift_JIS" ?>
-<rdf:RDF 
-  xmlns="http://purl.org/rss/1.0/"
-  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
-  xmlns:dc="http://purl.org/dc/elements/1.1/"
-  xml:lang="ja">
-
- <channel rdf:about="http://www.news24.jp/rss/index.rdf">
-  <title>日テレNEWS24</title>
-  <link>http://www.news24.jp</link>
-  <description>日テレNEWS24は、最新のニュースを動画で24時間お伝えする日本テレビのニュースサイトです。</description>
-  <dc:rights>Copyright(C)NIPPON TELEVISION NETWORK CORPORATION All rights reserved.</dc:rights>
-  <dc:publisher>NIPPON TELEVISION NETWORK CORPORATION </dc:publisher> 
-  <dc:creator>NIPPON TELEVISION NETWORK CORPORATION </dc:creator> 
-  <dc:date>2021-04-07T04:30:06+09:00</dc:date>
-  <items>
-   <rdf:Seq>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/04851845.html"/>
-      <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/07/10851887.html"/>
-      <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/07/10851870.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/07/07851869.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/07/07851868.html"/>
-      <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/07/10851867.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/07/06851859.html"/>
-      <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/07/10851858.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/07/07851853.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/09851848.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/07851847.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/09851844.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/07851843.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/09851840.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/09851833.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/07851832.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/09851827.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/09851824.html"/>
-      <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/10851823.html"/>
-      <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/10851821.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/07851811.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/07851804.html"/>
-      <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/10851803.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/06851802.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/09851800.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/07851793.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/09851792.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/04851791.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/07851787.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/07851785.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/07851780.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/09851779.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/09851776.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/09851775.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/07851774.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/07851767.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/07851766.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/09851763.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/09851757.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/06851756.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/09851739.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/07851729.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/04851728.html"/>
-      <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/10851722.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/07851721.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/07851717.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/07851714.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/09851690.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/07851682.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/04851674.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/07851673.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/07851668.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/07851654.html"/>
-      <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/10851646.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/07851645.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/06851641.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/07851635.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/07851634.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/07851630.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/07851629.html"/>
-      <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/10851624.html"/>
-      <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/10851615.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/07851614.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/07851608.html"/>
-      <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/10851607.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/04851604.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/07851590.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/07851591.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/07851581.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/07851576.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/07851575.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/09851572.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/04851568.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/07851559.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/07851557.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/07851555.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/06851552.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/07851550.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/07851520.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/06851510.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/07851509.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/07851508.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/07851507.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/07851506.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/07851499.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/04851492.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/06851487.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/07851483.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/04851482.html"/>
-      <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/10851472.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/07851467.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/07851464.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/07851463.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/07851462.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/04851461.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/07851447.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/07851442.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/07851437.html"/>
-      <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/10851424.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/07851422.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/07851421.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/07851413.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/04851408.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/07851402.html"/>
-      <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/10851400.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/07851392.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/07851385.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/07851384.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/06851383.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/07851372.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/07851371.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/07851367.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/07851362.html"/>
-      <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/10851351.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/06851350.html"/>
-      <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/10851346.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/06851345.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/07851332.html"/>
-      <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/10851331.html"/>
-        <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/07851323.html"/>
-      <rdf:li rdf:resource="http://www.news24.jp/articles/2021/04/06/10851321.html"/>
-   </rdf:Seq>
-  </items>
- </channel>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/04851845.html">
- <title>菅首相単独インタビュー　全編公開　4/6 23:47更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/04851845.html</link>
- <description>菅首相は６日、ＢＳ日テレの報道番組「深層ＮＥＷＳ」の取材に応じ、今年９月に予定されている自民党総裁選より前に衆議院の解散総選挙を行うことは「当然、あり得る」と述べました。単独インタビューの全編をお送りします。</description>
- <dc:date>2021-04-06T23:47:54+09:00</dc:date>
-</item>
-   <item rdf:about="http://www.news24.jp/articles/2021/04/07/10851887.html">
- <title>コロナ禍でも「富豪」急増　世界長者番付　4/7 3:18更新</title>
- <link>http://www.news24.jp/articles/2021/04/07/10851887.html</link>
- <description>アメリカの経済誌「フォーブス」は６日、恒例の「世界長者番付」を発表し、コロナ禍で富豪が急増している実態が明らかになりました。</description>
- <dc:date>2021-04-07T03:18:40+09:00</dc:date>
-</item>
-   <item rdf:about="http://www.news24.jp/articles/2021/04/07/10851870.html">
- <title>ＩＭＦ　世界経済見通しを上方修正　4/7 1:43更新</title>
- <link>http://www.news24.jp/articles/2021/04/07/10851870.html</link>
- <description>ＩＭＦ（＝国際通貨基金）は６日、最新の世界経済見通しを発表し、今年の世界全体の成長率の予測をプラス６．０％に上方修正しました。</description>
- <dc:date>2021-04-07T01:43:43+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/07/07851869.html">
- <title>元郵便局長「遊興費等に」約１０億円詐取か　4/7 1:40更新</title>
- <link>http://www.news24.jp/articles/2021/04/07/07851869.html</link>
- <description>長崎住吉郵便局の元局長の男性が、架空の貯金などの名目で知人らから約１０億円をだまし取った疑いがあるとして、日本郵便が調査を進めています。</description>
- <dc:date>2021-04-07T01:40:59+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/07/07851868.html">
- <title>全国で２６５２人確認　前週を大幅に上回る　4/7 1:34更新</title>
- <link>http://www.news24.jp/articles/2021/04/07/07851868.html</link>
- <description>ＮＮＮのまとめによりますと、６日、全国では２６５２人の感染が確認され、前週の火曜日（３月３０日）の２０８７人を大幅に上回っています。また、２８人の死亡が発表されました。</description>
- <dc:date>2021-04-07T01:34:25+09:00</dc:date>
-</item>
-   <item rdf:about="http://www.news24.jp/articles/2021/04/07/10851867.html">
- <title>露サーフィン選手、北方領土の国後島で合宿　4/7 1:32更新</title>
- <link>http://www.news24.jp/articles/2021/04/07/10851867.html</link>
- <description>東京オリンピックへの参加を目指すロシアのサーフィン選手が、北方領土の国後島で合宿していることが分かりました。</description>
- <dc:date>2021-04-07T01:32:46+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/07/06851859.html">
- <title>政府が検討「デジタル給与」実現性は？　4/7 0:45更新</title>
- <link>http://www.news24.jp/articles/2021/04/07/06851859.html</link>
- <description>コロナの影響もあり、現金を使う機会が減っていますが、いま政府が進めているのが「デジタル給与」です。</description>
- <dc:date>2021-04-07T00:45:22+09:00</dc:date>
-</item>
-   <item rdf:about="http://www.news24.jp/articles/2021/04/07/10851858.html">
- <title>深層告知：前駐米大使に外交の裏側を直撃！　4/7 0:45更新</title>
- <link>http://www.news24.jp/articles/2021/04/07/10851858.html</link>
- <description>杉山晋輔前駐米大使に生直撃！　日米首脳会談の成果は。国際社会は中国にどう向き合うべきか。ブリンケン国務長官ら米国要人と親交のある前駐米大使に外交の裏側を生直撃！</description>
- <dc:date>2021-04-07T00:45:07+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/07/07851853.html">
- <title>コロナ後遺症「食事も入浴もままならず…」　4/7 0:14更新</title>
- <link>http://www.news24.jp/articles/2021/04/07/07851853.html</link>
- <description>感染が増えている今、改めてみなさんに知って欲しいのが「コロナの後遺症」です。コロナの後遺症と診断された３０代の女性。お風呂やトイレに行くこともままならず、ひどいけん怠感に悩まされて、休職することになったといいます。</description>
- <dc:date>2021-04-07T00:14:29+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/09851848.html">
- <title>西武　開幕９試合目で初めて先制許し大敗　4/6 23:55更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/09851848.html</link>
- <description>６日、プロ野球・西武対楽天では開幕から８試合で一度も先制点を許していない西武が１回表に先発・松本航投手が押し出し四球を与え、開幕９試合目で初めて先制を許します。その後も合計１４四死球を与えるなど１３失点の大量失点。２対１３で大敗しました。</description>
- <dc:date>2021-04-06T23:55:31+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/07851847.html">
- <title>東京でも“感染力強い”「Ｎ５０１Ｙ」次々　4/6 23:50更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/07851847.html</link>
- <description>４月６日放送『ｎｅｗｓ　ｚｅｒｏ』より。</description>
- <dc:date>2021-04-06T23:50:58+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/09851844.html">
- <title>今季初の伝統の一戦　巨人は西勇の前に完敗　4/6 23:45更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/09851844.html</link>
- <description>６日、甲子園球場で行われた阪神対巨人の今季初めての伝統の一戦。巨人は５回に香月一也選手に移籍後初ホームランが飛び出すも、阪神・西勇輝選手の好投の前に７回散発４安打。試合は降雨のため７回コールドとなり、序盤の大量失点が響き２－６で敗れました。</description>
- <dc:date>2021-04-06T23:45:51+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/07851843.html">
- <title>大阪重症病床の使用率　１０日間で２倍以上　4/6 23:38更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/07851843.html</link>
- <description>４月６日放送『ｎｅｗｓ　ｚｅｒｏ』より。</description>
- <dc:date>2021-04-06T23:38:54+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/09851840.html">
- <title>ロッテ・小島に井口監督「もったいない」　4/6 23:32更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/09851840.html</link>
- <description>今季初対戦となったロッテ対オリックス。昨季、オリックス相手に３勝０敗のロッテ先発・小島和哉は６本のヒット、３つのフォアボールを許し、３失点。試合後、井口監督は、「小島らしいピッチングはできていない。もったいない」と話しました。</description>
- <dc:date>2021-04-06T23:32:40+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/09851833.html">
- <title>ロッテ“謎の魚”最終形態　ついにしゃべる　4/6 23:17更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/09851833.html</link>
- <description>千葉ロッテマリーンズの公式キャラクター“謎の魚”が６日のロッテ対オリックスの５回裏終了後に最終形態に進化。今月１日のツイッター上での予告通り最終形態へと進化を遂げ、今までしゃべることのなかった“謎の魚”が「サンキュー」とあいさつをしました。</description>
- <dc:date>2021-04-06T23:17:35+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/07851832.html">
- <title>夫遺体を工場に放置か　妻と娘を逮捕　横浜　4/6 23:17更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/07851832.html</link>
- <description>夫の遺体を横浜市の自宅敷地内の工場に２年間放置したとして、６８歳の妻と４０歳の娘が逮捕されました。</description>
- <dc:date>2021-04-06T23:17:05+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/09851827.html">
- <title>オナイウ劇的弾　マリノス、Ｃ大阪に勝利　4/6 23:03更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/09851827.html</link>
- <description>６日、明治安田生命Ｊ１リーグ第８節の横浜Ｆ・マリノス対セレッソ大阪が行われました。試合終了間際の後半４２分に横浜Ｆ・マリノスのオナイウ阿道選手が決勝ゴールをあげ、１対０で横浜Ｆ・マリノスが勝利しました。</description>
- <dc:date>2021-04-06T23:03:40+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/09851824.html">
- <title>広島・森下が完封　今季リーグ一番乗り　4/6 22:46更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/09851824.html</link>
- <description>６日、明治神宮野球場で行われたヤクルト対広島は、２対０で広島が勝利しました。広島先発の森下暢仁投手がヤクルト打線を９回６安打に抑え、無失点で完封処理。今シーズンリーグ一番乗りの完封勝利を果たしました。</description>
- <dc:date>2021-04-06T22:46:38+09:00</dc:date>
-</item>
-   <item rdf:about="http://www.news24.jp/articles/2021/04/06/10851823.html">
- <title>北の五輪不参加　ＩＯＣ“正式な申請まだ”　4/6 22:34更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/10851823.html</link>
- <description>北朝鮮が、新型コロナウイルスを理由に東京オリンピックに参加しない決定をしたことについて、ＩＯＣ（＝国際オリンピック委員会）が、正式な申請を受け取っていないことがわかりました。</description>
- <dc:date>2021-04-06T22:34:03+09:00</dc:date>
-</item>
-   <item rdf:about="http://www.news24.jp/articles/2021/04/06/10851821.html">
- <title>米ＮＹでは超高層展望デッキににぎわいが　4/6 22:32更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/10851821.html</link>
- <description>ワクチンの接種が進むイギリスでは、規制を緩和する動きがでています。感染者が減り始めたアメリカのニューヨーク州では、一部の隔離措置が撤廃され、打撃を受けた観光業に追い風となりそうです。</description>
- <dc:date>2021-04-06T22:32:55+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/07851811.html">
- <title>東京都　新たに１７人が変異ウイルス感染　4/6 22:10更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/07851811.html</link>
- <description>新型コロナウイルスのリバウンドが懸念される東京都内で、新たに１７人が変異ウイルスに感染していたことが確認されました。</description>
- <dc:date>2021-04-06T22:10:00+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/07851804.html">
- <title>島根県知事　聖火リレー“一転し容認”　4/6 22:01更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/07851804.html</link>
- <description>新型コロナウイルスの対策が不十分などとし、東京オリンピックの聖火リレーの中止を検討していた島根県の丸山知事がこれまでの考えを一転し開催を容認すると表明しました。</description>
- <dc:date>2021-04-06T22:01:56+09:00</dc:date>
-</item>
-   <item rdf:about="http://www.news24.jp/articles/2021/04/06/10851803.html">
- <title>台湾列車脱線　事故瞬間のドラレコ映像公開　4/6 21:58更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/10851803.html</link>
- <description>台湾で５０人が死亡した特急列車の脱線事故で、列車に設置されたカメラが撮影した事故の瞬間の映像が公開されました。レコーダーでは工事車両が見えてから衝突までは３秒ほど。列車は緊急ブレーキをかけましたが間に合わなかったことが分かります。</description>
- <dc:date>2021-04-06T21:58:27+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/06851802.html">
- <title>ルネサス　半導体を愛媛の工場で代替生産へ　4/6 21:43更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/06851802.html</link>
- <description>半導体大手のルネサスエレクトロニクスは、火災によって停止している半導体の生産について、台湾の半導体メーカーなどに委託するほかに、自社の愛媛県の工場でも代替生産を始めることがわかりました。</description>
- <dc:date>2021-04-06T21:43:55+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/09851800.html">
- <title>巨人・香月一也「がむしゃら」移籍後初ＨＲ　4/6 21:32更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/09851800.html</link>
- <description>６日、甲子園球場で行われているプロ野球の阪神対巨人。巨人の香月一也選手が５回、阪神の先発、西勇輝投手から巨人移籍後初ホームランを放ちました。</description>
- <dc:date>2021-04-06T21:32:12+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/07851793.html">
- <title>【天気】日中は全国的に青空広がる　4/6 21:22更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/07851793.html</link>
- <description>７日の日中は全国的に青空が広がりますが、夕方以降は北陸や北日本の日本海側で雲が広がり、夜にかけては雨やみぞれが降りそうです。</description>
- <dc:date>2021-04-06T21:22:11+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/09851792.html">
- <title>ＮＢＡ渡邊豪快ダンク！日本人対決はならず　4/6 21:21更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/09851792.html</link>
- <description>ＮＢＡトロント・ラプターズの渡邊雄太選手は６日（現地時間５日）、八村塁選手が所属するワシントン・ウィザーズとの対戦に途中出場し、豪快ダンクを決めました。一方、八村選手は右肩の張りで欠場。注目の日本人対決は再び持ち越されました。</description>
- <dc:date>2021-04-06T21:21:25+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/04851791.html">
- <title>首相「総裁選前の解散あり得る」単独インタ　4/6 21:16更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/04851791.html</link>
- <description>菅首相は６日、日本テレビの単独インタビューに応じ、ことし９月に予定されている自民党総裁選より前に衆議院の解散総選挙を行うことは「当然、あり得る」と述べました。</description>
- <dc:date>2021-04-06T21:16:04+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/07851787.html">
- <title>最後の楽しみ？　水面に浮かぶ桜の“花筏”　4/6 21:00更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/07851787.html</link>
- <description>４日から５日にかけて、西日本や東日本の太平洋側で雨が降り、一部で雨脚が強まりました。花散らしの雨で、見頃も終盤を迎えていた桜は散ってしまったところが多いですが、最後の楽しみとして“花筏（はないかだ）”を探してみてはいかがでしょうか。</description>
- <dc:date>2021-04-06T21:00:20+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/07851785.html">
- <title>フェンス突き破り…立体駐車場から車が転落　4/6 20:52更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/07851785.html</link>
- <description>６日、東京・八王子市でマンションの立体駐車場２階から軽自動車が道路に転落しました。車に乗っていた女性２人が病院に搬送されました。</description>
- <dc:date>2021-04-06T20:52:01+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/07851780.html">
- <title>オスのフクロウが“産卵”？　動物園で…　4/6 20:42更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/07851780.html</link>
- <description>動物園でオスとして飼育されていた４歳のフクロウが卵を産み、飼育員たちに衝撃が走りました。
-</description>
- <dc:date>2021-04-06T20:42:05+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/09851779.html">
- <title>怪物ルーキー・阪神佐藤輝　甲子園初ヒット　4/6 20:40更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/09851779.html</link>
- <description>阪神の怪物ルーキー・佐藤輝明選手（２２）が、６日の巨人との試合の第１打席でセンター前ヒット。甲子園での公式戦初ヒットを放ちました。</description>
- <dc:date>2021-04-06T20:40:28+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/09851776.html">
- <title>楽天・田中将大「伝説の胴上げ」の地で調整　4/6 20:32更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/09851776.html</link>
- <description>６日、楽天・田中将大投手がメットライフドームで西武との試合前練習に姿を見せました。２０１３年にリーグ優勝を決め、胴上げ投手になったマウンドをチェックするなど、リラックスした表情で試合前練習を行いました。</description>
- <dc:date>2021-04-06T20:32:40+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/09851775.html">
- <title>競泳・１９歳本多灯　瀬戸に勝ち五輪内定　4/6 20:32更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/09851775.html</link>
- <description>６日、競泳の日本選手権４日目が行われ、男子２００ｍバタフライ決勝で日本大学の２年生・１９歳の本多灯（ともる）選手が瀬戸大也選手を上回り優勝。派遣標準記録も突破し、初の五輪内定を勝ち取りました。</description>
- <dc:date>2021-04-06T20:32:35+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/07851774.html">
- <title>「彼氏に言われ…」高校教諭が女の子を盗撮　4/6 20:27更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/07851774.html</link>
- <description>熊本県の温泉施設で女の子らを盗撮したとして、高校教諭の女らが逮捕されました。
-</description>
- <dc:date>2021-04-06T20:27:24+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/07851767.html">
- <title>週休３日制検討の動き　意外なデメリットも　4/6 20:23更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/07851767.html</link>
- <description>今回のテーマは『週休３日制』です。希望すれば週に３日休みをとれる制度について、国が導入を検討する動きがあります。本当に実現性はあるのか、メリット・デメリットを含めて解説します。</description>
- <dc:date>2021-04-06T20:23:01+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/07851766.html">
- <title>大阪で感染最多“まん延防止”隣県にも影響　4/6 20:20更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/07851766.html</link>
- <description>「まん延防止等重点措置」が５日から適用された大阪で、新たに７１９人の感染が確認され過去最多を更新しました。吉村知事は医療非常事態宣言を出すことも検討していると、危機感を募らせています。</description>
- <dc:date>2021-04-06T20:20:38+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/09851763.html">
- <title>瀬戸　３種目で五輪　２００ｍバタフライも　4/6 20:18更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/09851763.html</link>
- <description>６日、競泳の日本選手権４日目が行われ、男子２００ｍバタフライ決勝で瀬戸大也選手が１分５５秒２０で２位。オリンピックへの派遣標準記録を突破し、４００ｍ個人メドレー、２００ｍ個人メドレーに続き３種目目の東京オリンピック内定を決めました。</description>
- <dc:date>2021-04-06T20:18:30+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/09851757.html">
- <title>寺村美穂　２００ｍ個人メドレー五輪内定　4/6 20:12更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/09851757.html</link>
- <description>６日、競泳の日本選手権４日目が行われ、女子２００ｍ個人メドレー決勝で寺村美穂選手が２分０９秒５５で優勝。派遣標準記録を突破し、東京オリンピックに内定しました。</description>
- <dc:date>2021-04-06T20:12:52+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/06851756.html">
- <title>「汚染産業」に見直し　着ない服も“再生”　4/6 20:11更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/06851756.html</link>
- <description>日本が、世界が、取り組むＳＤＧｓ。皆ができることとして、この「ファッション」を考えます。実は“世界第二位の汚染産業”ともいわれるファッション業界ですが、いま驚きの素材を活用するなど、生産の仕方を見直す動きが広がっています。</description>
- <dc:date>2021-04-06T20:11:22+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/09851739.html">
- <title>大橋悠依　２００ｍ個人メドレーも五輪内定　4/6 19:56更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/09851739.html</link>
- <description>６日、競泳の日本選手権４日目が行われ、女子２００ｍ個人メドレー決勝で２０１７年世界選手権銀メダルの大橋悠依選手が２分０９秒６７で２位。派遣標準記録を突破し、４００ｍ個人メドレーに続いて、東京五輪に内定しました。</description>
- <dc:date>2021-04-06T19:56:16+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/07851729.html">
- <title>閉店相次ぐ駅そばの新戦略　ロボット登場も　4/6 19:51更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/07851729.html</link>
- <description>駅構内にある「駅そば」のお店が大きな打撃を受けています。駅の利用者が減ったことで「駅そば」の名店も閉店に追い込まれるなか、生き残りをかけて新たな挑戦が始まっています。</description>
- <dc:date>2021-04-06T19:51:15+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/04851728.html">
- <title>海外の人権侵害に制裁…法案成立へ議員連盟　4/6 19:50更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/04851728.html</link>
- <description>海外における人権侵害に対して、制裁を科すための法案の成立を目指す超党派の議員連盟が６日、発足しました。</description>
- <dc:date>2021-04-06T19:50:58+09:00</dc:date>
-</item>
-   <item rdf:about="http://www.news24.jp/articles/2021/04/06/10851722.html">
- <title>国際水泳連盟　五輪最終予選中止を正式発表　4/6 19:47更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/10851722.html</link>
- <description>国際水泳連盟は、日本で予定されている東京オリンピックの最終予選などについて、予定されたスケジュールでの開催を中止すると正式に発表しました。</description>
- <dc:date>2021-04-06T19:47:12+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/07851721.html">
- <title>４月５月連続で“値上がり”　電気・ガス代　4/6 19:46更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/07851721.html</link>
- <description>４月と５月、電気代とガス代がそろって値上がりします。東京では、標準的な使用量の家庭で、２か月合わせて７００円近く支払いが増えるということです。家で過ごす時間が増える中、光熱費を安く抑えるために今、やっておくべきことがありました。</description>
- <dc:date>2021-04-06T19:46:13+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/07851717.html">
- <title>「彼氏に言われ」盗撮　高校教諭の女ら逮捕　4/6 19:40更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/07851717.html</link>
- <description>５年前、熊本県天草市にある温泉施設の脱衣所で女の子の裸を盗撮したとして、２８歳の高校教諭の女と元交際相手の男が逮捕されました。女は、「盗撮したことは間違いない。彼氏に言われてやった」と話し、容疑を認めているということです。</description>
- <dc:date>2021-04-06T19:40:49+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/07851714.html">
- <title>“かかしの里”６体に被害　首折られた姿も　4/6 19:37更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/07851714.html</link>
- <description>兵庫県姫路市の山奥にある集落。観光客を楽しませるとっておきの特徴があるんです。バス停のベンチで休む２人に、農作業に励む人。小屋の修理をするこの人も。実は全て人間ではなく「かかし」なんです。</description>
- <dc:date>2021-04-06T19:37:50+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/09851690.html">
- <title>Ｇ亀井ら「特例２０２１」で一軍再登録　4/6 19:24更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/09851690.html</link>
- <description>新型コロナウイルスに感染した巨人・丸佳浩選手らと接触頻度が高かった巨人・亀井善行選手、増田大輝選手、北村拓己選手の３選手が４日に登録抹消されましたが、保健所から濃厚接触者として認定されず「特例２０２１」を適用し６日、一軍に再登録されました。</description>
- <dc:date>2021-04-06T19:24:56+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/07851682.html">
- <title>変異株流行国にスペインなどを追加　4/6 19:20更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/07851682.html</link>
- <description>政府は、新型コロナウイルスの変異株の流行国に新たにスペインやフィンランド、カナダの一部地域などを指定し、今月９日から水際対策を強化します。政府はすでにイギリスや南アフリカ、フランスなど２６か国を指定しています。</description>
- <dc:date>2021-04-06T19:20:17+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/04851674.html">
- <title>菅首相「総裁選の前の解散も当然あり得る」　4/6 19:17更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/04851674.html</link>
- <description>菅首相は６日、日本テレビの単独インタビューに応じ、今年９月が任期の自民党総裁選前の衆議院の解散・総選挙について「当然、あり得る」と述べました。</description>
- <dc:date>2021-04-06T19:17:35+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/07851673.html">
- <title>島根県が聖火リレー“容認”知事が会見　4/6 19:14更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/07851673.html</link>
- <description>東京オリンピックの聖火リレーの中止を検討していた島根県の丸山知事が会見し、大会組織委員会に条件付きでの開催を容認したことを明らかにしました。</description>
- <dc:date>2021-04-06T19:14:21+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/07851668.html">
- <title>“高金利”うたい元郵便局長が１０億円詐取　4/6 19:12更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/07851668.html</link>
- <description>長崎市の元郵便局長の男性が、知人などからおよそ１０億円をだまし取った疑いがあるとして日本郵便が調査を進めています。元郵便局長は「高い金利が得られる」などと勧誘していたとみられます。６日、日本郵便が会見を開きました。</description>
- <dc:date>2021-04-06T19:12:08+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/07851654.html">
- <title>全国２６４７人感染　大阪と奈良で最多更新　4/6 19:06更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/07851654.html</link>
- <description>６日、これまでに全国で確認された新型コロナウイルスの感染者は２６４７人で大阪と奈良では過去最多を更新しました。</description>
- <dc:date>2021-04-06T19:06:31+09:00</dc:date>
-</item>
-   <item rdf:about="http://www.news24.jp/articles/2021/04/06/10851646.html">
- <title>露の生中継　キャスターのマイクを犬が強奪　4/6 19:02更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/10851646.html</link>
- <description>ロシアのお天気の生中継で、突如大型犬が現れ、現場リポーターのマイクを奪って走り去りました。キャスターは犬を追いかけますが、果たしてマイクを取り返すことはできたのでしょうか。</description>
- <dc:date>2021-04-06T19:02:18+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/07851645.html">
- <title>木村花さんＳＮＳに「死ねや」男性略式起訴　4/6 19:01更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/07851645.html</link>
- <description>人気番組「テラスハウス」に出演しその後自殺した木村花さんを侮辱しようと考え、去年４月、木村さんのツイッターに「死ねや、くそが」「きもい」などと投稿し中傷したとして、福井県の男性が侮辱罪で略式起訴されました。</description>
- <dc:date>2021-04-06T19:01:01+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/06851641.html">
- <title>日経平均３９２円安　利益確定売りなどで　4/6 18:58更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/06851641.html</link>
- <description>６日の東京株式市場で日経平均株価は４営業日ぶりに値を下げ終値は前日比３９２円６２銭安の２万９６９６円６３銭。５日に節目の３万円台を回復したこともあり、当面の利益を確定する目的の売り注文が次第に広がり、下げ幅は４００円を超える場面も。</description>
- <dc:date>2021-04-06T18:58:31+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/07851635.html">
- <title>まん丸なイカ！ダイバー「２５年で初めて」　4/6 18:54更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/07851635.html</link>
- <description>優雅に泳ぐ透き通った丸い生き物。今月３日、山口県長門市の海で撮影されました。撮影したダイバーは――</description>
- <dc:date>2021-04-06T18:54:19+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/07851634.html">
- <title>大阪・ミナミの飲食店　カニの看板壊される　4/6 18:50更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/07851634.html</link>
- <description>５日早朝、大阪・ミナミにある飲食店で、カニの看板が壊される被害がありました。</description>
- <dc:date>2021-04-06T18:50:52+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/07851630.html">
- <title>三島市路上刺殺　指名手配の男に声かけ…　4/6 18:45更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/07851630.html</link>
- <description>先月、静岡県三島市の繁華街で、男性を刃物で殺害した疑いで全国に指名手配されていた３８歳の男が逮捕されました。男が発見された場所は、事件現場から１００キロ以上離れた千葉県松戸市の路上でした。</description>
- <dc:date>2021-04-06T18:45:21+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/07851629.html">
- <title>原因は“飛びだしたネコ”トラックが電柱に　4/6 18:44更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/07851629.html</link>
- <description>６日午前５時４０分頃、長崎県佐世保市の国道で大型トラックが道路左側の電柱に衝突しました。トラックを運転していたのは４０代の男性です。一体、なぜ電柱にぶつかってしまったのでしょうか。</description>
- <dc:date>2021-04-06T18:44:04+09:00</dc:date>
-</item>
-   <item rdf:about="http://www.news24.jp/articles/2021/04/06/10851624.html">
- <title>パトカーと救急車がカーチェイス！理由は？　4/6 18:39更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/10851624.html</link>
- <description>アメリカ・テキサス州の住宅街を猛スピードで走る救急車。火災現場へ急行しているのかと思いきや…。前をふさぐ車を避けるため、道路を外れ、民家の芝生へと進入していきます。そして、救急車は大通りへ。後ろからは数台のパトカーが追いかけてきています。</description>
- <dc:date>2021-04-06T18:39:22+09:00</dc:date>
-</item>
-   <item rdf:about="http://www.news24.jp/articles/2021/04/06/10851615.html">
- <title>病院で火災発生　医師と看護師手術続行　露　4/6 18:30更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/10851615.html</link>
- <description>今月２日、ロシアの病院で火災が発生しました。現場に駆けつける消防隊員。放水活動が行われますが、炎の勢いは増していきます。担架に乗せられ次々と避難する患者たち。実は、火災が起きた時、病院内では非常に難しい心臓手術の真っ最中でした。</description>
- <dc:date>2021-04-06T18:30:22+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/07851614.html">
- <title>【天気】晴れ多く　北陸など夜雨や雪の所も　4/6 18:27更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/07851614.html</link>
- <description>日本付近は、北海道の南に中心を持つ高気圧に覆われています。このため、全国的には晴れた所が多くなりました。ただ、関東南部から西日本の太平洋側は、高気圧の縁に沿って湿った空気が流れ込んだため雲が多く、四国から東海では雨の降った所もありました。</description>
- <dc:date>2021-04-06T18:27:21+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/07851608.html">
- <title>“元ヤンキー町議”逮捕「カネを払わんか」　4/6 18:22更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/07851608.html</link>
- <description>紺色のスーツを着て町議会の場で発言するのは、福岡県みやこ町の元町議会議員。「元ヤンキー町議」として知られていました。</description>
- <dc:date>2021-04-06T18:22:11+09:00</dc:date>
-</item>
-   <item rdf:about="http://www.news24.jp/articles/2021/04/06/10851607.html">
- <title>プーチン氏続投可能に…更に２期なら８３歳　4/6 18:19更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/10851607.html</link>
- <description>ロシアで５日、プーチン大統領が現在の任期が切れる２０２４年以降も、最大で２期１２年の続投を可能とする「改正大統領選挙法」が発効しました。</description>
- <dc:date>2021-04-06T18:19:00+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/04851604.html">
- <title>総務相「徹底調査」フジＨＤ外資規制違反か　4/6 18:16更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/04851604.html</link>
- <description>フジテレビの持ち株会社フジ・メディア・ホールディングスが外資規制に違反していた可能性がある問題で、武田総務相は、徹底的に調査する方針を示しました。</description>
- <dc:date>2021-04-06T18:16:02+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/07851590.html">
- <title>「聖火」“女人禁制”舟でつなぐ　密懸念も　4/6 18:05更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/07851590.html</link>
- <description>愛知県へとつながれた東京オリンピックの聖火リレー。当初は男性限定とされた舟に女性が乗り、聖火が走りました。一方、都市部などでは沿道に密が発生していて、感染に懸念の声もでています。</description>
- <dc:date>2021-04-06T18:05:53+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/07851591.html">
- <title>バカラ賭博させ…違法カジノ店責任者ら逮捕　4/6 18:05更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/07851591.html</link>
- <description>６日午前、客にバカラ賭博をさせ、コミッション料として金を徴収したとして賭博開帳図利の疑いで横浜市の違法カジノ店責任者の男と従業員の男女２人が現行犯逮捕されました。
-</description>
- <dc:date>2021-04-06T18:05:42+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/07851581.html">
- <title>克行被告“事実と違う”現金渡した趣旨否定　4/6 17:48更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/07851581.html</link>
- <description>元法務大臣・河井克行被告の４月６日の公判では、検察側による被告人質問が行われました。現金を渡した趣旨について、検察側が「選挙支援の依頼が一番の目的だったのでは」と問うと、克行被告は「それは事実とは違いますね」と否定しました。</description>
- <dc:date>2021-04-06T17:48:17+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/07851576.html">
- <title>研究と…被験者の胸触る　研究員４度目逮捕　4/6 17:43更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/07851576.html</link>
- <description>研究と称して被験者の女性の胸を触るなどわいせつな行為をしたとして、産業技術総合研究所の４１歳の研究員の男が逮捕されました。同様の事件で４度目の逮捕です。</description>
- <dc:date>2021-04-06T17:43:24+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/07851575.html">
- <title>「軽率だった」市長ら会食…自粛呼びかけも　4/6 17:41更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/07851575.html</link>
- <description>４月６日放送『ｎｅｗｓ　ｅｖｅｒｙ．』より</description>
- <dc:date>2021-04-06T17:41:32+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/09851572.html">
- <title>新型コロナで試合中止のＧ大阪　代替日決定　4/6 17:38更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/09851572.html</link>
- <description>Ｊリーグは６日、選手とスタッフの合計８人が新型コロナウイルスのＰＣＲ検査で陽性判定を受け、試合が中止となっていたＪ１・ガンバ大阪の代替試合開催が決定したと発表しました。４月に１試合、７月に３試合、８月に２試合が行われます。</description>
- <dc:date>2021-04-06T17:38:33+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/04851568.html">
- <title>「デジタル改革関連法案」衆議院を通過　4/6 17:31更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/04851568.html</link>
- <description>「デジタル改革関連法案」が衆議院を通過しました。法案は、デジタル化の推進に向けことし９月にデジタル庁を創設することなどが柱となっており、ハンコが必要な行政手続きの削減も盛り込まれています。</description>
- <dc:date>2021-04-06T17:31:26+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/07851559.html">
- <title>大阪　過去最多７１９人の感染確認　4/6 17:08更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/07851559.html</link>
- <description>大阪府では新たに７１９人の新型コロナウイルスへの感染が確認されました。これまでで過去最多を更新しています。また、奈良県では７８人の感染が発表され、５日に続いて過去最多を更新しています。</description>
- <dc:date>2021-04-06T17:08:17+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/07851557.html">
- <title>変異ウイルスで一気に増加も想定～小池知事　4/6 16:56更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/07851557.html</link>
- <description>新型コロナウイルスのリバウンドが懸念される東京都内で、新たに３９９人の感染が確認されました。</description>
- <dc:date>2021-04-06T16:56:55+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/07851555.html">
- <title>ひき逃げで息子失った母　情報提供呼びかけ　4/6 16:45更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/07851555.html</link>
- <description>春の全国交通安全運動初日の６日、１２年前に小学生が亡くなったひき逃げ事件の母親らが情報提供を呼びかけました。</description>
- <dc:date>2021-04-06T16:45:44+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/06851552.html">
- <title>株価見通しは？　藤代宏一氏が解説　4/6 16:31更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/06851552.html</link>
- <description>６日の東京株式市場で日経平均株価の終値は、前営業日比３９２円６２銭安の２万９６９６円６３銭でした。今後の株価見通しについて、第一生命経済研究所の藤代宏一氏が解説します。（詳しくは動画で）</description>
- <dc:date>2021-04-06T16:31:05+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/07851550.html">
- <title>柵突き破りトラック転落　運転手死亡　静岡　4/6 16:30更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/07851550.html</link>
- <description>５日夜、静岡県小山町の県道でトラックがガードレールを突き破って転落し、運転手の男性が死亡しました。</description>
- <dc:date>2021-04-06T16:30:14+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/07851520.html">
- <title>東京　３９９人感染　６日連続で前週上回る　4/6 16:00更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/07851520.html</link>
- <description>新型コロナウイルスのリバウンドが懸念される東京都内で、新たに３９９人の感染が確認されました。都内の感染者は、６日連続で前の週の人数を上回っていて、増加傾向が続いています。</description>
- <dc:date>2021-04-06T16:00:38+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/06851510.html">
- <title>電気とガス↑　２か月で約７００円支払い増　4/6 15:32更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/06851510.html</link>
- <description>４月と５月に、電気とガスの料金がそろって値上がりします。東京では、標準的な使用量の家庭で、２か月合わせて７００円近く支払いが増えることになります。</description>
- <dc:date>2021-04-06T15:32:57+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/07851509.html">
- <title>「お手まき」陛下による皇居での稲作始まる　4/6 15:30更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/07851509.html</link>
- <description>天皇陛下は６日午前、皇居にある苗代に籾をまく、「お手まき」を行われました。皇居での稲作は昭和天皇から続く恒例行事で、陛下は、日本の農耕文化の中心である稲作を大切に思われているということです。</description>
- <dc:date>2021-04-06T15:30:01+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/07851508.html">
- <title>全国の重症者４５１人、前日比６人増：５日　4/6 15:29更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/07851508.html</link>
- <description>厚生労働省によりますと５日時点の全国の新型コロナウイルスの重症者は、前日から６人増えて４５１人となりました。重症者の数は、今月２日に４００人を超え増加が続いています。</description>
- <dc:date>2021-04-06T15:29:56+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/07851507.html">
- <title>兵庫で２７６人の感染確認　宣言解除後最多　4/6 15:26更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/07851507.html</link>
- <description>兵庫県では６日、新たに２７６人の新型コロナウイルスへの感染が確認されました。２回目の緊急事態宣言が解除された後、一日の感染者数としては最も多く、２７０人を超えるのは、１月２２日の２８３人以来、およそ３か月ぶりとなります。</description>
- <dc:date>2021-04-06T15:26:58+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/07851506.html">
- <title>警視総監　新１年生に横断歩道の渡り方指導　4/6 15:23更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/07851506.html</link>
- <description>６日に入学式を迎えた小学１年生に、警視庁のトップが横断歩道の渡り方を指導しました。</description>
- <dc:date>2021-04-06T15:23:47+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/07851499.html">
- <title>熊本城天守閣の工事完了　一般公開は２６日　4/6 15:21更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/07851499.html</link>
- <description>５年前の熊本地震で被災した熊本城天守閣の工事が終わり６日、内部が報道公開されました。耐震強化されたほかエレベーターやスロープが設けられ、バリアフリーにも対応しています。一般公開は今月２６日から始まります。</description>
- <dc:date>2021-04-06T15:21:46+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/04851492.html">
- <title>西村大臣“まん延防止”拡大の可能性に言及　4/6 15:18更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/04851492.html</link>
- <description>西村経済再生担当大臣は６日、新型コロナウイルスの感染が全国的に広がりつつあるとして、まん延防止等重点措置の適用地域を拡大する可能性に言及しました。</description>
- <dc:date>2021-04-06T15:18:42+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/06851487.html">
- <title>日経平均３９２円安　終値２万９６９６円　4/6 15:07更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/06851487.html</link>
- <description>６日の東京株式市場で日経平均株価の終値は、前営業日比３９２円６２銭安の２万９６９６円６３銭でした。</description>
- <dc:date>2021-04-06T15:07:02+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/07851483.html">
- <title>東京　３９９人の感染確認　重症者４４人　4/6 15:02更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/07851483.html</link>
- <description>新型コロナウイルスの感染者の増加傾向が続く東京都内で、６日、新たに３９９人の感染が確認されました。都内の感染者は２日ぶりに３００人を上回りました。重症者は５日より２人減って４４人でした。</description>
- <dc:date>2021-04-06T15:02:15+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/04851482.html">
- <title>北朝鮮への独自制裁　２年間延長を閣議決定　4/6 15:00更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/04851482.html</link>
- <description>今月１３日に期限を迎える北朝鮮への独自の制裁について、政府は６日の閣議で、さらに２年間延長することを決めました。</description>
- <dc:date>2021-04-06T15:00:44+09:00</dc:date>
-</item>
-   <item rdf:about="http://www.news24.jp/articles/2021/04/06/10851472.html">
- <title>シリアルの箱でドミノ、ギネス世界記録　米　4/6 14:14更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/10851472.html</link>
- <description>アメリカの小学校が、あるモノを使ったドミノでギネス世界記録に認定されました。</description>
- <dc:date>2021-04-06T14:14:32+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/07851467.html">
- <title>“まん延防止”適用の繁華街人出は大幅減少　4/6 14:08更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/07851467.html</link>
- <description>大阪市など、５日から「まん延防止等重点措置」が適用された地域の５日夜の繁華街の人出は、いずれの場所も１週間前と比べて大幅に減少した一方、東京都内では大幅に増加しているところもみられました。</description>
- <dc:date>2021-04-06T14:08:25+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/07851464.html">
- <title>文科省　教員不足の実態、全国調査を実施へ　4/6 14:01更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/07851464.html</link>
- <description>教員不足の実態を把握するため、文部科学省が来月、初めての全国的な調査を行うことが明らかになりました。</description>
- <dc:date>2021-04-06T14:01:40+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/07851463.html">
- <title>立体駐車場から車転落　巻き込まれた人なし　4/6 13:55更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/07851463.html</link>
- <description>６日昼前、東京・八王子市でマンションの立体駐車場２階から軽自動車が道路に転落しました。車に乗っていた女性２人が病院に搬送され、手当てを受けているということです。</description>
- <dc:date>2021-04-06T13:55:24+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/07851462.html">
- <title>雇用調整助成金　不正受給２億７０００万円　4/6 13:49更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/07851462.html</link>
- <description>新型コロナウイルスの影響で業績が悪化した企業に対して、従業員の雇用維持のため人件費を助成する「雇用調整助成金」について、不正受給が全国で４４件、２億７０００万円あまりにのぼることが分かりました。</description>
- <dc:date>2021-04-06T13:49:21+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/04851461.html">
- <title>河野大臣“ワクチン確実に打てる慌てずに”　4/6 13:45更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/04851461.html</link>
- <description>河野ワクチン担当相は、来週から始まる、高齢者への新型コロナワクチンの接種を前に「希望する人は確実に打てるので、慌てずにお願いをしたい」と呼びかけました。</description>
- <dc:date>2021-04-06T13:45:02+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/07851447.html">
- <title>専門家に聞く…“国産ワクチン”開発の現状　4/6 13:00更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/07851447.html</link>
- <description>新型コロナウイルスの政府の政策決定やワクチン開発、医療現場などの最前線で奔走する専門家たちに聞く企画。第６回は“国産ワクチン”開発の現状と課題。日本の企業と組み、開発にあたっている東京大学医科学研究所ワクチン科学分野の石井健教授を取材した。</description>
- <dc:date>2021-04-06T13:00:50+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/07851442.html">
- <title>【天気】午後は晴れても…雨が　洗濯物注意　4/6 12:43更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/07851442.html</link>
- <description>【全国の天気】６日は、午後も晴れる所が多いものの、湿った空気の影響で西日本や東日本では雨が降る所もありそうです。外に干してある洗濯物は早めに取り込むようにしてください。</description>
- <dc:date>2021-04-06T12:43:29+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/07851437.html">
- <title>組織委“各国アスリートのため準備進める”　4/6 12:32更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/07851437.html</link>
- <description>北朝鮮が東京オリンピックに参加しないと決定したことを受け、組織委員会は「報道は承知している」としたうえで、「各国・地域のアスリートが、ベストなパフォーマンスを発揮できるよう準備をすすめていく」とのコメントを発表しました。</description>
- <dc:date>2021-04-06T12:32:42+09:00</dc:date>
-</item>
-   <item rdf:about="http://www.news24.jp/articles/2021/04/06/10851424.html">
- <title>日中外相会談　王毅外相、日本に対しけん制　4/6 12:24更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/10851424.html</link>
- <description>５日に行われた日中外相電話会談で、王毅外相はアメリカを念頭に批判した上で、日本に対して「一部の偏見を持った国にあおられないよう望む」とけん制しました。</description>
- <dc:date>2021-04-06T12:24:49+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/07851422.html">
- <title>元郵便局長が郵貯名目１０億円詐取か　長崎　4/6 12:20更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/07851422.html</link>
- <description>長崎市の元郵便局長の男性が、郵便貯金などの名目で、知人らからおよそ１０億円をだまし取った疑いがあるとして、日本郵便が調査していることが分かりました。</description>
- <dc:date>2021-04-06T12:20:02+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/07851421.html">
- <title>立体駐車場から軽自動車が転落　八王子　4/6 12:18更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/07851421.html</link>
- <description>６日午前１１時すぎ、東京・八王子市のマンションの立体駐車場の２階から軽自動車が転落しました。車に乗っていた女性２人が病院に搬送されて手当てを受けているということです。</description>
- <dc:date>2021-04-06T12:18:25+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/07851413.html">
- <title>コロナ対策飲食店への認証制度創設へ　千葉　4/6 12:10更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/07851413.html</link>
- <description>千葉県の熊谷知事は、一定の新型コロナウイルス感染防止対策をしている飲食店については、時短営業の対象外にするといった認証制度を創設すると発表しました。</description>
- <dc:date>2021-04-06T12:10:18+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/04851408.html">
- <title>フジ持ち株会社違反か　総務相“徹底調査”　4/6 12:06更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/04851408.html</link>
- <description>フジテレビの持ち株会社フジ・メディア・ホールディングスが一時的に放送法の外資規制に違反していた可能性がある問題で、武田総務相は事実関係を徹底調査する方針を明らかにしました。</description>
- <dc:date>2021-04-06T12:06:18+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/07851402.html">
- <title>停車中タクシーから現金盗み、運転手を殴る　4/6 12:04更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/07851402.html</link>
- <description>東京・新宿区で仮眠で停車中のタクシーから現金を盗み、追いかけた運転手を殴ってケガをさせたとして、５５歳の男が逮捕されました。</description>
- <dc:date>2021-04-06T12:04:25+09:00</dc:date>
-</item>
-   <item rdf:about="http://www.news24.jp/articles/2021/04/06/10851400.html">
- <title>北“東京五輪”不参加を決定　韓国「残念」　4/6 12:00更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/10851400.html</link>
- <description>北朝鮮は新型コロナウイルスを理由に、今年行われる東京オリンピックに参加しない決定をしたと明らかにしました。</description>
- <dc:date>2021-04-06T12:00:14+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/07851392.html">
- <title>田村厚労相“やれること全てやってもらう”　4/6 11:52更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/07851392.html</link>
- <description>新型コロナウイルスの感染者数が増加傾向の東京都について、田村厚労相は、６日の会見で危機感を示し、「まん延防止等重点措置に関係なく、やれることは全てやってもらう」と改めて強調しました。</description>
- <dc:date>2021-04-06T11:52:00+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/07851385.html">
- <title>河井被告「よく覚えていない」と答えが続く　4/6 11:49更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/07851385.html</link>
- <description>公職選挙法違反の罪に問われている元法務大臣の河井克行被告の裁判で、検察側の被告人質問が６日から始まりました。法廷では、克行被告が「よく覚えていない」などと答える場面が続いています。</description>
- <dc:date>2021-04-06T11:49:39+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/07851384.html">
- <title>島根県丸山知事“聖火リレー”一転実施へ　4/6 11:47更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/07851384.html</link>
- <description>オリンピックの聖火リレーの中止を検討していた島根県の丸山知事は、これまでの考えを一転し、新たに条件を付けたうえで聖火リレー実施を容認する意向であることが分かりました。</description>
- <dc:date>2021-04-06T11:47:33+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/06851383.html">
- <title>日経平均２万９８６３円１０銭　午前終値　4/6 11:45更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/06851383.html</link>
- <description>６日の日経平均株価・午前終値は、前営業日比２２６円１５銭安の２万９８６３円１０銭でした。</description>
- <dc:date>2021-04-06T11:45:00+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/07851372.html">
- <title>「まん延防止」初日　大阪“マスク会食”は　4/6 10:49更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/07851372.html</link>
- <description>飲食店の時短などが求められる「まん延防止等重点措置」が、大阪など３府県の一部で５日、始まりました。大阪では「マスク会食」が呼びかけられ、店から「トラブルが怖い」との声も上がりますが、その実態は――。居酒屋の様子を特別に見せてもらいました。</description>
- <dc:date>2021-04-06T10:49:44+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/07851371.html">
- <title>フェイスブック個人情報　５億人超が丸見え　4/6 10:48更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/07851371.html</link>
- <description>名前や電話番号、経歴といったフェイスブック利用者の個人情報が、ネット上で閲覧できる状態になっていたことが分かりました。流出したのは１０６か国の５億人超、日本人は４２万超と指摘されています。考えられる被害のリスクと、その対策を考えます。</description>
- <dc:date>2021-04-06T10:48:59+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/07851367.html">
- <title>「まん延防止」兵庫、宮城でも　東京も警戒　4/6 10:28更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/07851367.html</link>
- <description>大阪に加え兵庫、宮城の一部でも５日、「まん延防止等重点措置」の適用が始まりました。“マスク会食”に神戸の飲食店から懸念の声が上がる一方、仙台の居酒屋では“マンボウ定食”なるメニューも。東京では変異株の感染者が増え、警戒感が強まっています。</description>
- <dc:date>2021-04-06T10:28:29+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/07851362.html">
- <title>車のボンネットに女性乗せ走行か　住職送検　4/6 10:18更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/07851362.html</link>
- <description>茨城県笠間市で交通トラブルになった女性を車のボンネットに乗せたまま走行し、殺害しようとしたとして逮捕された７８歳の住職の男が６日朝に送検されましたが、「殺そうと思ったわけではない」と容疑を否認し続けているということです。</description>
- <dc:date>2021-04-06T10:18:11+09:00</dc:date>
-</item>
-   <item rdf:about="http://www.news24.jp/articles/2021/04/06/10851351.html">
- <title>北朝鮮　コロナ理由に東京五輪“参加せず”　4/6 9:20更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/10851351.html</link>
- <description>北朝鮮は新型コロナウイルスの流行を理由に、今年行われる東京オリンピックに参加しない決定をしたと明らかにしました。</description>
- <dc:date>2021-04-06T09:20:17+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/06851350.html">
- <title>きょうの株価・為替予想レンジと注目業種　4/6 9:14更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/06851350.html</link>
- <description>６日の日経平均株価は、前営業日比１１９円６４銭高の３万０２０８円８９銭で寄りつきました。予想レンジは、日経平均株価は３万０１００円～３万０４００円、為替はドル／円＝１０９円７０銭～１１０円５０銭。</description>
- <dc:date>2021-04-06T09:14:42+09:00</dc:date>
-</item>
-   <item rdf:about="http://www.news24.jp/articles/2021/04/06/10851346.html">
- <title>プーチン氏“２０３６年まで続投”法が発効　4/6 9:07更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/10851346.html</link>
- <description>ロシアで５日、プーチン大統領が現在の任期が切れる２０２４年以降も、最大で２期１２年の続投が可能となる「改正大統領選挙法」が発効しました。</description>
- <dc:date>2021-04-06T09:07:50+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/06851345.html">
- <title>日経平均　前営業日比１１９円高で寄りつき　4/6 9:02更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/06851345.html</link>
- <description>６日の日経平均株価は、前営業日比１１９円６４銭高の３万０２０８円８９銭で寄りつきました。</description>
- <dc:date>2021-04-06T09:02:26+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/07851332.html">
- <title>【天気】広く晴れますが…一部でにわか雨も　4/6 7:27更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/07851332.html</link>
- <description>日中は晴れます。午後は関東～四国の一部でにわか雨でしょう。全国的にほぼ平年並みの気温になります。</description>
- <dc:date>2021-04-06T07:27:58+09:00</dc:date>
-</item>
-   <item rdf:about="http://www.news24.jp/articles/2021/04/06/10851331.html">
- <title>ＮＹダウ「雇用予想以上に回復」最高値更新　4/6 7:26更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/10851331.html</link>
- <description>５日のニューヨーク株式市場ダウ平均株価の終値は先週末比３７３ドル９８セント高い３万３５２７ドル１９セント。雇用が予想以上に回復していることから幅広い銘柄が買われ、過去最高値を更新して取引を終えました。</description>
- <dc:date>2021-04-06T07:26:46+09:00</dc:date>
-</item>
-     <item rdf:about="http://www.news24.jp/articles/2021/04/06/07851323.html">
- <title>自宅で母親死亡、殺害容疑で息子逮捕　大分　4/6 6:44更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/07851323.html</link>
- <description>大分市で５日、市営住宅の室内で母親を殺害した疑いで３７歳の男が逮捕されました。</description>
- <dc:date>2021-04-06T06:44:45+09:00</dc:date>
-</item>
-   <item rdf:about="http://www.news24.jp/articles/2021/04/06/10851321.html">
- <title>英政府が規制緩和　飲食店の屋外営業再開へ　4/6 6:25更新</title>
- <link>http://www.news24.jp/articles/2021/04/06/10851321.html</link>
- <description>イギリス政府は５日、新型コロナウイルス対策の段階的な規制緩和として、飲食店の屋外での営業などを再開させると発表しました。</description>
- <dc:date>2021-04-06T06:25:11+09:00</dc:date>
-</item>
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://purl.org/rss/1.0/" xmlns:taxo="http://purl.org/rss/1.0/modules/taxonomy/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:syn="http://purl.org/rss/1.0/modules/syndication/">
+  <channel rdf:about="http://www3.asahi.com/">
+    <title>朝日新聞デジタル</title>
+    <link>http://www.asahi.com/</link>
+    <description>朝日新聞デジタル</description>
+    <dc:language>ja</dc:language>
+    <dc:rights>Copyright 2021 Asahi Shimbun. All rights reserved. No reproduction or republication without written permission.</dc:rights>
+    <dc:creator>朝日新聞社</dc:creator>
+    <dc:date>2021-04-07T00:18:46+09:00</dc:date>
+    <dc:publisher>朝日新聞社</dc:publisher>
+    <syn:updatePeriod>hourly</syn:updatePeriod>
+    <syn:updateFrequency>1</syn:updateFrequency>
+    <syn:updateBase>2021-04-07T00:18:46+09:00</syn:updateBase>
+    <items>
+      <rdf:Seq>
+        <rdf:li rdf:resource="http://www.asahi.com/articles/ASP4676C7P46TTHB00D.html?ref=rss"/>
+        <rdf:li rdf:resource="http://www.asahi.com/articles/ASP467FHDP45OIPE032.html?ref=rss"/>
+        <rdf:li rdf:resource="http://www.asahi.com/articles/ASP437F3GP30OBJB001.html?ref=rss"/>
+        <rdf:li rdf:resource="http://www.asahi.com/articles/ASP466SNYP3QTIPE00G.html?ref=rss"/>
+        <rdf:li rdf:resource="http://www.asahi.com/articles/ASP466RWQP46IIPE01V.html?ref=rss"/>
+        <rdf:li rdf:resource="http://www.asahi.com/articles/ASP457TP2P3KPTIL014.html?ref=rss"/>
+        <rdf:li rdf:resource="http://www.asahi.com/articles/ASP466CXHP42UTIL04C.html?ref=rss"/>
+        <rdf:li rdf:resource="http://www.asahi.com/articles/ASP464V6FP45UTFL001.html?ref=rss"/>
+        <rdf:li rdf:resource="http://www.asahi.com/articles/ASP4666BLP46UTIL03T.html?ref=rss"/>
+        <rdf:li rdf:resource="http://www.asahi.com/articles/ASP4244P0P1KULFA001.html?ref=rss"/>
+        <rdf:li rdf:resource="http://japan.cnet.com/article/35168918/?tag=as.rss"/>
+        <rdf:li rdf:resource="http://www.asahi.com/articles/ASP433Q4HP41TIPE030.html?ref=rss"/>
+        <rdf:li rdf:resource="http://www.asahi.com/articles/ASP455F03P44UPQJ004.html?ref=rss"/>
+        <rdf:li rdf:resource="http://www.asahi.com/articles/ASP454K6YP44UTQP01K.html?ref=rss"/>
+        <rdf:li rdf:resource="http://www.asahi.com/articles/ASP457FBJP45UOHB00L.html?ref=rss"/>
+        <rdf:li rdf:resource="http://www.asahi.com/articles/ASP4535ZDP45UTQP002.html?ref=rss"/>
+        <rdf:li rdf:resource="http://japan.zdnet.com/article/35168916/?tag=as.rss"/>
+        <rdf:li rdf:resource="http://www.asahi.com/articles/ASP4676KDP46ULFA009.html?ref=rss"/>
+        <rdf:li rdf:resource="http://www.asahi.com/articles/ASP465GNKP46ULFA008.html?ref=rss"/>
+        <rdf:li rdf:resource="http://www.asahi.com/articles/ASP465R4TP45OIPE026.html?ref=rss"/>
+        <rdf:li rdf:resource="http://www.asahi.com/articles/ASP46672NP46PLFA002.html?ref=rss"/>
+        <rdf:li rdf:resource="http://www.asahi.com/articles/ASP4663MQP46UTIL02M.html?ref=rss"/>
+        <rdf:li rdf:resource="http://japan.cnet.com/article/35168934/?tag=as.rss"/>
+        <rdf:li rdf:resource="http://www.asahi.com/articles/ASP467TH8P46ULFA02H.html?ref=rss"/>
+        <rdf:li rdf:resource="http://www.asahi.com/articles/ASP463HRWP46PTIB002.html?ref=rss"/>
+        <rdf:li rdf:resource="http://www.asahi.com/articles/ASP4674P0P46UTIL03H.html?ref=rss"/>
+        <rdf:li rdf:resource="http://www.asahi.com/articles/ASP467CYGP46UTFK011.html?ref=rss"/>
+        <rdf:li rdf:resource="http://www.asahi.com/articles/ASP4671L0P46UTFK00S.html?ref=rss"/>
+        <rdf:li rdf:resource="http://www.asahi.com/articles/ASP4673VXP46UHBI02T.html?ref=rss"/>
+        <rdf:li rdf:resource="http://www.asahi.com/articles/ASP467QS1P46UHBI02G.html?ref=rss"/>
+        <rdf:li rdf:resource="http://www.asahi.com/articles/ASP4674PKP46UHBI01S.html?ref=rss"/>
+        <rdf:li rdf:resource="http://www.asahi.com/articles/ASP466KSNP46UHBI02N.html?ref=rss"/>
+        <rdf:li rdf:resource="http://www.asahi.com/articles/ASP466GQNP46UHBI02S.html?ref=rss"/>
+        <rdf:li rdf:resource="http://www.asahi.com/articles/ASP466HXMP46UCVL024.html?ref=rss"/>
+        <rdf:li rdf:resource="http://www.asahi.com/articles/ASP466QMVP46TIPE029.html?ref=rss"/>
+        <rdf:li rdf:resource="http://www.asahi.com/articles/ASP465Q0YP45OIPE00F.html?ref=rss"/>
+        <rdf:li rdf:resource="http://www.asahi.com/articles/ASP4666DKP45UCVL01X.html?ref=rss"/>
+        <rdf:li rdf:resource="http://www.asahi.com/articles/ASP466JDTP46ULZU012.html?ref=rss"/>
+        <rdf:li rdf:resource="http://www.asahi.com/articles/ASP4666VFP46UTIL01V.html?ref=rss"/>
+        <rdf:li rdf:resource="http://www.asahi.com/articles/ASP463DFZP45PLBJ009.html?ref=rss"/>
+        <rdf:li rdf:resource="http://www.asahi.com/articles/ASP466DVVP46UHBI02H.html?ref=rss"/>
+        <rdf:li rdf:resource="http://www.asahi.com/articles/ASP4573FCP45UUHB00K.html?ref=rss"/>
+        <rdf:li rdf:resource="http://www.asahi.com/articles/ASP460HYZP45TIPE01B.html?ref=rss"/>
+      </rdf:Seq>
+    </items>
+  </channel>
+  <item rdf:about="http://www.asahi.com/articles/ASP4676C7P46TTHB00D.html?ref=rss">
+    <title>佐賀県公安委員長が県弁護士会長を兼務　支障「なし」</title>
+    <link>http://www.asahi.com/articles/ASP4676C7P46TTHB00D.html?ref=rss</link>
+    <description></description>
+    <dc:subject>社会</dc:subject>
+    <dc:date>2021-04-06T23:37:13+09:00</dc:date>
+  </item>
+  <item rdf:about="http://www.asahi.com/articles/ASP467FHDP45OIPE032.html?ref=rss">
+    <title>阿弥陀如来に馬頭観音も…　差し押さえの仏像が公売に</title>
+    <link>http://www.asahi.com/articles/ASP467FHDP45OIPE032.html?ref=rss</link>
+    <description></description>
+    <dc:subject>社会</dc:subject>
+    <dc:date>2021-04-06T22:42:56+09:00</dc:date>
+  </item>
+  <item rdf:about="http://www.asahi.com/articles/ASP437F3GP30OBJB001.html?ref=rss">
+    <title>フィリピン出身女性が教諭に　来日9年、夢かなえるまで</title>
+    <link>http://www.asahi.com/articles/ASP437F3GP30OBJB001.html?ref=rss</link>
+    <description></description>
+    <dc:subject>社会</dc:subject>
+    <dc:date>2021-04-06T21:44:41+09:00</dc:date>
+  </item>
+  <item rdf:about="http://www.asahi.com/articles/ASP466SNYP3QTIPE00G.html?ref=rss">
+    <title>非行少年と組員の接点なくせ　少年院で「暴排教室」</title>
+    <link>http://www.asahi.com/articles/ASP466SNYP3QTIPE00G.html?ref=rss</link>
+    <description></description>
+    <dc:subject>社会</dc:subject>
+    <dc:date>2021-04-06T21:30:00+09:00</dc:date>
+  </item>
+  <item rdf:about="http://www.asahi.com/articles/ASP466RWQP46IIPE01V.html?ref=rss">
+    <title>教師から「指導する価値ない」　看護学生らパワハラ訴え</title>
+    <link>http://www.asahi.com/articles/ASP466RWQP46IIPE01V.html?ref=rss</link>
+    <description></description>
+    <dc:subject>社会</dc:subject>
+    <dc:date>2021-04-06T21:08:04+09:00</dc:date>
+  </item>
+  <item rdf:about="http://www.asahi.com/articles/ASP457TP2P3KPTIL014.html?ref=rss">
+    <title>片言の電話「マイクロソフトです」　1日で40万円失い</title>
+    <link>http://www.asahi.com/articles/ASP457TP2P3KPTIL014.html?ref=rss</link>
+    <description></description>
+    <dc:subject>社会</dc:subject>
+    <dc:date>2021-04-06T21:00:00+09:00</dc:date>
+  </item>
+  <item rdf:about="http://www.asahi.com/articles/ASP466CXHP42UTIL04C.html?ref=rss">
+    <title>「別の国みたい」嘆いた新橋の店主　1年後に再び訪ねた</title>
+    <link>http://www.asahi.com/articles/ASP466CXHP42UTIL04C.html?ref=rss</link>
+    <description></description>
+    <dc:subject>社会</dc:subject>
+    <dc:date>2021-04-06T20:21:27+09:00</dc:date>
+  </item>
+  <item rdf:about="http://www.asahi.com/articles/ASP464V6FP45UTFL001.html?ref=rss">
+    <title>同性パートナーの存在、上司が暴露　行政が仲介で和解</title>
+    <link>http://www.asahi.com/articles/ASP464V6FP45UTFL001.html?ref=rss</link>
+    <description></description>
+    <dc:subject>社会</dc:subject>
+    <dc:date>2021-04-06T20:13:52+09:00</dc:date>
+  </item>
+  <item rdf:about="http://www.asahi.com/articles/ASP4666BLP46UTIL03T.html?ref=rss">
+    <title>木村花さんをツイッターで中傷　侮辱罪で男に略式命令</title>
+    <link>http://www.asahi.com/articles/ASP4666BLP46UTIL03T.html?ref=rss</link>
+    <description></description>
+    <dc:subject>社会</dc:subject>
+    <dc:date>2021-04-06T19:01:30+09:00</dc:date>
+  </item>
+  <item rdf:about="http://www.asahi.com/articles/ASP4244P0P1KULFA001.html?ref=rss">
+    <title>危篤の母に名を呼ばれても…無国籍の僕は会いに行けない</title>
+    <link>http://www.asahi.com/articles/ASP4244P0P1KULFA001.html?ref=rss</link>
+    <description></description>
+    <dc:subject>社会</dc:subject>
+    <dc:date>2021-04-06T19:00:00+09:00</dc:date>
+  </item>
+  <item rdf:about="http://japan.cnet.com/article/35168918/?tag=as.rss">
+    <title>＜CNET Japan＞国が整備する新型コロナワクチン接種記録システム始動--接種記録をデータ化する理由</title>
+    <link>http://japan.cnet.com/article/35168918/?tag=as.rss</link>
+    <description></description>
+    <dc:subject>デジタル</dc:subject>
+    <dc:date>2021-04-06T23:20:00+09:00</dc:date>
+  </item>
+  <item rdf:about="http://www.asahi.com/articles/ASP433Q4HP41TIPE030.html?ref=rss">
+    <title>HAWKS和通信:1　石川投手に、お寿司おごります</title>
+    <link>http://www.asahi.com/articles/ASP433Q4HP41TIPE030.html?ref=rss</link>
+    <description></description>
+    <dc:subject>スポーツ</dc:subject>
+    <dc:date>2021-04-06T12:00:00+09:00</dc:date>
+  </item>
+  <item rdf:about="http://www.asahi.com/articles/ASP455F03P44UPQJ004.html?ref=rss">
+    <title>82年の再現になるかも　引き分けが多くなると言えば…</title>
+    <link>http://www.asahi.com/articles/ASP455F03P44UPQJ004.html?ref=rss</link>
+    <description></description>
+    <dc:subject>スポーツ</dc:subject>
+    <dc:date>2021-04-06T11:30:00+09:00</dc:date>
+  </item>
+  <item rdf:about="http://www.asahi.com/articles/ASP454K6YP44UTQP01K.html?ref=rss">
+    <title>楽天の先発、入団3年以内ずらり　「石井GM色」が全開</title>
+    <link>http://www.asahi.com/articles/ASP454K6YP44UTQP01K.html?ref=rss</link>
+    <description></description>
+    <dc:subject>スポーツ</dc:subject>
+    <dc:date>2021-04-06T09:00:00+09:00</dc:date>
+  </item>
+  <item rdf:about="http://www.asahi.com/articles/ASP457FBJP45UOHB00L.html?ref=rss">
+    <title>バスケのアルビ、運営会社長がパワハラ　無期限謹慎に</title>
+    <link>http://www.asahi.com/articles/ASP457FBJP45UOHB00L.html?ref=rss</link>
+    <description></description>
+    <dc:subject>スポーツ</dc:subject>
+    <dc:date>2021-04-05T22:26:31+09:00</dc:date>
+  </item>
+  <item rdf:about="http://www.asahi.com/articles/ASP4535ZDP45UTQP002.html?ref=rss">
+    <title>大谷、投打同時出場で1回に先制HR　5回に同点で降板</title>
+    <link>http://www.asahi.com/articles/ASP4535ZDP45UTQP002.html?ref=rss</link>
+    <description></description>
+    <dc:subject>スポーツ</dc:subject>
+    <dc:date>2021-04-05T12:04:19+09:00</dc:date>
+  </item>
+  <item rdf:about="http://japan.zdnet.com/article/35168916/?tag=as.rss">
+    <title>＜ZDNet Japan＞オムロン阿蘇、オラクルのIaaSを導入し可視化を実現</title>
+    <link>http://japan.zdnet.com/article/35168916/?tag=as.rss</link>
+    <description></description>
+    <dc:subject>デジタル</dc:subject>
+    <dc:date>2021-04-06T15:02:00+09:00</dc:date>
+  </item>
+  <item rdf:about="http://www.asahi.com/articles/ASP4676KDP46ULFA009.html?ref=rss">
+    <title>「大恐慌以来の不況」から１年　格差広がる危うい回復</title>
+    <link>http://www.asahi.com/articles/ASP4676KDP46ULFA009.html?ref=rss</link>
+    <description></description>
+    <dc:subject>ビジネス</dc:subject>
+    <dc:date>2021-04-06T22:00:00+09:00</dc:date>
+  </item>
+  <item rdf:about="http://www.asahi.com/articles/ASP465GNKP46ULFA008.html?ref=rss">
+    <title>今年の世界成長率は6％　IMF予想、1月から上方修正</title>
+    <link>http://www.asahi.com/articles/ASP465GNKP46ULFA008.html?ref=rss</link>
+    <description></description>
+    <dc:subject>ビジネス</dc:subject>
+    <dc:date>2021-04-06T21:49:36+09:00</dc:date>
+  </item>
+  <item rdf:about="http://www.asahi.com/articles/ASP465R4TP45OIPE026.html?ref=rss">
+    <title>スギHD、売上高が過去最高　コロナ禍でも出店攻勢</title>
+    <link>http://www.asahi.com/articles/ASP465R4TP45OIPE026.html?ref=rss</link>
+    <description></description>
+    <dc:subject>ビジネス</dc:subject>
+    <dc:date>2021-04-06T20:00:00+09:00</dc:date>
+  </item>
+  <item rdf:about="http://www.asahi.com/articles/ASP46672NP46PLFA002.html?ref=rss">
+    <title>スエズ座礁、どうなる巨額賠償　損害は「1100億円」</title>
+    <link>http://www.asahi.com/articles/ASP46672NP46PLFA002.html?ref=rss</link>
+    <description></description>
+    <dc:subject>ビジネス</dc:subject>
+    <dc:date>2021-04-06T19:34:43+09:00</dc:date>
+  </item>
+  <item rdf:about="http://www.asahi.com/articles/ASP4663MQP46UTIL02M.html?ref=rss">
+    <title>Suica利用範囲、東北3県に拡大　23年春以降</title>
+    <link>http://www.asahi.com/articles/ASP4663MQP46UTIL02M.html?ref=rss</link>
+    <description></description>
+    <dc:subject>ビジネス</dc:subject>
+    <dc:date>2021-04-06T18:32:51+09:00</dc:date>
+  </item>
+  <item rdf:about="http://japan.cnet.com/article/35168934/?tag=as.rss">
+    <title>＜CNET Japan＞ファミマでもクレカのタッチ決済が利用可能に--スマホ決済「Alipay+」なども導入へ</title>
+    <link>http://japan.cnet.com/article/35168934/?tag=as.rss</link>
+    <description></description>
+    <dc:subject>デジタル</dc:subject>
+    <dc:date>2021-04-06T19:47:00+09:00</dc:date>
+  </item>
+  <item rdf:about="http://www.asahi.com/articles/ASP467TH8P46ULFA02H.html?ref=rss">
+    <title>首相、自民総裁選前の解散「あり得る」　TV番組で発言</title>
+    <link>http://www.asahi.com/articles/ASP467TH8P46ULFA02H.html?ref=rss</link>
+    <description></description>
+    <dc:subject>政治</dc:subject>
+    <dc:date>2021-04-06T23:40:11+09:00</dc:date>
+  </item>
+  <item rdf:about="http://www.asahi.com/articles/ASP463HRWP46PTIB002.html?ref=rss">
+    <title>島根、聖火リレーを容認　「追加経済対策の検討」を考慮</title>
+    <link>http://www.asahi.com/articles/ASP463HRWP46PTIB002.html?ref=rss</link>
+    <description></description>
+    <dc:subject>政治</dc:subject>
+    <dc:date>2021-04-06T22:20:38+09:00</dc:date>
+  </item>
+  <item rdf:about="http://www.asahi.com/articles/ASP4674P0P46UTIL03H.html?ref=rss">
+    <title>「総務省に相談あったか」焦点に　フジHD外資規制違反</title>
+    <link>http://www.asahi.com/articles/ASP4674P0P46UTIL03H.html?ref=rss</link>
+    <description></description>
+    <dc:subject>政治</dc:subject>
+    <dc:date>2021-04-06T22:17:04+09:00</dc:date>
+  </item>
+  <item rdf:about="http://www.asahi.com/articles/ASP467CYGP46UTFK011.html?ref=rss">
+    <title>参院2選挙、8日告示　広島と長野、与野党対決の見通し</title>
+    <link>http://www.asahi.com/articles/ASP467CYGP46UTFK011.html?ref=rss</link>
+    <description></description>
+    <dc:subject>政治</dc:subject>
+    <dc:date>2021-04-06T22:15:11+09:00</dc:date>
+  </item>
+  <item rdf:about="http://www.asahi.com/articles/ASP4671L0P46UTFK00S.html?ref=rss">
+    <title>デジタル改革法案、衆院通過　個人情報保護などに懸念</title>
+    <link>http://www.asahi.com/articles/ASP4671L0P46UTFK00S.html?ref=rss</link>
+    <description></description>
+    <dc:subject>政治</dc:subject>
+    <dc:date>2021-04-06T22:03:19+09:00</dc:date>
+  </item>
+  <item rdf:about="http://www.asahi.com/articles/ASP4673VXP46UHBI02T.html?ref=rss">
+    <title>北朝鮮メディアが菅首相批判「言い掛かりつける前に…」</title>
+    <link>http://www.asahi.com/articles/ASP4673VXP46UHBI02T.html?ref=rss</link>
+    <description></description>
+    <dc:subject>国際</dc:subject>
+    <dc:date>2021-04-06T23:22:23+09:00</dc:date>
+  </item>
+  <item rdf:about="http://www.asahi.com/articles/ASP467QS1P46UHBI02G.html?ref=rss">
+    <title>入管改正案「国際水準達せず」　国連の人権専門家が書簡</title>
+    <link>http://www.asahi.com/articles/ASP467QS1P46UHBI02G.html?ref=rss</link>
+    <description></description>
+    <dc:subject>国際</dc:subject>
+    <dc:date>2021-04-06T23:12:29+09:00</dc:date>
+  </item>
+  <item rdf:about="http://www.asahi.com/articles/ASP4674PKP46UHBI01S.html?ref=rss">
+    <title>米とイランの核合意協議再開　制裁・核開発、妥結点探る</title>
+    <link>http://www.asahi.com/articles/ASP4674PKP46UHBI01S.html?ref=rss</link>
+    <description></description>
+    <dc:subject>国際</dc:subject>
+    <dc:date>2021-04-06T22:08:53+09:00</dc:date>
+  </item>
+  <item rdf:about="http://www.asahi.com/articles/ASP466KSNP46UHBI02N.html?ref=rss">
+    <title>イスラエル、現首相に組閣を委任　続投めぐり政界分裂</title>
+    <link>http://www.asahi.com/articles/ASP466KSNP46UHBI02N.html?ref=rss</link>
+    <description></description>
+    <dc:subject>国際</dc:subject>
+    <dc:date>2021-04-06T20:29:17+09:00</dc:date>
+  </item>
+  <item rdf:about="http://www.asahi.com/articles/ASP466GQNP46UHBI02S.html?ref=rss">
+    <title>北朝鮮の不参加表明なぜ？　尾を引く感染対策と外交問題</title>
+    <link>http://www.asahi.com/articles/ASP466GQNP46UHBI02S.html?ref=rss</link>
+    <description></description>
+    <dc:subject>国際</dc:subject>
+    <dc:date>2021-04-06T20:09:24+09:00</dc:date>
+  </item>
+  <item rdf:about="http://www.asahi.com/articles/ASP466HXMP46UCVL024.html?ref=rss">
+    <title>名人戦、前夜に開幕式　渡辺明名人「大変な七番勝負に」</title>
+    <link>http://www.asahi.com/articles/ASP466HXMP46UCVL024.html?ref=rss</link>
+    <description></description>
+    <dc:subject>文化芸能</dc:subject>
+    <dc:date>2021-04-06T21:30:00+09:00</dc:date>
+  </item>
+  <item rdf:about="http://www.asahi.com/articles/ASP466QMVP46TIPE029.html?ref=rss">
+    <title>加藤登紀子さん「ダム、短絡的」　豪雨被災地でライブ</title>
+    <link>http://www.asahi.com/articles/ASP466QMVP46TIPE029.html?ref=rss</link>
+    <description></description>
+    <dc:subject>社会</dc:subject>
+    <dc:date>2021-04-06T21:00:00+09:00</dc:date>
+  </item>
+  <item rdf:about="http://www.asahi.com/articles/ASP465Q0YP45OIPE00F.html?ref=rss">
+    <title>A.B.C-Zが定時制ドラマ　戸塚、五関、河合に聞く</title>
+    <link>http://www.asahi.com/articles/ASP465Q0YP45OIPE00F.html?ref=rss</link>
+    <description></description>
+    <dc:subject>文化芸能</dc:subject>
+    <dc:date>2021-04-06T20:30:00+09:00</dc:date>
+  </item>
+  <item rdf:about="http://www.asahi.com/articles/ASP4666DKP45UCVL01X.html?ref=rss">
+    <title>将棋名人戦、7日に開幕　斎藤八段、渡辺名人に挑む</title>
+    <link>http://www.asahi.com/articles/ASP4666DKP45UCVL01X.html?ref=rss</link>
+    <description></description>
+    <dc:subject>文化芸能</dc:subject>
+    <dc:date>2021-04-06T19:03:25+09:00</dc:date>
+  </item>
+  <item rdf:about="http://www.asahi.com/articles/ASP466JDTP46ULZU012.html?ref=rss">
+    <title>内部情報狙う検索「ハンター」　シャドーITに潜むわな</title>
+    <link>http://www.asahi.com/articles/ASP466JDTP46ULZU012.html?ref=rss</link>
+    <description></description>
+    <dc:subject>社会</dc:subject>
+    <dc:date>2021-04-06T22:00:00+09:00</dc:date>
+  </item>
+  <item rdf:about="http://www.asahi.com/articles/ASP4666VFP46UTIL01V.html?ref=rss">
+    <title>「トレロ」の個人情報、誰でも閲覧可に　公開設定に注意</title>
+    <link>http://www.asahi.com/articles/ASP4666VFP46UTIL01V.html?ref=rss</link>
+    <description></description>
+    <dc:subject>サイエンス</dc:subject>
+    <dc:date>2021-04-06T19:06:49+09:00</dc:date>
+  </item>
+  <item rdf:about="http://www.asahi.com/articles/ASP463DFZP45PLBJ009.html?ref=rss">
+    <title>「恐怖の臭い」生存能力高める　関西医科大など発見</title>
+    <link>http://www.asahi.com/articles/ASP463DFZP45PLBJ009.html?ref=rss</link>
+    <description></description>
+    <dc:subject>サイエンス</dc:subject>
+    <dc:date>2021-04-06T19:00:00+09:00</dc:date>
+  </item>
+  <item rdf:about="http://www.asahi.com/articles/ASP466DVVP46UHBI02H.html?ref=rss">
+    <title>ロバート・マンデルさん死去　「ユーロ」の生みの親</title>
+    <link>http://www.asahi.com/articles/ASP466DVVP46UHBI02H.html?ref=rss</link>
+    <description></description>
+    <dc:subject>おくやみ</dc:subject>
+    <dc:date>2021-04-06T19:17:04+09:00</dc:date>
+  </item>
+  <item rdf:about="http://www.asahi.com/articles/ASP4573FCP45UUHB00K.html?ref=rss">
+    <title>大嶋一生・日光市長が死去、56歳　がん治療で入院中</title>
+    <link>http://www.asahi.com/articles/ASP4573FCP45UUHB00K.html?ref=rss</link>
+    <description></description>
+    <dc:subject>おくやみ</dc:subject>
+    <dc:date>2021-04-06T10:37:33+09:00</dc:date>
+  </item>
+  <item rdf:about="http://www.asahi.com/articles/ASP460HYZP45TIPE01B.html?ref=rss">
+    <title>おしんの「嫁いびり」舞台でも　橋田寿賀子さんを悼む声</title>
+    <link>http://www.asahi.com/articles/ASP460HYZP45TIPE01B.html?ref=rss</link>
+    <description></description>
+    <dc:subject>おくやみ</dc:subject>
+    <dc:date>2021-04-06T10:26:38+09:00</dc:date>
+  </item>
 </rdf:RDF>

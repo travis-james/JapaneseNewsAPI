@@ -4,12 +4,14 @@ import (
 	"encoding/xml"
 	"io/ioutil"
 	"log"
+	"net/http"
+	"time"
 )
 
-var URLs = []string{
-	"http://www.asahi.com/rss/asahi/newsheadlines.rdf",
-	"https://www.nhk.or.jp/rss/news/cat0.xml",
-}
+var (
+	asahiURL = "http://www.asahi.com/rss/asahi/newsheadlines.rdf"
+	nhkURL   = "https://www.nhk.or.jp/rss/news/cat0.xml"
+)
 
 type NHK struct {
 	XMLName xml.Name   `xml:"rss"`
@@ -28,17 +30,11 @@ type NHKItem struct {
 
 // For NHK.
 func GetNHK() *NHK {
-	// url := "https://www.news24.jp/rss/index.rdf"
-	// resp, err := fetchFeed(url)
-	resp, err := ioutil.ReadFile("ex.xml")
+	resp, err := fetchFeed(nhkURL)
 	if err != nil {
 		log.Fatalf("fetch feed failed: %v", err)
 	}
 	article := &NHK{}
-	// reader := bytes.NewReader(resp)
-	// decoder := xml.NewDecoder(reader)
-	// decoder.CharsetReader = charset.NewReaderLabel
-	// err = decoder.Decode(article)
 	err = xml.Unmarshal(resp, article)
 	if err != nil {
 		log.Fatalf("xml unmarshal fail: %v", err)
@@ -54,14 +50,14 @@ type Asahi struct {
 type AsahiItem struct {
 	Title string `xml:"title"`
 	Link  string `xml:"link"`
-	Date  string `xml:"dc:date"`
+	Date  string `xml:"date"`
 }
 
 // For Asahi.
 func GetAsahi() *Asahi {
-	//url := "https://www.news24.jp/rss/index.rdf"
-	//resp, err := fetchFeed(url)
-	resp, err := ioutil.ReadFile("ex.rdf")
+	url := "http://www.asahi.com/rss/asahi/newsheadlines.rdf"
+	resp, err := fetchFeed(url)
+	//resp, err := ioutil.ReadFile("ex.rdf")
 	if err != nil {
 		log.Fatalf("fetch feed failed: %v", err)
 	}
@@ -71,4 +67,23 @@ func GetAsahi() *Asahi {
 		log.Fatalf("xml unmarshal fail: %v", err)
 	}
 	return article
+}
+
+func fetchFeed(url string) ([]byte, error) {
+	net := &http.Client{
+		Timeout: time.Second * 10,
+	}
+
+	// Get the feed.
+	res, err := net.Get(url)
+	if err != nil {
+		return nil, err
+	}
+	defer res.Body.Close()
+
+	body, err := ioutil.ReadAll(res.Body)
+	if err != nil {
+		return nil, err
+	}
+	return body, nil
 }
