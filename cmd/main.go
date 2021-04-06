@@ -30,10 +30,8 @@ func fetchFeed(url string) ([]byte, error) {
 
 // For NHK.
 func main() {
-	// a := readfeeds.GetNHK()
-	// fmt.Println(a)
+	a := readfeeds.GetNHK()
+	fmt.Println(a)
 	// b := readfeeds.GetAsahi()
 	// fmt.Println(b)
-	c := readfeeds.GetNews24()
-	fmt.Println(c)
 }
