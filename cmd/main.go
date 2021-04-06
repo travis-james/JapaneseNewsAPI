@@ -4,25 +4,9 @@ import (
 	"encoding/xml"
 	"fmt"
 	"io/ioutil"
-	"log"
 	"net/http"
 	"time"
 )
-
-type NHK struct {
-	XMLName xml.Name   `xml:"rss"`
-	XMLCh   NHKChannel `xml:"channel"`
-}
-
-type NHKChannel struct {
-	Items []NHKItem `xml:"item"`
-}
-
-type NHKItem struct {
-	Title string `xml:"title"`
-	Link  string `xml:"link"`
-	Date  string `xml:"pubDate"`
-}
 
 type Asahi struct {
 	XMLName xml.Name    `xml:"RDF"`
@@ -56,22 +40,8 @@ func fetchFeed(url string) ([]byte, error) {
 
 // For NHK.
 func main() {
-	// url := "https://www.news24.jp/rss/index.rdf"
-	// resp, err := fetchFeed(url)
-	resp, err := ioutil.ReadFile("ex.xml")
-	if err != nil {
-		log.Fatalf("fetch feed failed: %v", err)
-	}
-	article := &NHK{}
-	// reader := bytes.NewReader(resp)
-	// decoder := xml.NewDecoder(reader)
-	// decoder.CharsetReader = charset.NewReaderLabel
-	// err = decoder.Decode(article)
-	err = xml.Unmarshal(resp, article)
-	if err != nil {
-		log.Fatalf("xml unmarshal fail: %v", err)
-	}
-	fmt.Println(article)
+	a := readfeeds.getNHK()
+	fmt.Println(a)
 }
 
 // For news24
