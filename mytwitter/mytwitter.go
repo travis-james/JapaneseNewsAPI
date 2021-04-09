@@ -51,6 +51,7 @@ func getenv(name string) string {
 	return v
 }
 
+// Why return pointer instead of value? So I can return nil....
 func GetTrends() (*TTrends, error) {
 	// Get Credentials for twitter.
 	client := getCredentials()
