@@ -1,6 +1,7 @@
 package readfeeds
 
 import (
+	"encoding/json"
 	"encoding/xml"
 	"io/ioutil"
 	"log"
@@ -28,18 +29,29 @@ type NHKItem struct {
 	Date  string `xml:"pubDate"`
 }
 
-// For NHK.
-func GetNHK() *NHK {
+// GetAsahi goes to the Asahi RSS feed and turns that xml response into a struct. That struct is then marshaled into
+// a JSON string that is returned. The JSON string contains articles of the form [{Title, Link, Date}, etc].
+func GetNHK() string {
+	// First fetch the RSS feed.
 	resp, err := fetchFeed(nhkURL)
+	// resp, err := ioutil.ReadFile("ex.xml")
 	if err != nil {
 		log.Fatalf("fetch feed failed: %v", err)
 	}
-	article := &NHK{}
-	err = xml.Unmarshal(resp, article)
+
+	// Turn the xml response into a struct.
+	feed := &NHK{}
+	err = xml.Unmarshal(resp, feed)
 	if err != nil {
 		log.Fatalf("xml unmarshal fail: %v", err)
 	}
-	return article
+
+	// Now turn the struct's items into a json []byte.
+	article, err := json.Marshal(feed.XMLCh.Items)
+	if err != nil {
+		log.Fatalf("json marshal fail: %v", err)
+	}
+	return string(article)
 }
 
 type Asahi struct {
@@ -53,25 +65,34 @@ type AsahiItem struct {
 	Date  string `xml:"date"`
 }
 
-// For Asahi.
-func GetAsahi() *Asahi {
-	url := "http://www.asahi.com/rss/asahi/newsheadlines.rdf"
-	resp, err := fetchFeed(url)
-	//resp, err := ioutil.ReadFile("ex.rdf")
+// GetAsahi goes to the Asahi RSS feed and turns that xml response into a struct. That struct is then marshaled into
+// a JSON string that is returned. The JSON string contains articles of the form [{Title, Link, Date}, etc].
+func GetAsahi() string {
+	// First fetch the RSS feed.
+	resp, err := fetchFeed(asahiURL)
+	// resp, err := ioutil.ReadFile("ex.rdf")
 	if err != nil {
 		log.Fatalf("fetch feed failed: %v", err)
 	}
-	article := &Asahi{}
-	err = xml.Unmarshal(resp, article)
+
+	// Turn the xml response into a struct.
+	feed := &Asahi{}
+	err = xml.Unmarshal(resp, feed)
 	if err != nil {
 		log.Fatalf("xml unmarshal fail: %v", err)
 	}
-	return article
+
+	// Now turn the struct's items into a json []byte.
+	article, err := json.Marshal(feed.Items)
+	if err != nil {
+		log.Fatalf("json marshal fail: %v", err)
+	}
+	return string(article)
 }
 
 func fetchFeed(url string) ([]byte, error) {
 	net := &http.Client{
-		Timeout: time.Second * 10,
+		Timeout: time.Second * 10, // Having timeout is a good practice, I need to remember to do this.
 	}
 
 	// Get the feed.
