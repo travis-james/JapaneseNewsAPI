@@ -90,6 +90,8 @@ func GetAsahi() string {
 	return string(article)
 }
 
+// fetchFeed get's the response body of from the passed url and returns a []byte of that
+// resposne. Basically just a fancy wrapper for http.Get.
 func fetchFeed(url string) ([]byte, error) {
 	net := &http.Client{
 		Timeout: time.Second * 10, // Having timeout is a good practice, I need to remember to do this.
