@@ -20,3 +20,10 @@ for line in $(cat twitter.env)
 do
 export $line
 done
+
+
+---- TODO
+1. Get translate working.
+2. Make twitter struct
+3. DB
+4. Set up web routes

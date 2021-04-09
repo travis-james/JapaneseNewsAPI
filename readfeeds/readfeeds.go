@@ -32,8 +32,8 @@ type NHKItem struct {
 // a slice of headlines/links/dats is returned.
 func GetNHK() ([]NHKItem, error) {
 	// First fetch the RSS feed.
-	resp, err := fetchFeed(nhkURL)
-	//resp, err := ioutil.ReadFile("ex.rdf")
+	//resp, err := fetchFeed(nhkURL)
+	resp, err := ioutil.ReadFile("ex.rdf")
 	if err != nil {
 		return nil, err
 	}
