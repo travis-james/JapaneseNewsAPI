@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/travis-james/JapaneseNewsAPI/mytranslate"
+	"github.com/travis-james/JapaneseNewsAPI/mytwitter"
 )
 
 // For NHK.
@@ -27,10 +27,19 @@ func main() {
 	// 	log.Fatalf("%v\n", err)
 	// }
 	// fmt.Println(b)
-	c := "今日は、ギターを買うつもりだと思う。"
-	d, err := mytranslate.TranslateJP(c)
+	// c := "今日は、ギターを買うつもりだと思う。"
+	// d, err := mytranslate.TranslateJP(c)
+	// if err != nil {
+	// 	log.Fatalln(err)
+	// }
+	// fmt.Println(d)
+	a, err := mytwitter.GetTrends()
 	if err != nil {
 		log.Fatalln(err)
 	}
-	fmt.Println(d)
+
+	for _, trend := range a.Trends {
+		fmt.Println(trend)
+	}
+
 }

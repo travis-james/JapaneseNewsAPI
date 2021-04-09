@@ -1,4 +1,4 @@
-package main
+package mytwitter
 
 import (
 	"fmt"
@@ -7,6 +7,7 @@ import (
 
 	"github.com/dghubble/go-twitter/twitter"
 	"github.com/dghubble/oauth1"
+	"github.com/travis-james/JapaneseNewsAPI/mytranslate"
 )
 
 const (
@@ -21,29 +22,25 @@ var (
 	accessSecret   = getenv("TWITTER_ACCESS_TOKEN_SECRET")
 )
 
-func main() {
+type TTrend struct {
+	Trend   string
+	TrendEN string
+}
+
+type TTrends struct {
+	Trends []TTrend
+	Time   time.Time
+}
+
+func getCredentials() *twitter.Client {
 	config := oauth1.NewConfig(consumerKey, consumerSecret)
 	token := oauth1.NewToken(accessToken, accessSecret)
 	// http.Client will automatically authorize Requests
 	httpClient := config.Client(oauth1.NoContext, token)
 
 	// twitter client
-	twitcliA := twitter.NewClient(httpClient)
-	trends(twitcliA)
-	//twitcliB := twitter.NewClient(httpClient)
-
-	// Create a google translate client.
-	// ctx := context.Background()
-	// tc, err := translate.NewTranslationClient(ctx, option.WithCredentialsFile("translation-api-project-307416-8cf7f95bb9a6.json"))
-	// if err != nil {
-	// 	fmt.Println("Client failed.")
-	// 	panic(err)
-	// }
-
-	//wg.Add(2)
-	//go trends(ctx, twitcliA, tc)
-	//go retweet(twitcliB, "golang")
-	//wg.Wait()
+	twitcli := twitter.NewClient(httpClient)
+	return twitcli
 }
 
 func getenv(name string) string {
@@ -54,21 +51,30 @@ func getenv(name string) string {
 	return v
 }
 
-func trends(client *twitter.Client) {
+func GetTrends() (*TTrends, error) {
+	// Get Credentials for twitter.
+	client := getCredentials()
 	// Get current time/date in PST
 	loc, _ := time.LoadLocation("America/Los_Angeles")
 	now := time.Now().In(loc)
-	text := fmt.Sprintf("The current time is: %s\nCurrent trends in Japan are:\n", now)
+	retval := &TTrends{
+		Trends: make([]TTrend, 5),
+		Time:   now,
+	}
 
 	// Get a trend list of the latest trends.
 	tl, _, err := client.Trends.Place(jpWOEID, nil)
 	if err != nil {
-		panic(err)
+		return nil, err
 	}
 
 	// Get 5 trends and append them to text.
-	for i := 0; i < 10; i++ {
-		text += "‣ " + tl[0].Trends[i].Name + "\n"
+	for i := 0; i < 5; i++ {
+		retval.Trends[i].Trend = tl[0].Trends[i].Name
+		retval.Trends[i].TrendEN, err = mytranslate.TranslateJP(tl[0].Trends[i].Name)
+		if err != nil {
+			fmt.Println(err)
+		}
 	}
-	fmt.Println("the text: " + text)
+	return retval, nil
 }

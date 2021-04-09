@@ -23,7 +23,7 @@ done
 
 
 ---- TODO
-1. Get translate working.
+1. Get translate working. - DONE
 2. Make twitter struct
 3. DB
 4. Set up web routes
