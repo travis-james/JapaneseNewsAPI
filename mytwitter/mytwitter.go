@@ -4,13 +4,11 @@ import (
 	"context"
 	"fmt"
 	"os"
-	"sync"
 	"time"
 
 	translate "cloud.google.com/go/translate/apiv3"
 	"github.com/dghubble/go-twitter/twitter"
 	"github.com/dghubble/oauth1"
-	"google.golang.org/api/option"
 )
 
 const (
@@ -23,7 +21,7 @@ var (
 	consumerSecret = getenv("TWITTER_CONSUMER_SECRET")
 	accessToken    = getenv("TWITTER_ACCESS_TOKEN")
 	accessSecret   = getenv("TWITTER_ACCESS_TOKEN_SECRET")
-	wg             = &sync.WaitGroup{}
+	//wg             = &sync.WaitGroup{}
 )
 
 func main() {
@@ -34,20 +32,21 @@ func main() {
 
 	// twitter client
 	twitcliA := twitter.NewClient(httpClient)
-	twitcliB := twitter.NewClient(httpClient)
+	trends()
+	//twitcliB := twitter.NewClient(httpClient)
 
 	// Create a google translate client.
-	ctx := context.Background()
-	tc, err := translate.NewTranslationClient(ctx, option.WithCredentialsFile("translation-api-project-307416-8cf7f95bb9a6.json"))
-	if err != nil {
-		fmt.Println("Client failed.")
-		panic(err)
-	}
+	// ctx := context.Background()
+	// tc, err := translate.NewTranslationClient(ctx, option.WithCredentialsFile("translation-api-project-307416-8cf7f95bb9a6.json"))
+	// if err != nil {
+	// 	fmt.Println("Client failed.")
+	// 	panic(err)
+	// }
 
-	wg.Add(2)
-	go trends(ctx, twitcliA, tc)
-	go retweet(twitcliB, "golang")
-	wg.Wait()
+	//wg.Add(2)
+	//go trends(ctx, twitcliA, tc)
+	//go retweet(twitcliB, "golang")
+	//wg.Wait()
 }
 
 func getenv(name string) string {
@@ -59,7 +58,7 @@ func getenv(name string) string {
 }
 
 func retweet(client *twitter.Client, hashtag string) {
-	defer wg.Done()
+	//defer wg.Done()
 
 	// Crack open a stream of tweets.
 	stream, err := client.Streams.Filter(&twitter.StreamFilterParams{
@@ -96,8 +95,7 @@ func retweet(client *twitter.Client, hashtag string) {
 	}
 }
 
-func trends(ctx context.Context, client *twitter.Client, tc *translate.TranslationClient) {
-	defer wg.Done()
+func trends(client *twitter.Client) {
 
 	for {
 		// Get current time/date in PST
