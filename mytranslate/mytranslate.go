@@ -22,6 +22,7 @@ func TranslateJP(text string) (string, error) {
 		SourceLanguageCode: "ja",
 		TargetLanguageCode: "en",
 		Parent:             "projects/translation-api-project-307416",
+		MimeType:           "text/plain",
 	}
 	resp, err := tc.TranslateText(ctx, req)
 	if err != nil {
