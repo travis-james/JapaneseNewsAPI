@@ -2,14 +2,21 @@ package main
 
 import (
 	"fmt"
+	"log"
 
-	"github.com/travis-james/RSSReader/readfeeds"
+	"github.com/travis-james/JapaneseNewsAPI/readfeeds"
 )
 
 // For NHK.
 func main() {
-	a := readfeeds.GetNHK()
+	a, err := readfeeds.GetNHK()
+	if err != nil {
+		log.Fatalf("%v\n", err)
+	}
 	fmt.Println(a)
-	// b := readfeeds.GetAsahi()
+	// b, err := readfeeds.GetAsahi()
+	// if err != nil {
+	// 	log.Fatalf("%v\n", err)
+	// }
 	// fmt.Println(b)
 }

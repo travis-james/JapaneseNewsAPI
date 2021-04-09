@@ -1,10 +1,8 @@
 package readfeeds
 
 import (
-	"encoding/json"
 	"encoding/xml"
 	"io/ioutil"
-	"log"
 	"net/http"
 	"time"
 )
@@ -29,29 +27,29 @@ type NHKItem struct {
 	Date  string `xml:"pubDate"`
 }
 
-// GetAsahi goes to the Asahi RSS feed and turns that xml response into a struct. That struct is then marshaled into
-// a JSON string that is returned. The JSON string contains articles of the form [{Title, Link, Date}, etc].
-func GetNHK() string {
+// GetAsahi goes to the Asahi RSS feed and turns that xml response into a struct. The part of the struct containing
+// a slice of headlines/links/dats is returned.
+func GetNHK() ([]NHKItem, error) {
 	// First fetch the RSS feed.
 	resp, err := fetchFeed(nhkURL)
-	// resp, err := ioutil.ReadFile("ex.xml")
+	//resp, err := ioutil.ReadFile("ex.rdf")
 	if err != nil {
-		log.Fatalf("fetch feed failed: %v", err)
+		return nil, err
 	}
 
 	// Turn the xml response into a struct.
 	feed := &NHK{}
 	err = xml.Unmarshal(resp, feed)
 	if err != nil {
-		log.Fatalf("xml unmarshal fail: %v", err)
+		return nil, err
 	}
 
 	// Now turn the struct's items into a json []byte.
-	article, err := json.Marshal(feed.XMLCh.Items)
-	if err != nil {
-		log.Fatalf("json marshal fail: %v", err)
-	}
-	return string(article)
+	// article, err := json.Marshal(feed.XMLCh.Items)
+	// if err != nil {
+	// 	return "", err
+	// }
+	return feed.XMLCh.Items, nil
 }
 
 type Asahi struct {
@@ -65,29 +63,29 @@ type AsahiItem struct {
 	Date  string `xml:"date"`
 }
 
-// GetAsahi goes to the Asahi RSS feed and turns that xml response into a struct. That struct is then marshaled into
-// a JSON string that is returned. The JSON string contains articles of the form [{Title, Link, Date}, etc].
-func GetAsahi() string {
+// GetAsahi goes to the Asahi RSS feed and turns that xml response into a struct. The part of the struct containing
+// a slice of headlines/links/dats is returned.
+func GetAsahi() ([]AsahiItem, error) {
 	// First fetch the RSS feed.
 	resp, err := fetchFeed(asahiURL)
-	// resp, err := ioutil.ReadFile("ex.rdf")
+	//resp, err := ioutil.ReadFile("ex.rdf")
 	if err != nil {
-		log.Fatalf("fetch feed failed: %v", err)
+		return nil, err
 	}
 
 	// Turn the xml response into a struct.
 	feed := &Asahi{}
 	err = xml.Unmarshal(resp, feed)
 	if err != nil {
-		log.Fatalf("xml unmarshal fail: %v", err)
+		return nil, err
 	}
 
 	// Now turn the struct's items into a json []byte.
-	article, err := json.Marshal(feed.Items)
-	if err != nil {
-		log.Fatalf("json marshal fail: %v", err)
-	}
-	return string(article)
+	// article, err := json.Marshal(feed.Items)
+	// if err != nil {
+	// 	return "", err
+	// }
+	return feed.Items, nil
 }
 
 // fetchFeed get's the response body of from the passed url and returns a []byte of that

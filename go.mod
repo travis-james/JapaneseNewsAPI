@@ -1,4 +1,4 @@
-module github.com/travis-james/RSSReader
+module github.com/travis-james/JapaneseNewsAPI
 
 go 1.15
 
