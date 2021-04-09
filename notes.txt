@@ -14,3 +14,9 @@ decoder.CharsetReader
 	article := &Asahi{}
 	err = decoder.Decode(article)
 a
+
+--- Defining env variable:
+for line in $(cat twitter.env)
+do
+export $line
+done
