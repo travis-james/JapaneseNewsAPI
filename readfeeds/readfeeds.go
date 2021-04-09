@@ -22,9 +22,10 @@ type NHKChannel struct {
 }
 
 type NHKItem struct {
-	Title string `xml:"title"`
-	Link  string `xml:"link"`
-	Date  string `xml:"pubDate"`
+	Title   string `xml:"title"`
+	TitleEN string
+	Link    string `xml:"link"`
+	Date    string `xml:"pubDate"`
 }
 
 // GetAsahi goes to the Asahi RSS feed and turns that xml response into a struct. The part of the struct containing
@@ -58,9 +59,10 @@ type Asahi struct {
 }
 
 type AsahiItem struct {
-	Title string `xml:"title"`
-	Link  string `xml:"link"`
-	Date  string `xml:"date"`
+	Title   string `xml:"title"`
+	TitleEN string
+	Link    string `xml:"link"`
+	Date    string `xml:"date"`
 }
 
 // GetAsahi goes to the Asahi RSS feed and turns that xml response into a struct. The part of the struct containing
