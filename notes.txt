@@ -1,4 +1,11 @@
 These are notes for my own benefit. 
+---- TODO
+1. Get translate working. - DONE
+2. Make twitter struct - DONE
+2.5 Create a news struct that will house everything
+3. DB
+4. Set up web routes
+
 --- Some RSS Feeds
 Asahi - http://www.asahi.com/rss/asahi/newsheadlines.rdf
 日テレNEWS24 - https://www.news24.jp/rss/index.rdf
@@ -10,9 +17,12 @@ do
 export $line
 done
 
+---  Setting up MongoDB with Docker
+https://www.thepolyglotdeveloper.com/2019/01/getting-started-mongodb-docker-container-deployment/
 
----- TODO
-1. Get translate working. - DONE
-2. Make twitter struct - DONE
-3. DB
-4. Set up web routes
+1.) docker pull mongo
+2.) docker run -d -p 27017-27019:27017-27019 --name mongodb mongo
+Runs in detached mode (in the background)
+We are also mapping the container ports with host ports so that way we can access the database from a host level application if we wanted to.
+3.) To interact with it:
+docker exec -it mongodb bash
