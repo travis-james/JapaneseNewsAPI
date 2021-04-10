@@ -1,19 +1,8 @@
+These are notes for my own benefit. 
+--- Some RSS Feeds
 Asahi - http://www.asahi.com/rss/asahi/newsheadlines.rdf
 日テレNEWS24 - https://www.news24.jp/rss/index.rdf
 NHK - https://www.nhk.or.jp/rss/news/cat0.xml
-
-newreader, _ := charset.NewReaderLabel("SHIFT_JIS")
-decoder.CharsetReader
-
-	newreader, _ := charset.NewReaderLabel("SHIFT_JIS")
-	if err != nil {
-		fmt.Println(err.Error())
-		return nil
-	}
-	decoder.CharsetReader("", newreader)
-	article := &Asahi{}
-	err = decoder.Decode(article)
-a
 
 --- Defining env variable:
 for line in $(cat twitter.env)
@@ -24,6 +13,6 @@ done
 
 ---- TODO
 1. Get translate working. - DONE
-2. Make twitter struct
+2. Make twitter struct - DONE
 3. DB
 4. Set up web routes
