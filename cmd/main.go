@@ -44,27 +44,34 @@ func main() {
 	// }
 
 	// Translate Asahi & NHK.
-	readfeeds.TranslateTitle(n.XMLCh.Items, a.Items)
-	for i, item := range a.Items {
-		if i == 5 {
-			break
-		}
-		fmt.Println(item)
-	}
-	for i, item := range n.XMLCh.Items {
-		if i == 5 {
-			break
-		}
-		fmt.Println(item)
-	}
-
-	// c, err := mytwitter.GetTrends()
-	// if err != nil {
-	// 	log.Fatalln(err)
+	// readfeeds.TranslateTitle(n.XMLCh.Items, a.Items)
+	// for i, item := range a.Items {
+	// 	if i == 5 {
+	// 		break
+	// 	}
+	// 	fmt.Println(item)
+	// }
+	// for i, item := range n.XMLCh.Items {
+	// 	if i == 5 {
+	// 		break
+	// 	}
+	// 	fmt.Println(item)
 	// }
 
+	// Get twitter trends.
+	c, err := mytwitter.GetTrends()
+	if err != nil {
+		log.Fatalln(err)
+	}
 	// for _, trend := range c.Trends {
 	// 	fmt.Println(trend)
 	// }
 
+	todaysnews := News{
+		NHK:   n.XMLCh.Items,
+		Asahi: a.Items,
+		Twit:  c,
+		Date:  time.Now(),
+	}
+	fmt.Println(todaysnews)
 }
