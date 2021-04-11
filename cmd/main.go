@@ -5,7 +5,6 @@ import (
 	"log"
 	"time"
 
-	"github.com/travis-james/JapaneseNewsAPI/mytranslate"
 	"github.com/travis-james/JapaneseNewsAPI/mytwitter"
 	"github.com/travis-james/JapaneseNewsAPI/readfeeds"
 )
@@ -19,39 +18,20 @@ type News struct {
 
 // For NHK.
 func main() {
-	a := News{}
-	var err error
-	a.Asahi, err = readfeeds.GetAsahi()
+	asahinews, err := readfeeds.GetNHK()
 	if err != nil {
 		log.Fatalf("%v\n", err)
 	}
-	for i, item := range a {
-		a[i].TitleEN, err = mytranslate.TranslateJP(item.Title)
-		if err != nil {
-			fmt.Println(err)
-		}
-	}
-	for _, item := range a {
+	for _, item := range asahinews {
 		fmt.Println(item)
 	}
-	// b, err := readfeeds.GetAsahi()
-	// if err != nil {
-	// 	log.Fatalf("%v\n", err)
-	// }
-	// fmt.Println(b)
-	// c := "今日は、ギターを買うつもりだと思う。"
-	// d, err := mytranslate.TranslateJP(c)
+	// c, err := mytwitter.GetTrends()
 	// if err != nil {
 	// 	log.Fatalln(err)
 	// }
-	// fmt.Println(d)
-	c, err := mytwitter.GetTrends()
-	if err != nil {
-		log.Fatalln(err)
-	}
 
-	for _, trend := range c.Trends {
-		fmt.Println(trend)
-	}
+	// for _, trend := range c.Trends {
+	// 	fmt.Println(trend)
+	// }
 
 }

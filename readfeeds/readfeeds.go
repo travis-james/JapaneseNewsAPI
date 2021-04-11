@@ -2,9 +2,12 @@ package readfeeds
 
 import (
 	"encoding/xml"
+	"fmt"
 	"io/ioutil"
 	"net/http"
 	"time"
+
+	"github.com/travis-james/JapaneseNewsAPI/mytranslate"
 )
 
 var (
@@ -32,8 +35,8 @@ type NHKItem struct {
 // a slice of headlines/links/dats is returned.
 func GetNHK() ([]NHKItem, error) {
 	// First fetch the RSS feed.
-	//resp, err := fetchFeed(nhkURL)
-	resp, err := ioutil.ReadFile("ex.rdf")
+	resp, err := fetchFeed(nhkURL)
+	//resp, err := ioutil.ReadFile("ex.rdf")
 	if err != nil {
 		return nil, err
 	}
@@ -44,6 +47,9 @@ func GetNHK() ([]NHKItem, error) {
 	if err != nil {
 		return nil, err
 	}
+
+	// Translate the headlines.
+	feed.XMLCh.translatetitle()
 
 	// Now turn the struct's items into a json []byte.
 	// article, err := json.Marshal(feed.XMLCh.Items)
@@ -69,8 +75,8 @@ type AsahiItem struct {
 // a slice of headlines/links/dats is returned.
 func GetAsahi() ([]AsahiItem, error) {
 	// First fetch the RSS feed.
-	resp, err := fetchFeed(asahiURL)
-	//resp, err := ioutil.ReadFile("ex.rdf")
+	//resp, err := fetchFeed(asahiURL)
+	resp, err := ioutil.ReadFile("ex.rdf")
 	if err != nil {
 		return nil, err
 	}
@@ -81,6 +87,9 @@ func GetAsahi() ([]AsahiItem, error) {
 	if err != nil {
 		return nil, err
 	}
+
+	// Translate the headlines.
+	feed.translatetitle()
 
 	// Now turn the struct's items into a json []byte.
 	// article, err := json.Marshal(feed.Items)
@@ -109,4 +118,34 @@ func fetchFeed(url string) ([]byte, error) {
 		return nil, err
 	}
 	return body, nil
+}
+
+type Headline interface {
+	translatetitle()
+}
+
+func (n *NHKChannel) translatetitle() {
+	for i, item := range n.Items {
+		// if i == 3 {
+		// 	return
+		// }
+		var err error
+		n.Items[i].TitleEN, err = mytranslate.TranslateJP(item.Title)
+		if err != nil {
+			fmt.Println(err)
+		}
+	}
+}
+
+func (a *Asahi) translatetitle() {
+	for i, item := range a.Items {
+		// if i == 3 {
+		// 	return
+		// }
+		var err error
+		a.Items[i].TitleEN, err = mytranslate.TranslateJP(item.Title)
+		if err != nil {
+			fmt.Println(err)
+		}
+	}
 }
