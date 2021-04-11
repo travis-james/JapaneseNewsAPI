@@ -2,9 +2,12 @@ package readfeeds
 
 import (
 	"encoding/xml"
+	"fmt"
 	"io/ioutil"
 	"net/http"
 	"time"
+
+	"github.com/travis-james/JapaneseNewsAPI/mytranslate"
 )
 
 // NHK is the top level struct of reading the NHK RSS feed.
@@ -104,15 +107,26 @@ func fetchRSS(url string) ([]byte, error) {
 // 	}
 // }
 
-// func (a *Asahi) translatetitle() {
-// 	for i, item := range a.Items {
-// 		// if i == 3 {
-// 		// 	return
-// 		// }
-// 		var err error
-// 		a.Items[i].TitleEN, err = mytranslate.TranslateJP(item.Title)
-// 		if err != nil {
-// 			fmt.Println(err)
-// 		}
-// 	}
-// }
+func TranslateTitle(n []NHKItem, a []AsahiItem) {
+	for i, item := range n {
+		if i == 3 {
+			break
+		}
+		var err error
+		n[i].TitleEN, err = mytranslate.TranslateJP(item.Title)
+		if err != nil {
+			fmt.Println(err)
+		}
+	}
+
+	for i, item := range a {
+		if i == 3 {
+			break
+		}
+		var err error
+		a[i].TitleEN, err = mytranslate.TranslateJP(item.Title)
+		if err != nil {
+			fmt.Println(err)
+		}
+	}
+}

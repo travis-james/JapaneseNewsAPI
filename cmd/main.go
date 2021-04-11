@@ -23,6 +23,7 @@ var (
 
 // For NHK.
 func main() {
+	// Get NHK.
 	n := &readfeeds.NHK{}
 	err := readfeeds.SetFeed(n, nhkURL)
 	if err != nil {
@@ -32,14 +33,31 @@ func main() {
 	// 	fmt.Println(item)
 	// }
 
+	// Get Asahi.
 	a := &readfeeds.Asahi{}
 	err = readfeeds.SetFeed(a, asahiURL)
 	if err != nil {
 		log.Fatalf("%v\n", err)
 	}
-	for _, item := range a.Items {
+	// for _, item := range a.Items {
+	// 	fmt.Println(item)
+	// }
+
+	// Translate Asahi & NHK.
+	readfeeds.TranslateTitle(n.XMLCh.Items, a.Items)
+	for i, item := range a.Items {
+		if i == 5 {
+			break
+		}
 		fmt.Println(item)
 	}
+	for i, item := range n.XMLCh.Items {
+		if i == 5 {
+			break
+		}
+		fmt.Println(item)
+	}
+
 	// c, err := mytwitter.GetTrends()
 	// if err != nil {
 	// 	log.Fatalln(err)
