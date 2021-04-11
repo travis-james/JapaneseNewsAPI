@@ -2,28 +2,24 @@ package readfeeds
 
 import (
 	"encoding/xml"
-	"fmt"
 	"io/ioutil"
 	"net/http"
 	"time"
-
-	"github.com/travis-james/JapaneseNewsAPI/mytranslate"
 )
 
-var (
-	asahiURL = "http://www.asahi.com/rss/asahi/newsheadlines.rdf"
-	nhkURL   = "https://www.nhk.or.jp/rss/news/cat0.xml"
-)
-
+// NHK is the top level struct of reading the NHK RSS feed.
+// XMLCh contains the point of interest, NHKChannel struct.
 type NHK struct {
 	XMLName xml.Name   `xml:"rss"`
 	XMLCh   NHKChannel `xml:"channel"`
 }
 
+// NHKChannel contains a slice of NHKItems (headlines/articles).
 type NHKChannel struct {
 	Items []NHKItem `xml:"item"`
 }
 
+// NHKItem is the fundamental NHK data type containing a headline, link, date, etc.
 type NHKItem struct {
 	Title   string `xml:"title"`
 	TitleEN string
@@ -31,39 +27,14 @@ type NHKItem struct {
 	Date    string `xml:"pubDate"`
 }
 
-// GetAsahi goes to the Asahi RSS feed and turns that xml response into a struct. The part of the struct containing
-// a slice of headlines/links/dats is returned.
-func GetNHK() ([]NHKItem, error) {
-	// First fetch the RSS feed.
-	resp, err := fetchFeed(nhkURL)
-	//resp, err := ioutil.ReadFile("ex.rdf")
-	if err != nil {
-		return nil, err
-	}
-
-	// Turn the xml response into a struct.
-	feed := &NHK{}
-	err = xml.Unmarshal(resp, feed)
-	if err != nil {
-		return nil, err
-	}
-
-	// Translate the headlines.
-	feed.XMLCh.translatetitle()
-
-	// Now turn the struct's items into a json []byte.
-	// article, err := json.Marshal(feed.XMLCh.Items)
-	// if err != nil {
-	// 	return "", err
-	// }
-	return feed.XMLCh.Items, nil
-}
-
+// Asahi is the top level struct of reading the Asahi RSS feed.
+// Items contains the point of interest, AsahiItem struct.
 type Asahi struct {
 	XMLName xml.Name    `xml:"RDF"`
 	Items   []AsahiItem `xml:"item"`
 }
 
+// AsahiItem is the fundamental Asahi data type containing a headline, link, date, etc.
 type AsahiItem struct {
 	Title   string `xml:"title"`
 	TitleEN string
@@ -71,37 +42,33 @@ type AsahiItem struct {
 	Date    string `xml:"date"`
 }
 
-// GetAsahi goes to the Asahi RSS feed and turns that xml response into a struct. The part of the struct containing
-// a slice of headlines/links/dats is returned.
-func GetAsahi() ([]AsahiItem, error) {
+// SetFeed should be used where Asahi or NHK is passed with it's appropriate URL. This will then
+// set those structs with their appropriate values.
+func SetFeed(feed interface{}, url string) error {
 	// First fetch the RSS feed.
-	//resp, err := fetchFeed(asahiURL)
-	resp, err := ioutil.ReadFile("ex.rdf")
+	resp, err := fetchRSS(url)
+	//resp, err := ioutil.ReadFile("ex.rdf")
 	if err != nil {
-		return nil, err
+		return err
 	}
 
 	// Turn the xml response into a struct.
-	feed := &Asahi{}
 	err = xml.Unmarshal(resp, feed)
 	if err != nil {
-		return nil, err
+		return err
 	}
 
-	// Translate the headlines.
-	feed.translatetitle()
-
 	// Now turn the struct's items into a json []byte.
-	// article, err := json.Marshal(feed.Items)
+	// article, err := json.Marshal(feed.XMLCh.Items)
 	// if err != nil {
 	// 	return "", err
 	// }
-	return feed.Items, nil
+	return nil
 }
 
 // fetchFeed get's the response body of from the passed url and returns a []byte of that
 // resposne. Basically just a fancy wrapper for http.Get.
-func fetchFeed(url string) ([]byte, error) {
+func fetchRSS(url string) ([]byte, error) {
 	net := &http.Client{
 		Timeout: time.Second * 10, // Having timeout is a good practice, I need to remember to do this.
 	}
@@ -120,32 +87,32 @@ func fetchFeed(url string) ([]byte, error) {
 	return body, nil
 }
 
-type Headline interface {
-	translatetitle()
-}
+// type Headline interface {
+// 	translatetitle()
+// }
 
-func (n *NHKChannel) translatetitle() {
-	for i, item := range n.Items {
-		// if i == 3 {
-		// 	return
-		// }
-		var err error
-		n.Items[i].TitleEN, err = mytranslate.TranslateJP(item.Title)
-		if err != nil {
-			fmt.Println(err)
-		}
-	}
-}
+// func (n *NHKChannel) translatetitle() {
+// 	for i, item := range n.Items {
+// 		// if i == 3 {
+// 		// 	return
+// 		// }
+// 		var err error
+// 		n.Items[i].TitleEN, err = mytranslate.TranslateJP(item.Title)
+// 		if err != nil {
+// 			fmt.Println(err)
+// 		}
+// 	}
+// }
 
-func (a *Asahi) translatetitle() {
-	for i, item := range a.Items {
-		// if i == 3 {
-		// 	return
-		// }
-		var err error
-		a.Items[i].TitleEN, err = mytranslate.TranslateJP(item.Title)
-		if err != nil {
-			fmt.Println(err)
-		}
-	}
-}
+// func (a *Asahi) translatetitle() {
+// 	for i, item := range a.Items {
+// 		// if i == 3 {
+// 		// 	return
+// 		// }
+// 		var err error
+// 		a.Items[i].TitleEN, err = mytranslate.TranslateJP(item.Title)
+// 		if err != nil {
+// 			fmt.Println(err)
+// 		}
+// 	}
+// }

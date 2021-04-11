@@ -16,13 +16,28 @@ type News struct {
 	Date  time.Time
 }
 
+var (
+	asahiURL = "http://www.asahi.com/rss/asahi/newsheadlines.rdf"
+	nhkURL   = "https://www.nhk.or.jp/rss/news/cat0.xml"
+)
+
 // For NHK.
 func main() {
-	asahinews, err := readfeeds.GetNHK()
+	n := &readfeeds.NHK{}
+	err := readfeeds.SetFeed(n, nhkURL)
 	if err != nil {
 		log.Fatalf("%v\n", err)
 	}
-	for _, item := range asahinews {
+	// for _, item := range n.XMLCh.Items {
+	// 	fmt.Println(item)
+	// }
+
+	a := &readfeeds.Asahi{}
+	err = readfeeds.SetFeed(a, asahiURL)
+	if err != nil {
+		log.Fatalf("%v\n", err)
+	}
+	for _, item := range a.Items {
 		fmt.Println(item)
 	}
 	// c, err := mytwitter.GetTrends()
