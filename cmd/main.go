@@ -1,6 +1,7 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
 	"log"
 	"time"
@@ -44,7 +45,7 @@ func main() {
 	// }
 
 	// Translate Asahi & NHK.
-	// readfeeds.TranslateTitle(n.XMLCh.Items, a.Items)
+	readfeeds.TranslateTitle(n.XMLCh.Items, a.Items)
 	// for i, item := range a.Items {
 	// 	if i == 5 {
 	// 		break
@@ -74,4 +75,11 @@ func main() {
 		Date:  time.Now(),
 	}
 	fmt.Println(todaysnews)
+
+	jnews, err := json.Marshal(todaysnews)
+	if err != nil {
+		log.Fatal(err)
+	}
+	fmt.Println("===\n===\n===\n====\n===\n===")
+	fmt.Println(string(jnews))
 }
