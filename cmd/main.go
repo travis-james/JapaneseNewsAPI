@@ -1,13 +1,15 @@
 package main
 
 import (
-	"encoding/json"
+	"context"
 	"fmt"
 	"log"
 	"time"
 
 	"github.com/travis-james/JapaneseNewsAPI/mytwitter"
 	"github.com/travis-james/JapaneseNewsAPI/readfeeds"
+	"go.mongodb.org/mongo-driver/mongo"
+	"go.mongodb.org/mongo-driver/mongo/options"
 )
 
 type News struct {
@@ -21,6 +23,7 @@ type News struct {
 var (
 	asahiURL = "http://www.asahi.com/rss/asahi/newsheadlines.rdf"
 	nhkURL   = "https://www.nhk.or.jp/rss/news/cat0.xml"
+	client   *mongo.Client
 )
 
 // For NHK.
@@ -74,14 +77,30 @@ func main() {
 		Asahi: a.Items,
 		Twit:  c,
 		Date:  time.Now(),
-		ID:    1,
+		ID:    2,
 	}
-	fmt.Println(todaysnews)
+	//fmt.Println(todaysnews)
 
-	jnews, err := json.Marshal(todaysnews)
+	// JSON?
+	// jnews, err := json.Marshal(todaysnews)
+	// if err != nil {
+	// 	log.Fatal(err)
+	// }
+	// fmt.Println(string(jnews))
+
+	// For DB.
+	ctx, _ := context.WithTimeout(context.Background(), 10*time.Second)
+	clientOptions := options.Client().ApplyURI("mongodb://localhost:27017")
+	client, err = mongo.Connect(ctx, clientOptions)
 	if err != nil {
 		log.Fatal(err)
 	}
-	fmt.Println("===\n===\n===\n====\n===\n===")
-	fmt.Println(string(jnews))
+
+	collection := client.Database("jpnews").Collection("day")
+	//ctx, _ := context.WithTimeout(context.Background(), 5*time.Second)
+	result, err := collection.InsertOne(ctx, todaysnews)
+	if err != nil {
+		log.Fatal(err)
+	}
+	fmt.Println(result)
 }

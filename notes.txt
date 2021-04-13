@@ -30,8 +30,7 @@ docker exec -it mongodb bash
 mongo
 use jpnews
 db.day.save(the struct)
-WriteResult({ "nInserted" : 1 })
-db.people.find({ date: "2021-04-12T18:16:13.946829589-07:00" })
+db.day.find({ "ID": 1 })
 --- Asahi vs NHK
 They're Item structs are the same except what the date is labeled in xml. This causes a lot of redundant code, is there a way
 around this....
