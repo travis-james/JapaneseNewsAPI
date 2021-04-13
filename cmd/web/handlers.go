@@ -7,8 +7,8 @@ import (
 	"net/http"
 	"time"
 
+	"github.com/travis-james/JapaneseNewsAPI/mynews"
 	"github.com/travis-james/JapaneseNewsAPI/mytwitter"
-	"github.com/travis-james/JapaneseNewsAPI/readfeeds"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
 )
@@ -22,8 +22,8 @@ func (app *application) home(w http.ResponseWriter, r *http.Request) {
 
 func (app *application) updatenews(w http.ResponseWriter, r *http.Request) {
 	// Get NHK.
-	n := &readfeeds.NHK{}
-	err := readfeeds.SetFeed(n, nhkURL)
+	n := &mynews.NHK{}
+	err := mynews.SetFeed(n, nhkURL)
 	if err != nil {
 		log.Fatalf("%v\n", err)
 	}
@@ -32,8 +32,8 @@ func (app *application) updatenews(w http.ResponseWriter, r *http.Request) {
 	// }
 
 	// Get Asahi.
-	a := &readfeeds.Asahi{}
-	err = readfeeds.SetFeed(a, asahiURL)
+	a := &mynews.Asahi{}
+	err = mynews.SetFeed(a, asahiURL)
 	if err != nil {
 		log.Fatalf("%v\n", err)
 	}
@@ -42,7 +42,7 @@ func (app *application) updatenews(w http.ResponseWriter, r *http.Request) {
 	// }
 
 	// Translate Asahi & NHK.
-	readfeeds.TranslateTitle(n.XMLCh.Items, a.Items)
+	mynews.TranslateTitle(n.XMLCh.Items, a.Items)
 	// for i, item := range a.Items {
 	// 	if i == 5 {
 	// 		break
@@ -65,11 +65,12 @@ func (app *application) updatenews(w http.ResponseWriter, r *http.Request) {
 	// 	fmt.Println(trend)
 	// }
 
+	date := time.Now().Format("2006-01-02")
 	todaysnews := News{
 		NHK:   n.XMLCh.Items,
 		Asahi: a.Items,
 		Twit:  c,
-		Date:  time.Now(),
+		Date:  date,
 		ID:    2,
 	}
 	//fmt.Println(todaysnews)

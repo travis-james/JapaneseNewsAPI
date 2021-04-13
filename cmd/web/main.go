@@ -6,14 +6,14 @@ import (
 	"log"
 	"net/http"
 
+	"github.com/travis-james/JapaneseNewsAPI/mynews"
 	"github.com/travis-james/JapaneseNewsAPI/mytwitter"
-	"github.com/travis-james/JapaneseNewsAPI/readfeeds"
 	"go.mongodb.org/mongo-driver/mongo"
 )
 
 type News struct {
-	NHK   []readfeeds.NHKItem
-	Asahi []readfeeds.AsahiItem
+	NHK   []mynews.NHKItem
+	Asahi []mynews.AsahiItem
 	Twit  []mytwitter.TTrend
 	Date  string
 	ID    int

@@ -1,4 +1,4 @@
-package readfeeds
+package mynews
 
 import (
 	"encoding/xml"
@@ -89,23 +89,6 @@ func fetchRSS(url string) ([]byte, error) {
 	}
 	return body, nil
 }
-
-// type Headline interface {
-// 	translatetitle()
-// }
-
-// func (n *NHKChannel) translatetitle() {
-// 	for i, item := range n.Items {
-// 		// if i == 3 {
-// 		// 	return
-// 		// }
-// 		var err error
-// 		n.Items[i].TitleEN, err = mytranslate.TranslateJP(item.Title)
-// 		if err != nil {
-// 			fmt.Println(err)
-// 		}
-// 	}
-// }
 
 func TranslateTitle(n []NHKItem, a []AsahiItem) {
 	for i, item := range n {
