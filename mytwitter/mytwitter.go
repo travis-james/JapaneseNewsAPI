@@ -3,7 +3,6 @@ package mytwitter
 import (
 	"fmt"
 	"os"
-	"time"
 
 	"github.com/dghubble/go-twitter/twitter"
 	"github.com/dghubble/oauth1"
@@ -27,11 +26,6 @@ type TTrend struct {
 	TrendEN string
 }
 
-type TTrends struct {
-	Trends []TTrend
-	Time   time.Time
-}
-
 func getCredentials() *twitter.Client {
 	config := oauth1.NewConfig(consumerKey, consumerSecret)
 	token := oauth1.NewToken(accessToken, accessSecret)
@@ -52,16 +46,12 @@ func getenv(name string) string {
 }
 
 // Why return pointer instead of value? So I can return nil....
-func GetTrends() (*TTrends, error) {
+func GetTrends() ([]TTrend, error) {
 	// Get Credentials for twitter.
 	client := getCredentials()
 	// Get current time/date in PST
-	loc, _ := time.LoadLocation("America/Los_Angeles")
-	now := time.Now().In(loc)
-	retval := &TTrends{
-		Trends: make([]TTrend, 5),
-		Time:   now,
-	}
+	//loc, _ := time.LoadLocation("America/Los_Angeles")
+	retval := make([]TTrend, 5)
 
 	// Get a trend list of the latest trends.
 	tl, _, err := client.Trends.Place(jpWOEID, nil)
@@ -69,10 +59,10 @@ func GetTrends() (*TTrends, error) {
 		return nil, err
 	}
 
-	// Get 5 trends and append them to text.
+	// Get 5 trends, translate, and append them to the slice.
 	for i := 0; i < 5; i++ {
-		retval.Trends[i].Trend = tl[0].Trends[i].Name
-		retval.Trends[i].TrendEN, err = mytranslate.TranslateJP(tl[0].Trends[i].Name)
+		retval[i].Trend = tl[0].Trends[i].Name
+		retval[i].TrendEN, err = mytranslate.TranslateJP(tl[0].Trends[i].Name)
 		if err != nil {
 			fmt.Println(err)
 		}

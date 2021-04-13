@@ -13,8 +13,9 @@ import (
 type News struct {
 	NHK   []readfeeds.NHKItem
 	Asahi []readfeeds.AsahiItem
-	Twit  *mytwitter.TTrends
+	Twit  []mytwitter.TTrend
 	Date  time.Time
+	ID    int
 }
 
 var (
@@ -73,6 +74,7 @@ func main() {
 		Asahi: a.Items,
 		Twit:  c,
 		Date:  time.Now(),
+		ID:    1,
 	}
 	fmt.Println(todaysnews)
 

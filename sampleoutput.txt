@@ -5,335 +5,334 @@
 ====
 ===
 ===
+db.day.save(
 {
-   "NHK":[
-      {
-         "Title":"トリチウムなど含む処理水 薄めて海洋放出の方針決定 政府",
-         "TitleEN":"Dilute treated water containing tritium and decide on policy for ocean release",
-         "Link":"http://www3.nhk.or.jp/news/html/20210413/k10012971161000.html",
-         "Date":"Tue, 13 Apr 2021 09:26:16 +0900"
-      },
-      {
-         "Title":"高齢者へのコロナワクチン接種 初日の12日は1139人が受ける",
-         "TitleEN":"Corona vaccination for the elderly 1139 people receive on the 12th of the first day",
-         "Link":"http://www3.nhk.or.jp/news/html/20210413/k10012970951000.html",
-         "Date":"Tue, 13 Apr 2021 04:30:56 +0900"
-      },
-      {
-         "Title":"全国的に大気不安定 落雷や突風 激しい雨に注意を 気象庁",
-         "TitleEN":"Atmospheric instability nationwide Beware of lightning strikes and gusts of heavy rain Japan Meteorological Agency",
-         "Link":"http://www3.nhk.or.jp/news/html/20210413/k10012971051000.html",
-         "Date":"Tue, 13 Apr 2021 05:39:29 +0900"
-      },
-      {
-         "Title":"アメリカで黒人男性が警察官に撃たれ死亡 各地で抗議活動も",
-         "TitleEN":"",
-         "Link":"http://www3.nhk.or.jp/news/html/20210413/k10012971141000.html",
-         "Date":"Tue, 13 Apr 2021 07:16:43 +0900"
-      },
-      {
-         "Title":"台湾の防空識別圏に中国軍機延べ25機進入 台湾国防部",
-         "TitleEN":"",
-         "Link":"http://www3.nhk.or.jp/news/html/20210413/k10012971071000.html",
-         "Date":"Tue, 13 Apr 2021 09:41:23 +0900"
-      },
-      {
-         "Title":"日米同盟「さらに強化していくべき」7割 NHK世論調査",
-         "TitleEN":"",
-         "Link":"http://www3.nhk.or.jp/news/html/20210413/k10012969861000.html",
-         "Date":"Tue, 13 Apr 2021 04:13:06 +0900"
-      },
-      {
-         "Title":"国の重要文化財「明恵上人坐像」の内部に巻物発見",
-         "TitleEN":"",
-         "Link":"http://www3.nhk.or.jp/news/html/20210413/k10012970761000.html",
-         "Date":"Tue, 13 Apr 2021 04:16:01 +0900"
-      }
-   ],
-   "Asahi":[
-      {
-         "Title":"【速報中】片岡愛之助さんからスタート　大阪聖火リレー",
-         "TitleEN":"[Breaking news] Start from Ainosuke Kataoka Osaka Torch Relay",
-         "Link":"http://www.asahi.com/articles/ASP4D75TFP4DPTIL02J.html?ref=rss",
-         "Date":"2021-04-13T09:58:45+09:00"
-      },
-      {
-         "Title":"履歴書から電話番号を入手しセクハラ　校長、停職2カ月",
-         "TitleEN":"Obtained a phone number from the resume, sexual harassment principal, suspended for 2 months",
-         "Link":"http://www.asahi.com/articles/ASP4F32VCP4DPTIL011.html?ref=rss",
-         "Date":"2021-04-13T09:57:08+09:00"
-      },
-      {
-         "Title":"庭に0歳の遺体、生きていると偽り給付金　母に猶予判決",
-         "TitleEN":"0-year-old corpse in the garden, false benefit if alive",
-         "Link":"http://www.asahi.com/articles/ASP4F31R6P4DIIPE00X.html?ref=rss",
-         "Date":"2021-04-13T09:35:31+09:00"
-      },
-      {
-         "Title":"車窓にキンコン西野さんの光る絵本　苦境の三セク打開策",
-         "TitleEN":"",
-         "Link":"http://www.asahi.com/articles/ASP475W7JP3KULUC005.html?ref=rss",
-         "Date":"2021-04-13T09:00:00+09:00"
-      },
-      {
-         "Title":"まずはくっちゃべりませんか?　核ごみ問題、動いた町民",
-         "TitleEN":"",
-         "Link":"http://www.asahi.com/articles/ASP4D6DCQP48IIPE022.html?ref=rss",
-         "Date":"2021-04-13T08:00:00+09:00"
-      },
-      {
-         "Title":"コロナ対応病院に不急の手術延期要請　大阪府、病床逼迫",
-         "TitleEN":"",
-         "Link":"http://www.asahi.com/articles/ASP4F00K5P4DPTIL029.html?ref=rss",
-         "Date":"2021-04-13T06:00:00+09:00"
-      },
-      {
-         "Title":"ワクチンの「副反応」とは？　報告されている症状は？",
-         "TitleEN":"",
-         "Link":"http://www.asahi.com/articles/ASP4F02VGP4DULBJ010.html?ref=rss",
-         "Date":"2021-04-13T06:00:00+09:00"
-      },
-      {
-         "Title":"全国で新たに2109人感染　東京や大阪で前週より増加",
-         "TitleEN":"",
-         "Link":"http://www.asahi.com/articles/ASP4F0BDXP4DUTIL00N.html?ref=rss",
-         "Date":"2021-04-13T01:06:06+09:00"
-      },
-      {
-         "Title":"鹿児島・トカラ列島、3日で地震200回超　島民は警戒",
-         "TitleEN":"",
-         "Link":"http://www.asahi.com/articles/ASP4D6FGWP4DTIPE00K.html?ref=rss",
-         "Date":"2021-04-12T23:23:54+09:00"
-      },
-      {
-         "Title":"高齢者ワクチン接種、GW明けに本格化　再拡大防げるか",
-         "TitleEN":"",
-         "Link":"http://www.asahi.com/articles/ASP4D7DX5P4DUTFK00T.html?ref=rss",
-         "Date":"2021-04-12T22:58:53+09:00"
-      },
-      {
-         "Title":"＜CNET Japan＞アップル、「Apple TV」と「HomePod」を合わせた新製品を開発か",
-         "TitleEN":"",
-         "Link":"http://japan.cnet.com/article/35169231/?tag=as.rss",
-         "Date":"2021-04-13T09:21:00+09:00"
-      },
-      {
-         "Title":"少年・松山が腕磨いたゴルフ練習場　「ここから世界に」",
-         "TitleEN":"",
-         "Link":"http://www.asahi.com/articles/ASP4D7GSCP4DPTLC00M.html?ref=rss",
-         "Date":"2021-04-13T08:53:56+09:00"
-      },
-      {
-         "Title":"ダカールラリー優勝　異色社員ドライバーは「諦めない」",
-         "TitleEN":"",
-         "Link":"http://www.asahi.com/articles/ASP4D4DFNP39OIPE027.html?ref=rss",
-         "Date":"2021-04-13T07:00:00+09:00"
-      },
-      {
-         "Title":"悲願メジャーV松山の強みは　青木と尾崎のいいとこ取り",
-         "TitleEN":"",
-         "Link":"http://www.asahi.com/articles/ASP4D6VYFP4DUTQP00X.html?ref=rss",
-         "Date":"2021-04-12T21:14:20+09:00"
-      },
-      {
-         "Title":"松山英樹先輩の快挙「感動した」　明徳義塾の後輩も祝福",
-         "TitleEN":"",
-         "Link":"http://www.asahi.com/articles/ASP4D5TPJP4DPTLC018.html?ref=rss",
-         "Date":"2021-04-12T18:13:00+09:00"
-      },
-      {
-         "Title":"北海道の中2が目指すクイーン　近代五種で狙う東京五輪",
-         "TitleEN":"",
-         "Link":"http://www.asahi.com/articles/ASP4961FWP48IIPE014.html?ref=rss",
-         "Date":"2021-04-12T17:00:00+09:00"
-      },
-      {
-         "Title":"＜ZDNet Japan＞米国株の「逆指値」が可能に--「逆指値・成行売り注文」を活用、守りながら攻める",
-         "TitleEN":"",
-         "Link":"http://japan.zdnet.com/article/35169234/?tag=as.rss",
-         "Date":"2021-04-13T09:13:00+09:00"
-      },
-      {
-         "Title":"海洋放出、東電社長「丁寧に説明尽くす」　非難声明も",
-         "TitleEN":"",
-         "Link":"http://www.asahi.com/articles/ASP4F33MDP4FULFA008.html?ref=rss",
-         "Date":"2021-04-13T09:40:39+09:00"
-      },
-      {
-         "Title":"新生アイシン、「分社経営」のムダ克服へ　子会社と統合",
-         "TitleEN":"",
-         "Link":"http://www.asahi.com/articles/ASP494W07P41OIPE001.html?ref=rss",
-         "Date":"2021-04-13T07:00:00+09:00"
-      },
-      {
-         "Title":"ラブリーな英語表現にみる　したたかでしなやかな英国",
-         "TitleEN":"",
-         "Link":"http://www.asahi.com/articles/ASP4D535BP4DULFA00V.html?ref=rss",
-         "Date":"2021-04-13T07:00:00+09:00"
-      },
-      {
-         "Title":"雇い止め通告で傷ついた自負　いまさら撤回されても",
-         "TitleEN":"",
-         "Link":"http://www.asahi.com/articles/ASP3Y4PQYP3RULFA02K.html?ref=rss",
-         "Date":"2021-04-13T06:00:00+09:00"
-      },
-      {
-         "Title":"メジャーVに沸くゴルフ業界　久々の追い風、株価も上昇",
-         "TitleEN":"",
-         "Link":"http://www.asahi.com/articles/ASP4D6WZ7P4DPLFA001.html?ref=rss",
-         "Date":"2021-04-12T21:35:19+09:00"
-      },
-      {
-         "Title":"＜CNET Japan＞アドビの「源ノ角ゴシック」がバリアブルフォントに対応--ウェイトを自由に調整可能",
-         "TitleEN":"",
-         "Link":"http://japan.cnet.com/article/35169222/?tag=as.rss",
-         "Date":"2021-04-12T20:15:00+09:00"
-      },
-      {
-         "Title":"処理水の海洋放出、10～30代が抗議　「強行に怒り」",
-         "TitleEN":"",
-         "Link":"http://www.asahi.com/articles/ASP4D6RXLP4DUGTB00K.html?ref=rss",
-         "Date":"2021-04-13T10:00:00+09:00"
-      },
-      {
-         "Title":"【速報中】菅首相「海洋放出が現実的と判断」",
-         "TitleEN":"",
-         "Link":"http://www.asahi.com/articles/ASP4D7SRLP4DULFA028.html?ref=rss",
-         "Date":"2021-04-13T09:28:21+09:00"
-      },
-      {
-         "Title":"菅首相「海洋放出が現実的と判断した」　関係閣僚会議",
-         "TitleEN":"",
-         "Link":"http://www.asahi.com/articles/ASP4F327MP4FULFA005.html?ref=rss",
-         "Date":"2021-04-13T09:27:35+09:00"
-      },
-      {
-         "Title":"南箕輪村長に元地域おこし隊員が当選　首都圏出身の対決",
-         "TitleEN":"",
-         "Link":"http://www.asahi.com/articles/ASP4F2TS3P4CUOOB006.html?ref=rss",
-         "Date":"2021-04-13T09:26:57+09:00"
-      },
-      {
-         "Title":"太田市長選で現職・清水氏が当選　全国最多の通算8選",
-         "TitleEN":"",
-         "Link":"http://www.asahi.com/articles/ASP4F2TJPP4DUHNB00B.html?ref=rss",
-         "Date":"2021-04-13T09:06:53+09:00"
-      },
-      {
-         "Title":"ロシアに「深い懸念」、G7外相が声明　ウクライナ情勢",
-         "TitleEN":"",
-         "Link":"http://www.asahi.com/articles/ASP4F33HRP4FUHBI001.html?ref=rss",
-         "Date":"2021-04-13T09:56:04+09:00"
-      },
-      {
-         "Title":"英国、待ち焦がれたパブ解禁　気温3度でも屋外でビール",
-         "TitleEN":"",
-         "Link":"http://www.asahi.com/articles/ASP4F321KP4DUHBI038.html?ref=rss",
-         "Date":"2021-04-13T09:36:08+09:00"
-      },
-      {
-         "Title":"警察官の「誤射」で黒人男性死亡　米ミネソタで事件再び",
-         "TitleEN":"",
-         "Link":"http://www.asahi.com/articles/ASP4F327QP4FUHBI00B.html?ref=rss",
-         "Date":"2021-04-13T09:30:38+09:00"
-      },
-      {
-         "Title":"【写真まとめ】抗議が続くミャンマー　弾圧受けても　",
-         "TitleEN":"",
-         "Link":"http://www.asahi.com/articles/ASP3B3JZRP3BUEHF001.html?ref=rss",
-         "Date":"2021-04-13T09:26:22+09:00"
-      },
-      {
-         "Title":"海洋放出の方針決定、韓国メディアも速報　関心高く",
-         "TitleEN":"",
-         "Link":"http://www.asahi.com/articles/ASP4F31H3P4FUHBI00C.html?ref=rss",
-         "Date":"2021-04-13T09:16:46+09:00"
-      },
-      {
-         "Title":"一力遼天元、4連勝で首位堅持 囲碁名人戦リーグ",
-         "TitleEN":"",
-         "Link":"http://www.asahi.com/articles/ASP4D7XF2P4DUCVL05Z.html?ref=rss",
-         "Date":"2021-04-13T00:15:00+09:00"
-      },
-      {
-         "Title":"「国宝 鳥獣戯画のすべて」 東京・上野で13日から",
-         "TitleEN":"",
-         "Link":"http://www.asahi.com/articles/ASP4D63LYP4DUCVL02Y.html?ref=rss",
-         "Date":"2021-04-12T21:34:36+09:00"
-      },
-      {
-         "Title":"NHK聖火リレー、30秒の空白　当事者に聞いたその時",
-         "TitleEN":"",
-         "Link":"http://www.asahi.com/articles/ASP4D4TBKP49UCVL01L.html?ref=rss",
-         "Date":"2021-04-12T19:00:00+09:00"
-      },
-      {
-         "Title":"MBS局アナお勧めの1冊　原田マハから学んだ言葉の力",
-         "TitleEN":"",
-         "Link":"http://www.asahi.com/articles/ASP493RH2P45PTFC00T.html?ref=rss",
-         "Date":"2021-04-12T13:00:00+09:00"
-      },
-      {
-         "Title":"バイデン政権がインテルなどと協議　半導体の不足に対応",
-         "TitleEN":"",
-         "Link":"http://www.asahi.com/articles/ASP4F31CTP4FUHBI008.html?ref=rss",
-         "Date":"2021-04-13T09:22:31+09:00"
-      },
-      {
-         "Title":"COCOA陽性登録数、感染者の約2%　有効性に疑問も",
-         "TitleEN":"",
-         "Link":"http://www.asahi.com/articles/ASP4D62X6P4DULFA01R.html?ref=rss",
-         "Date":"2021-04-12T18:41:57+09:00"
-      },
-      {
-         "Title":"LINEの「トーク」で通信障害　送受信できない不具合",
-         "TitleEN":"",
-         "Link":"http://www.asahi.com/articles/ASP4D61VBP4DULFA01Q.html?ref=rss",
-         "Date":"2021-04-12T18:19:29+09:00"
-      },
-      {
-         "Title":"英王室「献花でなく寄付を」　フィリップ殿下死去で声明",
-         "TitleEN":"",
-         "Link":"http://www.asahi.com/articles/ASP4B24XKP4BUHBI009.html?ref=rss",
-         "Date":"2021-04-10T06:50:40+09:00"
-      },
-      {
-         "Title":"首相「衷心より哀悼の意」　英フィリップ殿下死去で書簡",
-         "TitleEN":"",
-         "Link":"http://www.asahi.com/articles/ASP4B0DN1P49UTFK02L.html?ref=rss",
-         "Date":"2021-04-10T01:34:54+09:00"
-      },
-      {
-         "Title":"宮殿の近代化進めたフィリップ殿下　歯に衣着せぬ発言も",
-         "TitleEN":"",
-         "Link":"http://www.asahi.com/articles/ASP4976YPP49UHBI02K.html?ref=rss",
-         "Date":"2021-04-09T22:22:00+09:00"
-      }
-   ],
-   "Twit":{
-      "Trends":[
-         {
-            "Trend":"#丸亀製麺さんうどん弁当食べたいです",
-            "TrendEN":"#Marugame Seimen-san I want to eat udon lunch"
-         },
-         {
-            "Trend":"ガンダム実写化",
-            "TrendEN":"Gundam live-action"
-         },
-         {
-            "Trend":"少年たち",
-            "TrendEN":"Boys"
-         },
-         {
-            "Trend":"Gセイバー",
-            "TrendEN":"G Saber"
-         },
-         {
-            "Trend":"正式決定",
-            "TrendEN":"Official decision"
-         }
-      ],
-      "Time":"2021-04-12T18:16:12.82195921-07:00"
-   },
-   "Date":"2021-04-12T18:16:13.946829589-07:00"
-}
+  "NHK": [
+    {
+      "Title": "トリチウムなど含む処理水 薄めて海洋放出の方針決定 政府",
+      "TitleEN": "Dilute treated water containing tritium and decide on policy for ocean release",
+      "Link": "http://www3.nhk.or.jp/news/html/20210413/k10012971161000.html",
+      "Date": "Tue, 13 Apr 2021 10:47:28 +0900"
+    },
+    {
+      "Title": "高齢者へのコロナワクチン接種 初日の12日は1139人が受ける",
+      "TitleEN": "Corona vaccination for the elderly 1139 people receive on the 12th of the first day",
+      "Link": "http://www3.nhk.or.jp/news/html/20210413/k10012970951000.html",
+      "Date": "Tue, 13 Apr 2021 04:30:56 +0900"
+    },
+    {
+      "Title": "アメリカで黒人男性が警察官に撃たれ死亡 各地で抗議活動も",
+      "TitleEN": "A black man was shot dead by a police officer in the United States Protests in various places",
+      "Link": "http://www3.nhk.or.jp/news/html/20210413/k10012971141000.html",
+      "Date": "Tue, 13 Apr 2021 07:16:43 +0900"
+    },
+    {
+      "Title": "台湾の防空識別圏に中国軍機延べ25機進入 台湾国防部",
+      "TitleEN": "",
+      "Link": "http://www3.nhk.or.jp/news/html/20210413/k10012971071000.html",
+      "Date": "Tue, 13 Apr 2021 09:41:23 +0900"
+    },
+    {
+      "Title": "ウクライナでのロシア軍増強に「深い懸念」 G7外相が共同声明",
+      "TitleEN": "",
+      "Link": "http://www3.nhk.or.jp/news/html/20210413/k10012971171000.html",
+      "Date": "Tue, 13 Apr 2021 10:19:33 +0900"
+    },
+    {
+      "Title": "全国的に大気不安定 落雷や突風 激しい雨に注意を 気象庁",
+      "TitleEN": "",
+      "Link": "http://www3.nhk.or.jp/news/html/20210413/k10012971051000.html",
+      "Date": "Tue, 13 Apr 2021 05:39:29 +0900"
+    },
+    {
+      "Title": "国の重要文化財「明恵上人坐像」の内部に巻物発見",
+      "TitleEN": "",
+      "Link": "http://www3.nhk.or.jp/news/html/20210413/k10012970761000.html",
+      "Date": "Tue, 13 Apr 2021 04:16:01 +0900"
+    }
+  ],
+  "Asahi": [
+    {
+      "Title": "フラワーデモ、静かに訴え　「邪魔だ」と言った男性にも",
+      "TitleEN": "Flower demo, quietly appealing to men who said \"it's in the way\"",
+      "Link": "http://www.asahi.com/articles/ASP4F3C3PP4CPXLB004.html?ref=rss",
+      "Date": "2021-04-13T10:20:29+09:00"
+    },
+    {
+      "Title": "【速報中】片岡愛之助さんがトーチキス　大阪聖火リレー",
+      "TitleEN": "[Breaking news] Ainosuke Kataoka is a torch kiss Osaka torch relay",
+      "Link": "http://www.asahi.com/articles/ASP4D75TFP4DPTIL02J.html?ref=rss",
+      "Date": "2021-04-13T10:19:07+09:00"
+    },
+    {
+      "Title": "パトカーが追跡した車、川に水没　運転席の男性が死亡",
+      "TitleEN": "A car tracked by a police car, submerged in a river, a man in the driver's seat died",
+      "Link": "http://www.asahi.com/articles/ASP4F34Y1P4DTIPE006.html?ref=rss",
+      "Date": "2021-04-13T10:11:46+09:00"
+    },
+    {
+      "Title": "1年間の学び、たたえたい　#コロナを生きる言葉集",
+      "TitleEN": "",
+      "Link": "http://www.asahi.com/articles/ASP4B552PP47UTIL04D.html?ref=rss",
+      "Date": "2021-04-13T10:00:00+09:00"
+    },
+    {
+      "Title": "履歴書から電話番号を入手しセクハラ　校長、停職2カ月",
+      "TitleEN": "",
+      "Link": "http://www.asahi.com/articles/ASP4F32VCP4DPTIL011.html?ref=rss",
+      "Date": "2021-04-13T09:57:08+09:00"
+    },
+    {
+      "Title": "庭に0歳の遺体、生きていると偽り給付金　母に猶予判決",
+      "TitleEN": "",
+      "Link": "http://www.asahi.com/articles/ASP4F31R6P4DIIPE00X.html?ref=rss",
+      "Date": "2021-04-13T09:35:31+09:00"
+    },
+    {
+      "Title": "車窓にキンコン西野さんの光る絵本　苦境の三セク打開策",
+      "TitleEN": "",
+      "Link": "http://www.asahi.com/articles/ASP475W7JP3KULUC005.html?ref=rss",
+      "Date": "2021-04-13T09:00:00+09:00"
+    },
+    {
+      "Title": "まずはくっちゃべりませんか?　核ごみ問題、動いた町民",
+      "TitleEN": "",
+      "Link": "http://www.asahi.com/articles/ASP4D6DCQP48IIPE022.html?ref=rss",
+      "Date": "2021-04-13T08:00:00+09:00"
+    },
+    {
+      "Title": "コロナ対応病院に不急の手術延期要請　大阪府、病床逼迫",
+      "TitleEN": "",
+      "Link": "http://www.asahi.com/articles/ASP4F00K5P4DPTIL029.html?ref=rss",
+      "Date": "2021-04-13T06:00:00+09:00"
+    },
+    {
+      "Title": "ワクチンの「副反応」とは？　報告されている症状は？",
+      "TitleEN": "",
+      "Link": "http://www.asahi.com/articles/ASP4F02VGP4DULBJ010.html?ref=rss",
+      "Date": "2021-04-13T06:00:00+09:00"
+    },
+    {
+      "Title": "＜CNET Japan＞マイクロソフト、AIと音声認識のニュアンスを2兆円超で買収へ",
+      "TitleEN": "",
+      "Link": "http://japan.cnet.com/article/35169235/?tag=as.rss",
+      "Date": "2021-04-13T10:04:00+09:00"
+    },
+    {
+      "Title": "少年・松山が腕磨いたゴルフ練習場　「ここから世界に」",
+      "TitleEN": "",
+      "Link": "http://www.asahi.com/articles/ASP4D7GSCP4DPTLC00M.html?ref=rss",
+      "Date": "2021-04-13T08:53:56+09:00"
+    },
+    {
+      "Title": "ダカールラリー優勝　異色社員ドライバーは「諦めない」",
+      "TitleEN": "",
+      "Link": "http://www.asahi.com/articles/ASP4D4DFNP39OIPE027.html?ref=rss",
+      "Date": "2021-04-13T07:00:00+09:00"
+    },
+    {
+      "Title": "悲願メジャーV松山の強みは　青木と尾崎のいいとこ取り",
+      "TitleEN": "",
+      "Link": "http://www.asahi.com/articles/ASP4D6VYFP4DUTQP00X.html?ref=rss",
+      "Date": "2021-04-12T21:14:20+09:00"
+    },
+    {
+      "Title": "松山英樹先輩の快挙「感動した」　明徳義塾の後輩も祝福",
+      "TitleEN": "",
+      "Link": "http://www.asahi.com/articles/ASP4D5TPJP4DPTLC018.html?ref=rss",
+      "Date": "2021-04-12T18:13:00+09:00"
+    },
+    {
+      "Title": "北海道の中2が目指すクイーン　近代五種で狙う東京五輪",
+      "TitleEN": "",
+      "Link": "http://www.asahi.com/articles/ASP4961FWP48IIPE014.html?ref=rss",
+      "Date": "2021-04-12T17:00:00+09:00"
+    },
+    {
+      "Title": "＜ZDNet Japan＞米国株の「逆指値」が可能に--「逆指値・成行売り注文」を活用、守りながら攻める",
+      "TitleEN": "",
+      "Link": "http://japan.zdnet.com/article/35169234/?tag=as.rss",
+      "Date": "2021-04-13T09:13:00+09:00"
+    },
+    {
+      "Title": "海洋放出、東電社長「丁寧に説明尽くす」　非難声明も",
+      "TitleEN": "",
+      "Link": "http://www.asahi.com/articles/ASP4F33MDP4FULFA008.html?ref=rss",
+      "Date": "2021-04-13T09:40:39+09:00"
+    },
+    {
+      "Title": "新生アイシン、「分社経営」のムダ克服へ　子会社と統合",
+      "TitleEN": "",
+      "Link": "http://www.asahi.com/articles/ASP494W07P41OIPE001.html?ref=rss",
+      "Date": "2021-04-13T07:00:00+09:00"
+    },
+    {
+      "Title": "ラブリーな英語表現にみる　したたかでしなやかな英国",
+      "TitleEN": "",
+      "Link": "http://www.asahi.com/articles/ASP4D535BP4DULFA00V.html?ref=rss",
+      "Date": "2021-04-13T07:00:00+09:00"
+    },
+    {
+      "Title": "雇い止め通告で傷ついた自負　いまさら撤回されても",
+      "TitleEN": "",
+      "Link": "http://www.asahi.com/articles/ASP3Y4PQYP3RULFA02K.html?ref=rss",
+      "Date": "2021-04-13T06:00:00+09:00"
+    },
+    {
+      "Title": "メジャーVに沸くゴルフ業界　久々の追い風、株価も上昇",
+      "TitleEN": "",
+      "Link": "http://www.asahi.com/articles/ASP4D6WZ7P4DPLFA001.html?ref=rss",
+      "Date": "2021-04-12T21:35:19+09:00"
+    },
+    {
+      "Title": "＜CNET Japan＞アップル、「Apple TV」と「HomePod」を合わせた新製品を開発か",
+      "TitleEN": "",
+      "Link": "http://japan.cnet.com/article/35169231/?tag=as.rss",
+      "Date": "2021-04-13T09:21:00+09:00"
+    },
+    {
+      "Title": "【速報中】全漁連会長「漁業者の思い踏みにじる」",
+      "TitleEN": "",
+      "Link": "http://www.asahi.com/articles/ASP4D7SRLP4DULFA028.html?ref=rss",
+      "Date": "2021-04-13T10:21:37+09:00"
+    },
+    {
+      "Title": "千葉市、今年も待機児童「ゼロ」　でも入所待ち491人",
+      "TitleEN": "",
+      "Link": "http://www.asahi.com/articles/ASP4D6WR5P48UDCB01K.html?ref=rss",
+      "Date": "2021-04-13T10:03:55+09:00"
+    },
+    {
+      "Title": "処理水の海洋放出、10～30代が抗議　「強行に怒り」",
+      "TitleEN": "",
+      "Link": "http://www.asahi.com/articles/ASP4D6RXLP4DUGTB00K.html?ref=rss",
+      "Date": "2021-04-13T10:00:00+09:00"
+    },
+    {
+      "Title": "菅首相「海洋放出が現実的と判断した」　関係閣僚会議",
+      "TitleEN": "",
+      "Link": "http://www.asahi.com/articles/ASP4F327MP4FULFA005.html?ref=rss",
+      "Date": "2021-04-13T09:27:35+09:00"
+    },
+    {
+      "Title": "南箕輪村長に元地域おこし隊員が当選　首都圏出身の対決",
+      "TitleEN": "",
+      "Link": "http://www.asahi.com/articles/ASP4F2TS3P4CUOOB006.html?ref=rss",
+      "Date": "2021-04-13T09:26:57+09:00"
+    },
+    {
+      "Title": "ロシアに「深い懸念」、G7外相が声明　ウクライナ情勢",
+      "TitleEN": "",
+      "Link": "http://www.asahi.com/articles/ASP4F33HRP4FUHBI001.html?ref=rss",
+      "Date": "2021-04-13T09:56:04+09:00"
+    },
+    {
+      "Title": "英国、待ち焦がれたパブ解禁　気温3度でも屋外でビール",
+      "TitleEN": "",
+      "Link": "http://www.asahi.com/articles/ASP4F321KP4DUHBI038.html?ref=rss",
+      "Date": "2021-04-13T09:36:08+09:00"
+    },
+    {
+      "Title": "警察官の「誤射」で黒人男性死亡　米ミネソタで事件再び",
+      "TitleEN": "",
+      "Link": "http://www.asahi.com/articles/ASP4F327QP4FUHBI00B.html?ref=rss",
+      "Date": "2021-04-13T09:30:38+09:00"
+    },
+    {
+      "Title": "【写真まとめ】抗議が続くミャンマー　弾圧受けても　",
+      "TitleEN": "",
+      "Link": "http://www.asahi.com/articles/ASP3B3JZRP3BUEHF001.html?ref=rss",
+      "Date": "2021-04-13T09:26:22+09:00"
+    },
+    {
+      "Title": "海洋放出の方針決定、韓国メディアも速報　関心高く",
+      "TitleEN": "",
+      "Link": "http://www.asahi.com/articles/ASP4F31H3P4FUHBI00C.html?ref=rss",
+      "Date": "2021-04-13T09:16:46+09:00"
+    },
+    {
+      "Title": "一力遼天元、4連勝で首位堅持 囲碁名人戦リーグ",
+      "TitleEN": "",
+      "Link": "http://www.asahi.com/articles/ASP4D7XF2P4DUCVL05Z.html?ref=rss",
+      "Date": "2021-04-13T00:15:00+09:00"
+    },
+    {
+      "Title": "「国宝 鳥獣戯画のすべて」 東京・上野で13日から",
+      "TitleEN": "",
+      "Link": "http://www.asahi.com/articles/ASP4D63LYP4DUCVL02Y.html?ref=rss",
+      "Date": "2021-04-12T21:34:36+09:00"
+    },
+    {
+      "Title": "NHK聖火リレー、30秒の空白　当事者に聞いたその時",
+      "TitleEN": "",
+      "Link": "http://www.asahi.com/articles/ASP4D4TBKP49UCVL01L.html?ref=rss",
+      "Date": "2021-04-12T19:00:00+09:00"
+    },
+    {
+      "Title": "MBS局アナお勧めの1冊　原田マハから学んだ言葉の力",
+      "TitleEN": "",
+      "Link": "http://www.asahi.com/articles/ASP493RH2P45PTFC00T.html?ref=rss",
+      "Date": "2021-04-12T13:00:00+09:00"
+    },
+    {
+      "Title": "アリババ締め付ける中国　今度はアリペイ運営が組織再編",
+      "TitleEN": "",
+      "Link": "http://www.asahi.com/articles/ASP4F3C2VP4DULFA02K.html?ref=rss",
+      "Date": "2021-04-13T10:16:48+09:00"
+    },
+    {
+      "Title": "バイデン政権がインテルなどと協議　半導体の不足に対応",
+      "TitleEN": "",
+      "Link": "http://www.asahi.com/articles/ASP4F31CTP4FUHBI008.html?ref=rss",
+      "Date": "2021-04-13T09:22:31+09:00"
+    },
+    {
+      "Title": "COCOA陽性登録数、感染者の約2%　有効性に疑問も",
+      "TitleEN": "",
+      "Link": "http://www.asahi.com/articles/ASP4D62X6P4DULFA01R.html?ref=rss",
+      "Date": "2021-04-12T18:41:57+09:00"
+    },
+    {
+      "Title": "英王室「献花でなく寄付を」　フィリップ殿下死去で声明",
+      "TitleEN": "",
+      "Link": "http://www.asahi.com/articles/ASP4B24XKP4BUHBI009.html?ref=rss",
+      "Date": "2021-04-10T06:50:40+09:00"
+    },
+    {
+      "Title": "首相「衷心より哀悼の意」　英フィリップ殿下死去で書簡",
+      "TitleEN": "",
+      "Link": "http://www.asahi.com/articles/ASP4B0DN1P49UTFK02L.html?ref=rss",
+      "Date": "2021-04-10T01:34:54+09:00"
+    },
+    {
+      "Title": "宮殿の近代化進めたフィリップ殿下　歯に衣着せぬ発言も",
+      "TitleEN": "",
+      "Link": "http://www.asahi.com/articles/ASP4976YPP49UHBI02K.html?ref=rss",
+      "Date": "2021-04-09T22:22:00+09:00"
+    }
+  ],
+  "Twit": [
+    {
+      "Trend": "#丸亀製麺さんうどん弁当食べたいです",
+      "TrendEN": "#Marugame Seimen-san I want to eat udon lunch"
+    },
+    {
+      "Trend": "ガンダム実写化",
+      "TrendEN": "Gundam live-action"
+    },
+    {
+      "Trend": "Gセイバー",
+      "TrendEN": "G Saber"
+    },
+    {
+      "Trend": "少年たち",
+      "TrendEN": "Boys"
+    },
+    {
+      "Trend": "モルカー15話",
+      "TrendEN": "Molcar Episode 15"
+    }
+  ],
+  "Date": "2021-04-12T18:51:48.608125343-07:00",
+  "ID": 1
+})
