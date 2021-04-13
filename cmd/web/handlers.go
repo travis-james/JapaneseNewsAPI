@@ -13,6 +13,12 @@ import (
 	"go.mongodb.org/mongo-driver/mongo/options"
 )
 
+var (
+	asahiURL = "http://www.asahi.com/rss/asahi/newsheadlines.rdf"
+	nhkURL   = "https://www.nhk.or.jp/rss/news/cat0.xml"
+	client   *mongo.Client
+)
+
 func (app *application) home(w http.ResponseWriter, r *http.Request) {
 	info := []byte(`Welcome to JapaneseNewsAPI.\n
 	updatenews => update the database with the latest news.\n
@@ -66,7 +72,7 @@ func (app *application) updatenews(w http.ResponseWriter, r *http.Request) {
 	// }
 
 	date := time.Now().Format("2006-01-02")
-	todaysnews := News{
+	todaysnews := mynews.News{
 		NHK:   n.XMLCh.Items,
 		Asahi: a.Items,
 		Twit:  c,
