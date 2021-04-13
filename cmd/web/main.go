@@ -2,8 +2,10 @@ package main
 
 import (
 	"context"
+	"flag"
 	"fmt"
 	"log"
+	"net/http"
 	"time"
 
 	"github.com/travis-james/JapaneseNewsAPI/mytwitter"
@@ -26,8 +28,14 @@ var (
 	client   *mongo.Client
 )
 
-// For NHK.
 func main() {
+	addr := flag.String("addr", ":4000", "HTTP network address")
+	srv := &http.Server{
+		Addr:     *addr,
+		ErrorLog: errorLog,
+		Handler:  app.routes(),
+	}
+
 	// Get NHK.
 	n := &readfeeds.NHK{}
 	err := readfeeds.SetFeed(n, nhkURL)
