@@ -8,6 +8,7 @@ import (
 	"net/http"
 	"time"
 
+	"github.com/travis-james/JapaneseNewsAPI/pkg/mymongo"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
 )
@@ -16,8 +17,8 @@ import (
 // by using this, my handlers could have access to using
 //  logs I declare in main. As of now it's just for DB.
 type application struct {
-	client *mongo.Client
-	ctx    context.Context
+	news *mymongo.NewsModel
+	ctx  context.Context
 }
 
 func main() {
