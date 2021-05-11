@@ -13,9 +13,7 @@ import (
 	"go.mongodb.org/mongo-driver/mongo/options"
 )
 
-// application struct allows dependency injection. For example,
-// by using this, my handlers could have access to using
-//  logs I declare in main. As of now it's just for DB.
+// application struct allows dependency injection.
 type application struct {
 	news *mymongo.NewsModel
 	ctx  context.Context
@@ -35,8 +33,8 @@ func main() {
 	}
 
 	app := &application{
-		client: dbc,
-		ctx:    c,
+		news: &mymongo.NewsModel{DB: dbc},
+		ctx:  c,
 	}
 
 	srv := &http.Server{

@@ -1,4 +1,4 @@
-package mymongo_test
+package mymongo
 
 import (
 	"context"

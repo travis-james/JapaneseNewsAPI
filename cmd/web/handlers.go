@@ -4,11 +4,9 @@ import (
 	"fmt"
 	"log"
 	"net/http"
-	"time"
 
 	"github.com/travis-james/JapaneseNewsAPI/mynews"
 	"github.com/travis-james/JapaneseNewsAPI/mytwitter"
-	"github.com/travis-james/JapaneseNewsAPI/pkg/models"
 )
 
 var (
@@ -72,15 +70,15 @@ func (app *application) updatenews(w http.ResponseWriter, r *http.Request) {
 	// 	fmt.Println(trend)
 	// }
 
-	date := time.Now().Format("2006-01-02")
-	todaysnews := models.News{
-		NHK:   n.XMLCh.Items,
-		Asahi: a.Items,
-		Twit:  c,
-		Date:  date,
-		ID:    id,
-	}
-	id++
+	// date := time.Now().Format("2006-01-02")
+	// todaysnews := models.News{
+	// 	NHK:   n.XMLCh.Items,
+	// 	Asahi: a.Items,
+	// 	Twit:  c,
+	// 	Date:  date,
+	// 	ID:    id,
+	// }
+	// id++
 	//fmt.Println(todaysnews)
 
 	// JSON?
@@ -91,13 +89,11 @@ func (app *application) updatenews(w http.ResponseWriter, r *http.Request) {
 	// fmt.Println(string(jnews))
 
 	// For DB.
-	collection := app.client.Database("jpnews").Collection("day")
-	//ctx, _ := context.WithTimeout(context.Background(), 5*time.Second)
-	result, err := collection.InsertOne(app.ctx, todaysnews)
+	_, err = app.news.Insert(*n, *a, c)
 	if err != nil {
 		log.Fatal(err)
 	}
-	fmt.Println(result)
+	fmt.Println("Success")
 }
 
 func (app *application) getnews(w http.ResponseWriter, r *http.Request) {
