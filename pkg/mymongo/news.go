@@ -33,5 +33,6 @@ func (nm *NewsModel) Insert(n mynews.NHK, a mynews.Asahi, t []mytwitter.TTrend) 
 	if err != nil {
 		return nil, err
 	}
+	id++
 	return result, nil
 }
