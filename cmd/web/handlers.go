@@ -1,7 +1,6 @@
 package main
 
 import (
-	"context"
 	"fmt"
 	"log"
 	"net/http"
@@ -9,20 +8,21 @@ import (
 
 	"github.com/travis-james/JapaneseNewsAPI/mynews"
 	"github.com/travis-james/JapaneseNewsAPI/mytwitter"
-	"go.mongodb.org/mongo-driver/mongo"
-	"go.mongodb.org/mongo-driver/mongo/options"
 )
 
 var (
 	asahiURL = "http://www.asahi.com/rss/asahi/newsheadlines.rdf"
 	nhkURL   = "https://www.nhk.or.jp/rss/news/cat0.xml"
-	client   *mongo.Client
+	id       = 0
 )
 
 func (app *application) home(w http.ResponseWriter, r *http.Request) {
-	info := []byte(`Welcome to JapaneseNewsAPI.\n
-	updatenews => update the database with the latest news.\n
-	/getnews => get news for that given date.`)
+	info := []byte(`Welcome to JapaneseNewsAPI. This is a web api that stores the headlines 
+from the RSS feeds of NHK and Asahi news, as well as what was trending on
+Twitter in Japan at that time.
+
+/updatenews 'POST' => update the database with the latest news.
+/getnews 'GET' => get news for that given date. Response is JSON.`)
 	w.Write(info)
 }
 
@@ -77,8 +77,9 @@ func (app *application) updatenews(w http.ResponseWriter, r *http.Request) {
 		Asahi: a.Items,
 		Twit:  c,
 		Date:  date,
-		ID:    2,
+		ID:    id,
 	}
+	id++
 	//fmt.Println(todaysnews)
 
 	// JSON?
@@ -89,16 +90,9 @@ func (app *application) updatenews(w http.ResponseWriter, r *http.Request) {
 	// fmt.Println(string(jnews))
 
 	// For DB.
-	ctx, _ := context.WithTimeout(context.Background(), 10*time.Second)
-	clientOptions := options.Client().ApplyURI("mongodb://localhost:27017")
-	client, err = mongo.Connect(ctx, clientOptions)
-	if err != nil {
-		log.Fatal(err)
-	}
-
-	collection := client.Database("jpnews").Collection("day")
+	collection := app.client.Database("jpnews").Collection("day")
 	//ctx, _ := context.WithTimeout(context.Background(), 5*time.Second)
-	result, err := collection.InsertOne(ctx, todaysnews)
+	result, err := collection.InsertOne(app.ctx, todaysnews)
 	if err != nil {
 		log.Fatal(err)
 	}
