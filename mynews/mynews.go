@@ -8,16 +8,7 @@ import (
 	"time"
 
 	"github.com/travis-james/JapaneseNewsAPI/mytranslate"
-	"github.com/travis-james/JapaneseNewsAPI/mytwitter"
 )
-
-type News struct {
-	NHK   []NHKItem
-	Asahi []AsahiItem
-	Twit  []mytwitter.TTrend
-	Date  string
-	ID    int
-}
 
 // NHK is the top level struct of reading the NHK RSS feed.
 // XMLCh contains the point of interest, NHKChannel struct.

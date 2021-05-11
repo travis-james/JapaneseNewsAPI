@@ -8,6 +8,7 @@ import (
 
 	"github.com/travis-james/JapaneseNewsAPI/mynews"
 	"github.com/travis-james/JapaneseNewsAPI/mytwitter"
+	"github.com/travis-james/JapaneseNewsAPI/pkg/models"
 )
 
 var (
@@ -72,7 +73,7 @@ func (app *application) updatenews(w http.ResponseWriter, r *http.Request) {
 	// }
 
 	date := time.Now().Format("2006-01-02")
-	todaysnews := mynews.News{
+	todaysnews := models.News{
 		NHK:   n.XMLCh.Items,
 		Asahi: a.Items,
 		Twit:  c,
