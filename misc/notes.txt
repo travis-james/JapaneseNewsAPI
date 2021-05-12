@@ -25,7 +25,7 @@ https://www.thepolyglotdeveloper.com/2019/01/getting-started-mongodb-docker-cont
 Runs in detached mode (in the background)
 We are also mapping the container ports with host ports so that way we can access the database from a host level application if we wanted to.
 3.) To interact with it:
-docker exec -it mongodb bash
+docker exec -it test_db bash
 4.) Now that you're in the container, crack open the mongodb shell:
 mongo
 use jpnews

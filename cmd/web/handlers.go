@@ -1,10 +1,13 @@
 package main
 
 import (
+	"encoding/json"
+	"errors"
 	"fmt"
 	"log"
 	"net/http"
 
+	"github.com/gorilla/mux"
 	"github.com/travis-james/JapaneseNewsAPI/mynews"
 	"github.com/travis-james/JapaneseNewsAPI/mytwitter"
 )
@@ -21,7 +24,7 @@ from the RSS feeds of NHK and Asahi news, as well as what was trending on
 Twitter in Japan at that time.
 
 /updatenews 'POST' => update the database with the latest news.
-/getnews 'GET' => get news for that given date. Response is JSON.`)
+/date/{1999-12-31} 'GET' => get news for that given date. Response is JSON.`)
 	w.Write(info)
 }
 
@@ -97,5 +100,19 @@ func (app *application) updatenews(w http.ResponseWriter, r *http.Request) {
 }
 
 func (app *application) getnews(w http.ResponseWriter, r *http.Request) {
-	w.Write([]byte("Hello from getnews"))
+	w.Header().Set("content-type", "application/json")
+
+	vars := mux.Vars(r)
+	d, exists := vars["date"]
+	if exists == false {
+		http.Error(w, errors.New("getnews: bad date").Error(), http.StatusBadRequest)
+		return
+	}
+	// Find in db.
+	urnews, err := app.news.Get(d)
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusBadRequest)
+		return
+	}
+	json.NewEncoder(w).Encode(urnews)
 }

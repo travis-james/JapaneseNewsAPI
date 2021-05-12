@@ -2,6 +2,7 @@ package mymongo
 
 import (
 	"context"
+	"fmt"
 	"time"
 
 	"github.com/travis-james/JapaneseNewsAPI/mynews"
@@ -17,6 +18,7 @@ type NewsModel struct {
 
 var id = 0
 
+// Insert is a DB function that will insert a News struct into the db.
 func (nm *NewsModel) Insert(n mynews.NHK, a mynews.Asahi, t []mytwitter.TTrend) (*mongo.InsertOneResult, error) {
 	date := time.Now().Format("2006-01-02")
 	todaysnews := models.News{
@@ -35,4 +37,18 @@ func (nm *NewsModel) Insert(n mynews.NHK, a mynews.Asahi, t []mytwitter.TTrend) 
 	}
 	id++
 	return result, nil
+}
+
+// Get returns a
+func (nm *NewsModel) Get(date string) (*models.News, error) {
+	retval := &models.News{}
+	fmt.Println(date) // For debugging
+	collection := nm.DB.Database("jpnews").Collection("day")
+	ctx, _ := context.WithTimeout(context.Background(), 5*time.Second)
+	err := collection.FindOne(ctx, models.News{Date: date}).Decode(&retval)
+	fmt.Println(retval)
+	if err != nil {
+		return nil, err
+	}
+	return retval, nil
 }
