@@ -8,6 +8,7 @@ import (
 	"github.com/travis-james/JapaneseNewsAPI/mynews"
 	"github.com/travis-james/JapaneseNewsAPI/mytwitter"
 	"github.com/travis-james/JapaneseNewsAPI/pkg/models"
+	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo"
 )
 
@@ -45,7 +46,7 @@ func (nm *NewsModel) Get(date string) (*models.News, error) {
 	fmt.Println(date) // For debugging
 	collection := nm.DB.Database("jpnews").Collection("day")
 	ctx, _ := context.WithTimeout(context.Background(), 5*time.Second)
-	err := collection.FindOne(ctx, models.News{Date: date}).Decode(&retval)
+	err := collection.FindOne(ctx, bson.M{"date": date}).Decode(&retval)
 	fmt.Println(retval)
 	if err != nil {
 		return nil, err

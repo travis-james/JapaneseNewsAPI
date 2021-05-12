@@ -115,4 +115,5 @@ func (app *application) getnews(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	json.NewEncoder(w).Encode(urnews)
+	return
 }
