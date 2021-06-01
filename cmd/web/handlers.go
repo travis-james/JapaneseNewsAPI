@@ -24,7 +24,7 @@ from the RSS feeds of NHK and Asahi news, as well as what was trending on
 Twitter in Japan at that time.
 
 /updatenews 'POST' => update the database with the latest news.
-/date/{1999-12-31} 'GET' => get news for that given date. Response is JSON.`)
+/date/1999-12-31 'GET' => get news for that given date. Response is JSON.`)
 	w.Write(info)
 }
 

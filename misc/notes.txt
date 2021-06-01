@@ -33,7 +33,7 @@ db.day.save(the struct)
 db.day.find({ "id": 1 })
 db.day.find({"date": "2021-05-11"})
 --- Asahi vs NHK
-They're Item structs are the same except what the date is labeled in xml. This causes a lot of redundant code, is there a way
+Their Item structs are the same except what the date is labeled in xml. This causes a lot of redundant code, is there a way
 around this....
 
 === curl
