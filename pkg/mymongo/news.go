@@ -2,7 +2,6 @@ package mymongo
 
 import (
 	"context"
-	"fmt"
 	"time"
 
 	"github.com/travis-james/JapaneseNewsAPI/mynews"
@@ -39,11 +38,9 @@ func (nm *NewsModel) Insert(n mynews.NHK, a mynews.Asahi, t []mytwitter.TTrend) 
 // Get returns a
 func (nm *NewsModel) Get(date string) (*models.News, error) {
 	retval := &models.News{}
-	fmt.Println(date) // For debugging
 	collection := nm.DB.Database("jpnews").Collection("day")
 	ctx, _ := context.WithTimeout(context.Background(), 5*time.Second)
 	err := collection.FindOne(ctx, bson.M{"date": date}).Decode(&retval)
-	fmt.Println(retval)
 	if err != nil {
 		return nil, err
 	}

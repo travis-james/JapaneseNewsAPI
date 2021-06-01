@@ -1,6 +1,7 @@
 These are notes for my own benefit. 
 ---- TODO
 1. Get app working locally.
+1.5 Change characters a day to 2,000 daily.
 2. Get app working on cloud.
 
 --- Some RSS Feeds
@@ -34,4 +35,4 @@ Their Item structs are the same except what the date is labeled in xml. This cau
 around this....
 
 === curl
-curl -X POST http://localhost:4000/update
+curl -X POST http://localhost:4000/updatenews

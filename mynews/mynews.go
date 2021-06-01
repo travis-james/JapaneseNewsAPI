@@ -50,7 +50,7 @@ type AsahiItem struct {
 func SetFeed(feed interface{}, url string) error {
 	// First fetch the RSS feed.
 	resp, err := fetchRSS(url)
-	//resp, err := ioutil.ReadFile("ex.rdf")
+	//resp, err := ioutil.ReadFile("ex.rdf") for debugging.
 	if err != nil {
 		return err
 	}
@@ -60,12 +60,6 @@ func SetFeed(feed interface{}, url string) error {
 	if err != nil {
 		return err
 	}
-
-	// Now turn the struct's items into a json []byte.
-	// article, err := json.Marshal(feed.XMLCh.Items)
-	// if err != nil {
-	// 	return "", err
-	// }
 	return nil
 }
 
@@ -92,9 +86,6 @@ func fetchRSS(url string) ([]byte, error) {
 
 func TranslateTitle(n []NHKItem, a []AsahiItem) {
 	for i, item := range n {
-		if i == 3 {
-			break
-		}
 		var err error
 		n[i].TitleEN, err = mytranslate.TranslateJP(item.Title)
 		if err != nil {
@@ -103,9 +94,6 @@ func TranslateTitle(n []NHKItem, a []AsahiItem) {
 	}
 
 	for i, item := range a {
-		if i == 3 {
-			break
-		}
 		var err error
 		a[i].TitleEN, err = mytranslate.TranslateJP(item.Title)
 		if err != nil {

@@ -23,17 +23,19 @@ from the RSS feeds of NHK and Asahi news, as well as what was trending on
 Twitter in Japan at that time.
 
 /updatenews 'POST' => update the database with the latest news.
-/date/1999-12-31 'GET' => get news for that given date. Response is JSON.`)
+/getnews/1999-12-31 'GET' => get news for that given date. Response is JSON.`)
 	w.Write(info)
 }
 
 func (app *application) insertNews(w http.ResponseWriter, r *http.Request) {
+	// First check that the date isn't already in the database.
 	todaysDate := time.Now().Format("2006-01-02")
-	if prevDate == todaysDate {
-		w.Write([]byte("Today's date already exists in the database, no action taken."))
+	retval, _ := app.news.Get(todaysDate)
+	if retval != nil {
+		msg := todaysDate + " already exists in the database, no action taken."
+		w.Write([]byte(msg))
 		return
 	}
-	prevDate = todaysDate
 
 	// Get NHK.
 	n := &mynews.NHK{}
@@ -42,9 +44,6 @@ func (app *application) insertNews(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 		return
 	}
-	// for _, item := range n.XMLCh.Items {
-	// 	fmt.Println(item)
-	// }
 
 	// Get Asahi.
 	a := &mynews.Asahi{}
@@ -53,24 +52,9 @@ func (app *application) insertNews(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 		return
 	}
-	// for _, item := range a.Items {
-	// 	fmt.Println(item)
-	// }
 
 	// Translate Asahi & NHK.
 	mynews.TranslateTitle(n.XMLCh.Items, a.Items)
-	// for i, item := range a.Items {
-	// 	if i == 5 {
-	// 		break
-	// 	}
-	// 	fmt.Println(item)
-	// }
-	// for i, item := range n.XMLCh.Items {
-	// 	if i == 5 {
-	// 		break
-	// 	}
-	// 	fmt.Println(item)
-	// }
 
 	// Get twitter trends.
 	c, err := mytwitter.GetTrends()
@@ -78,27 +62,6 @@ func (app *application) insertNews(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 		return
 	}
-	// for _, trend := range c.Trends {
-	// 	fmt.Println(trend)
-	// }
-
-	// date := time.Now().Format("2006-01-02")
-	// todaysnews := models.News{
-	// 	NHK:   n.XMLCh.Items,
-	// 	Asahi: a.Items,
-	// 	Twit:  c,
-	// 	Date:  date,
-	// 	ID:    id,
-	// }
-	// id++
-	//fmt.Println(todaysnews)
-
-	// JSON?
-	// jnews, err := json.Marshal(todaysnews)
-	// if err != nil {
-	// 	log.Fatal(err)
-	// }
-	// fmt.Println(string(jnews))
 
 	// For DB.
 	_, err = app.news.Insert(*n, *a, c)
@@ -106,7 +69,8 @@ func (app *application) insertNews(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 		return
 	}
-	w.Write([]byte("Succesfully inserted today's news."))
+	msg := "Succesfully inserted the news of the following date: " + todaysDate
+	w.Write([]byte(msg))
 }
 
 func (app *application) getNews(w http.ResponseWriter, r *http.Request) {
