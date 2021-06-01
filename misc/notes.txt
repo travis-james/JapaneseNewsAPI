@@ -1,10 +1,7 @@
 These are notes for my own benefit. 
 ---- TODO
-1. Get translate working. - DONE
-2. Make twitter struct - DONE
-2.5 Create a news struct that will house everything - DONE
-3. DB
-4. Set up web routes
+1. Get app working locally.
+2. Get app working on cloud.
 
 --- Some RSS Feeds
 Asahi - http://www.asahi.com/rss/asahi/newsheadlines.rdf
