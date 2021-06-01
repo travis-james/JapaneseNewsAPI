@@ -17,8 +17,6 @@ type NewsModel struct {
 	DB *mongo.Client
 }
 
-var id = 0
-
 // Insert is a DB function that will insert a News struct into the db.
 func (nm *NewsModel) Insert(n mynews.NHK, a mynews.Asahi, t []mytwitter.TTrend) (*mongo.InsertOneResult, error) {
 	date := time.Now().Format("2006-01-02")
@@ -27,7 +25,6 @@ func (nm *NewsModel) Insert(n mynews.NHK, a mynews.Asahi, t []mytwitter.TTrend) 
 		Asahi: a.Items,
 		Twit:  t,
 		Date:  date,
-		ID:    id,
 	}
 
 	collection := nm.DB.Database("jpnews").Collection("day")
@@ -36,7 +33,6 @@ func (nm *NewsModel) Insert(n mynews.NHK, a mynews.Asahi, t []mytwitter.TTrend) 
 	if err != nil {
 		return nil, err
 	}
-	id++
 	return result, nil
 }
 

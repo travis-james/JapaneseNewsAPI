@@ -3,9 +3,8 @@ package main
 import (
 	"encoding/json"
 	"errors"
-	"fmt"
-	"log"
 	"net/http"
+	"time"
 
 	"github.com/gorilla/mux"
 	"github.com/travis-james/JapaneseNewsAPI/mynews"
@@ -15,7 +14,7 @@ import (
 var (
 	asahiURL = "http://www.asahi.com/rss/asahi/newsheadlines.rdf"
 	nhkURL   = "https://www.nhk.or.jp/rss/news/cat0.xml"
-	id       = 0
+	prevDate = ""
 )
 
 func (app *application) home(w http.ResponseWriter, r *http.Request) {
@@ -28,12 +27,20 @@ Twitter in Japan at that time.
 	w.Write(info)
 }
 
-func (app *application) updatenews(w http.ResponseWriter, r *http.Request) {
+func (app *application) insertNews(w http.ResponseWriter, r *http.Request) {
+	todaysDate := time.Now().Format("2006-01-02")
+	if prevDate == todaysDate {
+		w.Write([]byte("Today's date already exists in the database, no action taken."))
+		return
+	}
+	prevDate = todaysDate
+
 	// Get NHK.
 	n := &mynews.NHK{}
 	err := mynews.SetFeed(n, nhkURL)
 	if err != nil {
-		log.Fatalf("%v\n", err)
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
 	}
 	// for _, item := range n.XMLCh.Items {
 	// 	fmt.Println(item)
@@ -43,7 +50,8 @@ func (app *application) updatenews(w http.ResponseWriter, r *http.Request) {
 	a := &mynews.Asahi{}
 	err = mynews.SetFeed(a, asahiURL)
 	if err != nil {
-		log.Fatalf("%v\n", err)
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
 	}
 	// for _, item := range a.Items {
 	// 	fmt.Println(item)
@@ -67,7 +75,8 @@ func (app *application) updatenews(w http.ResponseWriter, r *http.Request) {
 	// Get twitter trends.
 	c, err := mytwitter.GetTrends()
 	if err != nil {
-		log.Fatalln(err)
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
 	}
 	// for _, trend := range c.Trends {
 	// 	fmt.Println(trend)
@@ -94,12 +103,13 @@ func (app *application) updatenews(w http.ResponseWriter, r *http.Request) {
 	// For DB.
 	_, err = app.news.Insert(*n, *a, c)
 	if err != nil {
-		log.Fatal(err)
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
 	}
-	fmt.Println("Success")
+	w.Write([]byte("Succesfully inserted today's news."))
 }
 
-func (app *application) getnews(w http.ResponseWriter, r *http.Request) {
+func (app *application) getNews(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("content-type", "application/json")
 
 	vars := mux.Vars(r)
@@ -111,7 +121,7 @@ func (app *application) getnews(w http.ResponseWriter, r *http.Request) {
 	// Find in db.
 	urnews, err := app.news.Get(d)
 	if err != nil {
-		http.Error(w, err.Error(), http.StatusBadRequest)
+		http.Error(w, err.Error(), http.StatusInternalServerError)
 		return
 	}
 	json.NewEncoder(w).Encode(urnews)
