@@ -17,6 +17,7 @@ var (
 	prevDate = ""
 )
 
+// home (GET) just writes a small welcome message explaining what the api does.
 func (app *application) home(w http.ResponseWriter, r *http.Request) {
 	info := []byte(`Welcome to JapaneseNewsAPI. This is a web api that stores the headlines 
 from the RSS feeds of NHK and Asahi news, as well as what was trending on
@@ -27,6 +28,8 @@ Twitter in Japan at that time.
 	w.Write(info)
 }
 
+// insertNews (POST) will get the latest news/trends and store it in the database,
+//  if it isn't already in the database.
 func (app *application) insertNews(w http.ResponseWriter, r *http.Request) {
 	// First check that the date isn't already in the database.
 	todaysDate := time.Now().Format("2006-01-02")
@@ -73,6 +76,8 @@ func (app *application) insertNews(w http.ResponseWriter, r *http.Request) {
 	w.Write([]byte(msg))
 }
 
+// getNews (GET) retrieves a news struct based on date (if it exists) and returns
+// a JSON object.
 func (app *application) getNews(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("content-type", "application/json")
 

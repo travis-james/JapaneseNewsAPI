@@ -84,6 +84,8 @@ func fetchRSS(url string) ([]byte, error) {
 	return body, nil
 }
 
+// TranslateTitle translates the headlines in the NHK and Asahi slices.
+// I should rewrite this so there's no duplicate code....
 func TranslateTitle(n []NHKItem, a []AsahiItem) {
 	for i, item := range n {
 		var err error

@@ -27,7 +27,8 @@ func (nm *NewsModel) Insert(n mynews.NHK, a mynews.Asahi, t []mytwitter.TTrend) 
 	}
 
 	collection := nm.DB.Database("jpnews").Collection("day")
-	ctx, _ := context.WithTimeout(context.Background(), 5*time.Second)
+	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
+	defer cancel()
 	result, err := collection.InsertOne(ctx, todaysnews)
 	if err != nil {
 		return nil, err
@@ -35,11 +36,12 @@ func (nm *NewsModel) Insert(n mynews.NHK, a mynews.Asahi, t []mytwitter.TTrend) 
 	return result, nil
 }
 
-// Get returns a
+// Get returns a news struct based on date IF it exists in the db.
 func (nm *NewsModel) Get(date string) (*models.News, error) {
 	retval := &models.News{}
 	collection := nm.DB.Database("jpnews").Collection("day")
-	ctx, _ := context.WithTimeout(context.Background(), 5*time.Second)
+	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
+	defer cancel()
 	err := collection.FindOne(ctx, bson.M{"date": date}).Decode(&retval)
 	if err != nil {
 		return nil, err

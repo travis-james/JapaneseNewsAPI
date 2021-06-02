@@ -45,7 +45,8 @@ func getenv(name string) string {
 	return v
 }
 
-// Why return pointer instead of value? So I can return nil....
+// GetTrends gets the top 5 trends on Twitter in Japan. It returns
+// a []TTrend that contains the trend in Japanese and in English.
 func GetTrends() ([]TTrend, error) {
 	// Get Credentials for twitter.
 	client := getCredentials()
