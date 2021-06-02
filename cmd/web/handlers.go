@@ -32,7 +32,7 @@ func (app *application) insertNews(w http.ResponseWriter, r *http.Request) {
 	todaysDate := time.Now().Format("2006-01-02")
 	retval, _ := app.news.Get(todaysDate)
 	if retval != nil {
-		msg := todaysDate + " already exists in the database, no action taken."
+		msg := todaysDate + " already exists in the database, no action taken.\n"
 		w.Write([]byte(msg))
 		return
 	}
@@ -69,7 +69,7 @@ func (app *application) insertNews(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 		return
 	}
-	msg := "Succesfully inserted the news of the following date: " + todaysDate
+	msg := "Succesfully inserted the news of the following date: " + todaysDate + "\n"
 	w.Write([]byte(msg))
 }
 
