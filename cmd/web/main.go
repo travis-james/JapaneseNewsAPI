@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"log"
 	"net/http"
+	"os"
 	"time"
 
 	"github.com/travis-james/JapaneseNewsAPI/pkg/mymongo"
@@ -19,14 +20,29 @@ type application struct {
 	ctx  context.Context
 }
 
+var (
+	dbUser = getenv("DB_USER")
+	dbPwd  = getenv("DB_PASS")
+	dbName = getenv("DB_AT")
+)
+
+func getenv(name string) string {
+	v := os.Getenv(name)
+	if v == "" {
+		panic("Missing environment variable " + name)
+	}
+	return v
+}
+
 func main() {
 	addr := flag.String("addr", ":4000", "HTTP network address")
-	dsn := flag.String("dsn", "mongodb://localhost:27017", "The data source name for the database")
 	flag.Parse()
+	dsn := "mongodb+srv://" + dbUser + ":" + dbPwd + "@" + dbName
 
 	// For DB.
-	c, _ := context.WithTimeout(context.Background(), 10*time.Second)
-	clientOptions := options.Client().ApplyURI(*dsn)
+	c, cancel := context.WithTimeout(context.Background(), 10*time.Second)
+	defer cancel()
+	clientOptions := options.Client().ApplyURI(dsn)
 	dbc, err := mongo.Connect(c, clientOptions)
 	if err != nil {
 		log.Fatal(err)
