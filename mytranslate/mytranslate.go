@@ -12,7 +12,7 @@ import (
 func TranslateJP(text string) (string, error) {
 	// Create a google translate client.
 	ctx := context.Background()
-	tc, err := translate.NewTranslationClient(ctx, option.WithCredentialsFile("mytranslate/translation-api-project-307416-8cf7f95bb9a6.json"))
+	tc, err := translate.NewTranslationClient(ctx, option.WithCredentialsFile("mytranslate/gtranslatekeys.json"))
 	if err != nil {
 		fmt.Println("Client failed.")
 		return "", err
