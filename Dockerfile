@@ -9,5 +9,5 @@ RUN go build ./cmd/web
 
 CMD [ "./web" ]
 
-# docker build --no-cache -t jpnewsapi .
-# docker run --env-file=jpnewsapi.env -p 4000:4000 jpnewsapi
+# docker build --no-cache -t gcr.io/[projectID]/jpnews-frontend:latest .
+# docker run --env-file=jpnewsapi.env -p 4000:4000 gcr.io/[projectID]/jpnews-frontend:latest
