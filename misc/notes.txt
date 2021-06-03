@@ -30,7 +30,7 @@ use jpnews
 db.day.save(the struct)
 db.day.find({ "id": 1 })
 db.day.find({"date": "2021-05-11"})
-db.day.remove({"date": "2021-05-11"})
+db.day.remove({"date": "2021-06-02"})
 --- Asahi vs NHK
 Their Item structs are the same except what the date is labeled in xml. This causes a lot of redundant code, is there a way
 around this....
