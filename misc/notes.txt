@@ -46,3 +46,7 @@ docker system prune -a --volumes
 
 === Shell into this docker container ===
 docker exec -it name /bin/sh
+
+=== Concerning Cloud Build not including my .json file ===
+https://cloud.google.com/sdk/gcloud/reference/builds/submit
+If a .gcloudignore file is absent and a .gitignore file is present in the local source directory, gcloud will use a generated Git-compatible .gcloudignore file that respects your .gitignored files.
