@@ -9,3 +9,7 @@ This API only has 3 endpoints as of now:
 
 ## Why did I make this?
 I was going to make this just a local utility for myself, but thought I'd challege myself and try to deploy it as an app. Seemed like a good opportunity to use various APIs (Twitter, Google Translate), and other technologies (MongoDB). I'm not going to link the site here because I want to avoid any unexpected costs, unfortunately. If you interview me for a job, though, I'll demo it for you 🙂
+
+## What's next?
+I'd like to restructure my date/news objects so that I can query by keyword and return headlines with that keyword.
+Would also like to add users at some point who can post articles, and have a favorites list.
