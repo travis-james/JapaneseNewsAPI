@@ -23,7 +23,7 @@ mongo
 use jpnews
 db.day.save(the struct)
 db.day.find({ "id": 1 })
-db.day.find({"date": "2021-05-11"})
+db.day.find({"date": "2021-07-17"})
 db.day.remove({"date": "2021-06-03"})
 --- Asahi vs NHK
 Their Item structs are the same except what the date is labeled in xml. This causes a lot of redundant code, is there a way
@@ -46,4 +46,9 @@ https://cloud.google.com/sdk/gcloud/reference/builds/submit
 If a .gcloudignore file is absent and a .gitignore file is present in the local source directory, gcloud will use a generated Git-compatible .gcloudignore file that respects your .gitignored files.
 
 === Testing rate limiting ===
-for i in {1..10}; do curl http://localhost:4000; done
+for i in {1..10}; do curl https://jpnewsapi-ifbwemlbfq-uc.a.run.app/getnews/2021-07-17; done
+for i in {1..10}; do curl -X POST https://jpnewsapi-ifbwemlbfq-uc.a.run.app/updatenews; done
+
+=== Push Local Docker Image (NO CLOUD BUILD) To GCP ===
+gcloud auth configure-docker (if not done already on local machine)
+docker push gcr.io/[project_name]/[image_name]
