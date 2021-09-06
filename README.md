@@ -10,6 +10,7 @@ This API only has 3 endpoints as of now:
 You can demo it here:
 https://jpnewsapi-ifbwemlbfq-uc.a.run.app/
 Rate limiting only allows 1 request per second, so if you get a "rate limit exceeded" error, that's why.
+
 **Note:** Since the database is updated manually not every date will be in the database.
 
 ## Why did I make this?
