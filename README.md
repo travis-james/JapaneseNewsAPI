@@ -9,7 +9,7 @@ This API only has 3 endpoints as of now:
 
 You can demo it here:
 
-~~https://jpnewsapi-ifbwemlbfq-uc.a.run.app/~~ I took my app offline now that I've found a job.
+~~https://jpnewsapi-ifbwemlbfq-uc.a.run.app/~~ (I took my app offline now that I've found a job.)
 
 Rate limiting only allows 1 request per second, so if you get a "rate limit exceeded" error, that's why.
 
