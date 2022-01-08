@@ -8,7 +8,9 @@ This API only has 3 endpoints as of now:
 * **/updatenews** : This is a POST method. It will retrieve headlines and links from Asahi's and NHK's RSS feeds, and what's trending on Twitter in Japan, and translate that information to English using Google's Translate API. If the date already exists in the database, no update will happen.
 
 You can demo it here:
-https://jpnewsapi-ifbwemlbfq-uc.a.run.app/
+
+~~https://jpnewsapi-ifbwemlbfq-uc.a.run.app/~~ I took my app offline now that I've found a job.
+
 Rate limiting only allows 1 request per second, so if you get a "rate limit exceeded" error, that's why.
 
 **Note:** Since the database is updated manually not every date will be in the database.
